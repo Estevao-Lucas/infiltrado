@@ -20,30 +20,30 @@ export function Playing({ onChangeRules }: PlayingProps) {
   const starter = players[round.starterIndex]
 
   return (
-    <div className="flex flex-1 flex-col justify-center gap-6">
-      <Card className="flex flex-col items-center gap-3 p-8 text-center">
-        <span className="text-6xl" aria-hidden="true">
-          🎬
-        </span>
-        <h1 className="text-2xl font-black">Partida iniciada!</h1>
-        <p className="text-slate-400">Hora de conversar e achar o impostor.</p>
-      </Card>
+    <div className="flex flex-1 flex-col justify-center gap-8">
+      <header className="text-center">
+        <h1 className="text-3xl font-bold tracking-tight text-text-primary">Partida iniciada</h1>
+        <p className="mt-2 text-text-secondary">Hora de conversar e achar o impostor.</p>
+      </header>
 
-      <Card className="bg-yellow-400 p-6 text-center text-slate-900">
-        <p className="text-xl font-black">🗣️ {starter} começa a conversa!</p>
+      <Card className="p-6 text-center">
+        <p className="text-sm font-semibold tracking-widest text-text-secondary uppercase">
+          Começa a conversa
+        </p>
+        <p className="mt-2 text-2xl font-bold tracking-tight text-primary">{starter}</p>
       </Card>
 
       <div className="flex flex-col gap-3">
         <Button fullWidth className="py-4 text-lg" onClick={() => setConfirmReveal(true)}>
-          👁️ Revelar Impostor &amp; Palavra
+          Revelar impostor e palavra
         </Button>
         <Button fullWidth variant="ghost" onClick={() => setConfirmNewGame(true)}>
-          🔁 Novo Jogo
+          Novo jogo
         </Button>
       </div>
 
-      <Modal open={confirmReveal} onClose={() => setConfirmReveal(false)} title="👁️ Revelar tudo?">
-        <p className="text-slate-300">
+      <Modal open={confirmReveal} onClose={() => setConfirmReveal(false)} title="Revelar tudo?">
+        <p className="text-text-secondary">
           Tem certeza que deseja revelar? O impostor e a palavra aparecerão para todos.
         </p>
         <div className="mt-6 flex gap-3">
@@ -51,13 +51,13 @@ export function Playing({ onChangeRules }: PlayingProps) {
             Cancelar
           </Button>
           <Button fullWidth onClick={revealResult}>
-            Sim, revelar!
+            Sim, revelar
           </Button>
         </div>
       </Modal>
 
-      <Modal open={confirmNewGame} onClose={() => setConfirmNewGame(false)} title="🔁 Novo jogo?">
-        <p className="text-slate-300">
+      <Modal open={confirmNewGame} onClose={() => setConfirmNewGame(false)} title="Novo jogo?">
+        <p className="text-text-secondary">
           A rodada atual será descartada. Os jogadores continuam na lista e você volta para as
           regras.
         </p>

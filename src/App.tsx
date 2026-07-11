@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ThemeToggle } from './components'
 import { Home } from './screens/Home'
 import { PlayersSetup } from './screens/PlayersSetup'
 import { Playing } from './screens/Playing'
@@ -42,10 +43,11 @@ function App() {
   const screenKey = screen === 'game' ? `game-${phase}` : screen
 
   return (
-    <main className="min-h-dvh overflow-x-hidden bg-slate-900 text-slate-100">
+    <main className="min-h-dvh overflow-x-hidden bg-background text-text-primary">
+      <ThemeToggle />
       <div
         key={screenKey}
-        className="screen-in mx-auto flex min-h-dvh w-full max-w-md flex-col px-4 py-6"
+        className="screen-in mx-auto flex min-h-dvh w-full max-w-md flex-col px-4 pt-16 pb-6"
       >
         {content}
       </div>

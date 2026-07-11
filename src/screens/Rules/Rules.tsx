@@ -49,13 +49,13 @@ export function Rules({ onBack, onStart }: RulesProps) {
         <Button variant="ghost" onClick={onBack} aria-label="Voltar para jogadores">
           ←
         </Button>
-        <h1 className="text-2xl font-black">⚙️ Regras</h1>
+        <h1 className="text-2xl font-bold tracking-tight text-text-primary">Regras</h1>
       </header>
 
       <Card className="flex items-center justify-between gap-3">
         <div>
-          <p className="font-bold">🕵️ Impostores</p>
-          <p className="text-sm text-slate-400">
+          <p className="font-semibold text-text-primary">Impostores</p>
+          <p className="text-sm text-text-secondary">
             {maxImposters === 1 ? 'Apenas 1 com esse grupo' : `De 1 a ${maxImposters}`}
           </p>
         </div>
@@ -73,7 +73,7 @@ export function Rules({ onBack, onStart }: RulesProps) {
         <Toggle
           checked={settings.hintsEnabled}
           onChange={(checked) => setSettings({ hintsEnabled: checked })}
-          label="💡 Dica para o impostor"
+          label="Dica para o impostor"
           description="O impostor recebe uma pista sutil da palavra"
         />
         {settings.hintsEnabled && imposterCount > 1 && (
@@ -85,10 +85,10 @@ export function Rules({ onBack, onStart }: RulesProps) {
                 role="radio"
                 aria-checked={settings.hintMode === option.value}
                 onClick={() => setSettings({ hintMode: option.value })}
-                className={`min-h-11 rounded-xl border-2 px-4 text-left text-sm font-bold transition focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:outline-none ${
+                className={`min-h-11 rounded-xl border px-4 text-left text-sm font-semibold transition focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none ${
                   settings.hintMode === option.value
-                    ? 'border-yellow-400 bg-yellow-400/10 text-yellow-300'
-                    : 'border-slate-700 text-slate-300 hover:border-slate-600'
+                    ? 'border-primary text-text-primary'
+                    : 'border-border text-text-secondary hover:text-text-primary'
                 }`}
               >
                 {option.label}
@@ -100,9 +100,9 @@ export function Rules({ onBack, onStart }: RulesProps) {
 
       <Card className="flex flex-col gap-3">
         <div className="flex items-center justify-between gap-2">
-          <p className="font-bold">
-            🗂️ Categorias{' '}
-            <span className="text-sm font-semibold text-slate-400">
+          <p className="font-semibold text-text-primary">
+            Categorias{' '}
+            <span className="text-sm font-medium text-text-secondary">
               ({selectedIds.length}/{categories.length})
             </span>
           </p>
@@ -112,7 +112,7 @@ export function Rules({ onBack, onStart }: RulesProps) {
               className="min-h-9 px-2 text-xs"
               onClick={() => setSettings({ selectedCategoryIds: categories.map((c) => c.id) })}
             >
-              Selecionar todas
+              Todas
             </Button>
             <Button
               variant="ghost"
@@ -135,7 +135,7 @@ export function Rules({ onBack, onStart }: RulesProps) {
           ))}
         </div>
         {selectedIds.length === 0 && (
-          <p className="text-center text-sm font-semibold text-red-400">
+          <p className="text-center text-sm font-medium text-danger">
             Selecione pelo menos 1 categoria
           </p>
         )}
@@ -147,7 +147,7 @@ export function Rules({ onBack, onStart }: RulesProps) {
         disabled={selectedIds.length === 0}
         onClick={handleStart}
       >
-        🚀 Começar
+        Começar
       </Button>
     </div>
   )

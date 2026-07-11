@@ -28,47 +28,45 @@ function RevealCard({ player, round, playerIndex, advanceLabel, onAdvance }: Rev
       <div className="relative select-none" {...bind}>
         {revealed ? (
           isImposter ? (
-            <Card className="flex min-h-80 flex-col items-center justify-center gap-3 border-4 border-red-500 bg-red-950 p-8 text-center">
-              <span className="text-6xl" aria-hidden="true">
-                🕵️
-              </span>
-              <p className="text-3xl font-black text-red-400 uppercase">Você é o impostor!</p>
+            <Card className="flex min-h-80 flex-col items-center justify-center gap-4 p-8 text-center">
+              <p className="text-sm font-semibold tracking-widest text-text-secondary uppercase">
+                Segredo
+              </p>
+              <p className="text-3xl font-bold tracking-tight text-danger uppercase">
+                Você é o impostor
+              </p>
               {category && (
-                <p className="font-semibold text-red-200/70">
-                  Categoria: {category.emoji} {category.name}
+                <p className="text-text-secondary">
+                  Categoria:{' '}
+                  <span className="font-semibold text-text-primary">{category.name}</span>
                 </p>
               )}
               {hint && (
-                <p className="rounded-xl bg-red-500/15 px-4 py-2 font-bold text-red-200">
-                  💡 Dica: {hint}
+                <p className="rounded-xl border border-border bg-surface-elevated px-4 py-2 font-semibold text-text-primary">
+                  Dica: {hint}
                 </p>
               )}
-              <p className="text-sm text-red-200/60">Disfarce-se e descubra a palavra…</p>
+              <p className="text-sm text-text-secondary">Disfarce-se e descubra a palavra.</p>
             </Card>
           ) : (
-            <Card className="flex min-h-80 flex-col items-center justify-center gap-3 bg-white p-8 text-center text-slate-900">
-              <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">
+            <Card className="flex min-h-80 flex-col items-center justify-center gap-4 bg-surface-elevated p-8 text-center">
+              <p className="text-sm font-semibold tracking-widest text-text-secondary uppercase">
                 A palavra é
               </p>
-              <p className="text-4xl font-black break-words">{round.word}</p>
-              {category && (
-                <p className="font-semibold text-slate-500">
-                  {category.emoji} {category.name}
-                </p>
-              )}
+              <p className="text-4xl font-bold tracking-tight break-words text-text-primary">
+                {round.word}
+              </p>
+              {category && <p className="text-text-secondary">{category.name}</p>}
             </Card>
           )
         ) : (
-          <Card className="flex min-h-80 flex-col items-center justify-center gap-4 bg-yellow-400 p-8 text-center text-slate-900">
-            <span className="text-5xl" aria-hidden="true">
-              🙈
-            </span>
-            <p className="text-3xl font-black break-words">{player}</p>
-            <p className="font-semibold text-slate-700">
-              Não conte a palavra para os outros jogadores 🤫
+          <Card className="flex min-h-80 flex-col items-center justify-center gap-4 p-8 text-center">
+            <p className="text-3xl font-bold tracking-tight break-words text-text-primary">
+              {player}
             </p>
-            <p className="mt-2 animate-pulse text-lg font-black tracking-wide uppercase">
-              👇 Segure para revelar
+            <p className="text-text-secondary">Não conte a palavra para os outros jogadores.</p>
+            <p className="mt-2 animate-pulse text-sm font-bold tracking-widest text-primary uppercase">
+              Segure para revelar
             </p>
           </Card>
         )}
@@ -100,9 +98,9 @@ export function Reveal() {
   return (
     <div className="flex flex-1 flex-col justify-center">
       <div key={index} className="screen-in">
-        <p className="mb-4 text-center font-bold text-slate-400">
-          🤝 Passe o celular para <span className="text-yellow-400">{player}</span>
-          <span className="mt-1 block text-sm font-semibold text-slate-500">
+        <p className="mb-6 text-center text-text-secondary">
+          Passe o celular para <span className="font-semibold text-text-primary">{player}</span>
+          <span className="mt-1 block text-sm">
             Jogador {index + 1} de {players.length}
           </span>
         </p>
@@ -110,7 +108,7 @@ export function Reveal() {
           player={player}
           round={round}
           playerIndex={index}
-          advanceLabel={isLast ? '🎮 Iniciar Partida' : '➡️ Próximo Jogador'}
+          advanceLabel={isLast ? 'Iniciar Partida' : 'Próximo Jogador'}
           onAdvance={isLast ? goToPlaying : nextReveal}
         />
       </div>

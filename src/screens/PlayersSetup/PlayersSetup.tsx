@@ -58,7 +58,7 @@ export function PlayersSetup({ onBack, onContinue }: PlayersSetupProps) {
   }
 
   const inputClasses =
-    'min-h-11 w-full rounded-2xl border-2 border-slate-700 bg-slate-800 px-4 font-semibold text-slate-100 placeholder:text-slate-500 focus:border-yellow-400 focus:outline-none'
+    'min-h-11 w-full rounded-xl border border-border bg-surface px-4 font-medium text-text-primary placeholder:text-text-secondary focus:border-primary focus:outline-none'
 
   return (
     <div className="flex flex-col gap-5">
@@ -66,8 +66,8 @@ export function PlayersSetup({ onBack, onContinue }: PlayersSetupProps) {
         <Button variant="ghost" onClick={onBack} aria-label="Voltar para a tela inicial">
           ←
         </Button>
-        <h1 className="text-2xl font-black">👥 Jogadores</h1>
-        <span className="ml-auto rounded-full bg-slate-800 px-3 py-1 text-sm font-bold text-slate-300">
+        <h1 className="text-2xl font-bold tracking-tight text-text-primary">Jogadores</h1>
+        <span className="ml-auto rounded-full border border-border px-3 py-1 text-sm font-semibold text-text-secondary">
           {players.length}/{MAX_PLAYERS}
         </span>
       </header>
@@ -92,27 +92,23 @@ export function PlayersSetup({ onBack, onContinue }: PlayersSetupProps) {
         </Button>
       </form>
       {error && (
-        <p role="alert" className="-mt-3 px-1 text-sm font-semibold text-red-400">
+        <p role="alert" className="-mt-3 px-1 text-sm font-medium text-danger">
           {error}
         </p>
       )}
 
       {players.length === 0 ? (
-        <Card className="py-10 text-center text-slate-400">
-          <span className="block text-4xl" aria-hidden="true">
-            🫥
-          </span>
-          <p className="mt-2 font-semibold">Ninguém por aqui ainda…</p>
-          <p className="text-sm">Adicione pelo menos {MIN_PLAYERS} jogadores.</p>
+        <Card className="py-12 text-center">
+          <p className="font-semibold text-text-primary">Ninguém por aqui ainda</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Adicione pelo menos {MIN_PLAYERS} jogadores.
+          </p>
         </Card>
       ) : (
         <ul className="flex flex-col gap-2">
           {players.map((player, index) => (
             <li key={`${player}-${index}`}>
-              <Card className="flex items-center gap-3 p-3">
-                <span className="text-xl" aria-hidden="true">
-                  🙋
-                </span>
+              <Card className="flex items-center gap-2 p-2 pl-4">
                 {editingIndex === index ? (
                   <input
                     className={inputClasses}
@@ -130,7 +126,7 @@ export function PlayersSetup({ onBack, onContinue }: PlayersSetupProps) {
                 ) : (
                   <button
                     type="button"
-                    className="min-h-11 flex-1 truncate rounded-xl text-left font-bold focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:outline-none"
+                    className="min-h-11 flex-1 truncate rounded-xl text-left font-medium text-text-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
                     onClick={() => startEditing(index)}
                     aria-label={`Editar ${player}`}
                   >
@@ -138,12 +134,12 @@ export function PlayersSetup({ onBack, onContinue }: PlayersSetupProps) {
                   </button>
                 )}
                 <Button
-                  variant="danger"
-                  className="shrink-0"
+                  variant="ghost"
+                  className="shrink-0 text-danger hover:text-danger"
                   onClick={() => removePlayer(index)}
                   aria-label={`Remover ${player}`}
                 >
-                  ✕
+                  ×
                 </Button>
               </Card>
             </li>
@@ -153,7 +149,7 @@ export function PlayersSetup({ onBack, onContinue }: PlayersSetupProps) {
 
       <div className="mt-auto flex flex-col gap-2 pt-2">
         {players.length < MIN_PLAYERS && (
-          <p className="text-center text-sm font-semibold text-slate-400">
+          <p className="text-center text-sm text-text-secondary">
             Mínimo de {MIN_PLAYERS} jogadores para continuar
           </p>
         )}
@@ -163,7 +159,7 @@ export function PlayersSetup({ onBack, onContinue }: PlayersSetupProps) {
           disabled={players.length < MIN_PLAYERS}
           onClick={onContinue}
         >
-          Continuar ➡️
+          Continuar
         </Button>
       </div>
     </div>

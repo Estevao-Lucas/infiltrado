@@ -35,14 +35,12 @@ function applyThemeWithTransition(resolved: ResolvedTheme) {
  */
 export function useTheme() {
   const [preference, setPreference] = useState<ThemePreference>(getStoredPreference)
-  const [resolved, setResolved] = useState<ResolvedTheme>(() =>
-    preference === 'system' ? systemTheme() : preference,
-  )
+  const [systemResolved, setSystemResolved] = useState<ResolvedTheme>(systemTheme)
+  const resolved = preference === 'system' ? systemResolved : preference
   const isFirstApply = useRef(true)
 
   useEffect(() => {
     localStorage.setItem(THEME_STORAGE_KEY, preference)
-    setResolved(preference === 'system' ? systemTheme() : preference)
   }, [preference])
 
   useEffect(() => {
@@ -59,7 +57,7 @@ export function useTheme() {
   useEffect(() => {
     if (preference !== 'system') return
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    const onChange = () => setResolved(systemTheme())
+    const onChange = () => setSystemResolved(systemTheme())
     mediaQuery.addEventListener('change', onChange)
     return () => mediaQuery.removeEventListener('change', onChange)
   }, [preference])
