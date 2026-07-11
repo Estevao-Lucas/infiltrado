@@ -25,48 +25,60 @@ function RevealCard({ player, round, playerIndex, advanceLabel, onAdvance }: Rev
 
   return (
     <>
-      <div className="relative select-none" {...bind}>
+      <div className="hold-area relative" {...bind}>
         {revealed ? (
           isImposter ? (
-            <Card className="flex min-h-80 flex-col items-center justify-center gap-4 p-8 text-center">
-              <p className="text-sm font-semibold tracking-widest text-text-secondary uppercase">
-                Segredo
-              </p>
-              <p className="text-3xl font-bold tracking-tight text-danger uppercase">
-                Você é o impostor
-              </p>
-              {category && (
-                <p className="text-text-secondary">
-                  Categoria:{' '}
-                  <span className="font-semibold text-text-primary">{category.name}</span>
+            <Card className="flex min-h-[58dvh] flex-col items-center p-8 text-center">
+              <div className="flex flex-1 flex-col items-center justify-center gap-4">
+                <p className="text-sm font-semibold tracking-widest text-text-secondary uppercase">
+                  Segredo
                 </p>
-              )}
-              {hint && (
-                <p className="rounded-xl border border-border bg-surface-elevated px-4 py-2 font-semibold text-text-primary">
-                  Dica: {hint}
+                <p className="text-3xl font-bold tracking-tight text-danger uppercase">
+                  Você é o impostor
                 </p>
-              )}
-              <p className="text-sm text-text-secondary">Disfarce-se e descubra a palavra.</p>
+                {category && (
+                  <p className="text-text-secondary">
+                    Categoria:{' '}
+                    <span className="font-semibold text-text-primary">{category.name}</span>
+                  </p>
+                )}
+                {hint && (
+                  <p className="rounded-xl border border-border bg-surface-elevated px-4 py-2 font-semibold text-text-primary">
+                    Dica: {hint}
+                  </p>
+                )}
+                <p className="text-sm text-text-secondary">Disfarce-se e descubra a palavra.</p>
+              </div>
+              <p className="mt-auto pt-6 text-sm font-bold tracking-widest text-text-secondary uppercase">
+                Solte para esconder
+              </p>
             </Card>
           ) : (
-            <Card className="flex min-h-80 flex-col items-center justify-center gap-4 bg-surface-elevated p-8 text-center">
-              <p className="text-sm font-semibold tracking-widest text-text-secondary uppercase">
-                A palavra é
+            <Card className="flex min-h-[58dvh] flex-col items-center bg-surface-elevated p-8 text-center">
+              <div className="flex flex-1 flex-col items-center justify-center gap-4">
+                <p className="text-sm font-semibold tracking-widest text-text-secondary uppercase">
+                  A palavra é
+                </p>
+                <p className="text-4xl font-bold tracking-tight break-words text-text-primary">
+                  {round.word}
+                </p>
+                {category && <p className="text-text-secondary">{category.name}</p>}
+              </div>
+              <p className="mt-auto pt-6 text-sm font-bold tracking-widest text-text-secondary uppercase">
+                Solte para esconder
               </p>
-              <p className="text-4xl font-bold tracking-tight break-words text-text-primary">
-                {round.word}
-              </p>
-              {category && <p className="text-text-secondary">{category.name}</p>}
             </Card>
           )
         ) : (
-          <Card className="flex min-h-80 flex-col items-center justify-center gap-4 p-8 text-center">
-            <p className="text-3xl font-bold tracking-tight break-words text-text-primary">
-              {player}
-            </p>
-            <p className="text-text-secondary">Não conte a palavra para os outros jogadores.</p>
-            <p className="mt-2 animate-pulse text-sm font-bold tracking-widest text-primary uppercase">
-              Segure para revelar
+          <Card className="flex min-h-[58dvh] flex-col items-center p-8 text-center">
+            <div className="flex flex-1 flex-col items-center justify-center gap-4">
+              <p className="text-3xl font-bold tracking-tight break-words text-text-primary">
+                {player}
+              </p>
+              <p className="text-text-secondary">Não conte a palavra para os outros jogadores.</p>
+            </div>
+            <p className="mt-auto animate-pulse pt-6 text-sm font-bold tracking-widest text-primary-hover uppercase">
+              Segure aqui para revelar
             </p>
           </Card>
         )}
