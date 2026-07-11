@@ -1,8 +1,1 @@
-export type {
-  WordEntry,
-  Category,
-  GameSettings,
-  Round,
-  GamePhase,
-  GameState,
-} from './game'
+export type { WordEntry, Category, GameSettings, Round, GamePhase, GameState } from './game'
