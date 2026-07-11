@@ -1,0 +1,34 @@
+/**
+ * Tokens semânticos — única fonte de cores do app.
+ * Componentes consomem só as classes Tailwind mapeadas em index.css,
+ * nunca cores literais.
+ */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --background: #0f1115;
+  --surface: #1a1d23;
+  --surface-elevated: #22262e;
+  --border: #2e333d;
+  --text-primary: #f4f4f5;
+  --text-secondary: #9ca3af;
+  --primary: #a3e635;
+  --primary-hover: #84cc16;
+  --on-primary: #0f1115;
+  --danger: #ef4444;
+  --on-danger: #ffffff;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --background: #f7f7f5;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --border: #e4e4e7;
+  --text-primary: #18181b;
+  --text-secondary: #52525b;
+  --primary: #65a30d;
+  --primary-hover: #4d7c0f;
+  --on-primary: #ffffff;
+  --danger: #dc2626;
+  --on-danger: #ffffff;
+}

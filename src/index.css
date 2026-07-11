@@ -1,7 +1,34 @@
 @import 'tailwindcss';
+@import './styles/tokens.css';
+
+/* Mapeia os tokens para utilitários Tailwind (bg-surface, text-danger…) */
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-border: var(--border);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-danger: var(--danger);
+  --color-on-danger: var(--on-danger);
+}
 
 body {
-  background-color: #0f172a;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+/* Transição suave só na troca de tema (classe aplicada pelo useTheme),
+   nunca no load inicial */
+html.theme-transition,
+html.theme-transition * {
+  transition:
+    background-color 150ms ease,
+    color 150ms ease,
+    border-color 150ms ease;
 }
 
 @keyframes screen-in {
