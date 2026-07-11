@@ -42,11 +42,13 @@ revealResult/newRound/resetSession`. 3–15 jogadores; impostores 1..floor(playe
   cíclico se faltar) → starter.
 - `src/data/categories/*.json` — 17 categorias × 80 palavras, cada uma com 2–3 dicas.
   `src/data/index.ts` importa e exporta tudo tipado.
-- `src/hooks/useHoldToReveal.ts` — hold-to-reveal com Pointer Events + `setPointerCapture`;
-  delay de 300ms antes de revelar, 600ms revelado para contar "hold completo". No iOS,
-  `touch-action: none` não basta: durante o hold registra `touchmove` NÃO-passivo com
-  preventDefault (senão o WebKit dispara pointercancel por micro-scroll e o card fecha
-  sozinho). CSS de apoio: `overscroll-behavior: none` no html/body e classe `.hold-area`.
+- `src/hooks/useHoldToReveal.ts` — hold-to-reveal em cima de `@use-gesture/react` (`useDrag`
+  com `pointer: { touch: true }` + `eventOptions: { passive: false }` + preventDefault);
+  delay de 300ms antes de revelar, 600ms revelado para contar "hold completo". Motivo da lib:
+  no iOS o WebKit dispara pointercancel espúrio (micro-scroll/gestos do sistema) e o card
+  fechava sozinho — touch events não-passivos seguram o gesto. Implementação manual anterior
+  com Pointer Events não foi suficiente. CSS de apoio: `overscroll-behavior: none` no
+  html/body e classe `.hold-area`.
 - `src/hooks/useTheme.ts` + `src/styles/tokens.css` — temas dark/light/system.
 
 ## Invariantes de jogo (não quebrar)
