@@ -16,7 +16,14 @@ function App() {
 
   let content
   if (screen === 'game' && phase !== 'setup') {
-    content = phase === 'reveal' ? <Reveal /> : phase === 'playing' ? <Playing /> : <Result />
+    content =
+      phase === 'reveal' ? (
+        <Reveal />
+      ) : phase === 'playing' ? (
+        <Playing onChangeRules={() => setScreen('rules')} />
+      ) : (
+        <Result onChangeRules={() => setScreen('rules')} onEndSession={() => setScreen('home')} />
+      )
   } else if (screen === 'players') {
     content = (
       <PlayersSetup onBack={() => setScreen('home')} onContinue={() => setScreen('rules')} />
