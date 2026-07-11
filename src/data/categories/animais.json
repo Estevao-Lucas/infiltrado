@@ -3,55 +3,325 @@
   "name": "Animais",
   "emoji": "🐾",
   "words": [
-    { "word": "Cachorro", "hints": ["fiel", "quintal", "osso"] },
-    { "word": "Gato", "hints": ["independente", "ronrona", "sete vidas"] },
-    { "word": "Elefante", "hints": ["memória", "grande", "marfim"] },
-    { "word": "Girafa", "hints": ["pescoço", "manchas", "folhas altas"] },
-    { "word": "Leão", "hints": ["juba", "rei", "savana"] },
-    { "word": "Tigre", "hints": ["listras", "ásia", "feroz"] },
-    { "word": "Macaco", "hints": ["banana", "galhos", "imita"] },
-    { "word": "Zebra", "hints": ["listras", "preto e branco", "savana"] },
-    { "word": "Cavalo", "hints": ["sela", "galope", "ferradura"] },
-    { "word": "Vaca", "hints": ["leite", "pasto", "malhada"] },
-    { "word": "Porco", "hints": ["lama", "rosado", "focinho"] },
-    { "word": "Galinha", "hints": ["ovos", "cacareja", "quintal"] },
-    { "word": "Pato", "hints": ["lago", "grasna", "marcha"] },
-    { "word": "Coelho", "hints": ["cenoura", "orelhas", "páscoa"] },
-    { "word": "Tartaruga", "hints": ["casco", "lenta", "centenária"] },
-    { "word": "Jacaré", "hints": ["pantanal", "mandíbula", "água parada"] },
-    { "word": "Cobra", "hints": ["rasteja", "veneno", "muda de pele"] },
-    { "word": "Arara", "hints": ["colorida", "barulhenta", "casal"] },
-    { "word": "Papagaio", "hints": ["repete", "verde", "pirata"] },
-    { "word": "Tucano", "hints": ["bico", "colorido", "mata"] },
-    { "word": "Pinguim", "hints": ["frio", "smoking", "desajeitado"] },
-    { "word": "Urso", "hints": ["hibernação", "mel", "caverna"] },
-    { "word": "Panda", "hints": ["bambu", "china", "preguiçoso"] },
-    { "word": "Lobo", "hints": ["uiva", "alcateia", "lua"] },
-    { "word": "Raposa", "hints": ["esperta", "ruiva", "astuta"] },
-    { "word": "Coruja", "hints": ["noturna", "sábia", "pescoço"] },
-    { "word": "Morcego", "hints": ["caverna", "de cabeça pra baixo", "noturno"] },
-    { "word": "Golfinho", "hints": ["inteligente", "salto", "assobio"] },
-    { "word": "Baleia", "hints": ["gigante", "jato", "canto"] },
-    { "word": "Tubarão", "hints": ["barbatana", "dentes", "filme"] },
-    { "word": "Polvo", "hints": ["oito", "tinta", "flexível"] },
-    { "word": "Caranguejo", "hints": ["pinças", "de lado", "mangue"] },
-    { "word": "Cavalo-marinho", "hints": ["pai carrega", "enrolado", "delicado"] },
-    { "word": "Borboleta", "hints": ["casulo", "colorida", "jardim"] },
-    { "word": "Abelha", "hints": ["colmeia", "rainha", "ferrão"] },
-    { "word": "Formiga", "hints": ["fila", "carrega", "trabalho"] },
-    { "word": "Aranha", "hints": ["teia", "oito patas", "canto"] },
-    { "word": "Escorpião", "hints": ["cauda", "deserto", "signo"] },
-    { "word": "Sapo", "hints": ["lagoa", "pula", "príncipe"] },
-    { "word": "Camaleão", "hints": ["muda de cor", "língua", "olhos"] },
-    { "word": "Preguiça", "hints": ["lento", "árvore", "pecado"] },
-    { "word": "Tamanduá", "hints": ["língua", "formigueiro", "focinho"] },
-    { "word": "Capivara", "hints": ["lagoa", "tranquila", "meme"] },
-    { "word": "Onça", "hints": ["pintada", "pantanal", "nota"] },
-    { "word": "Canguru", "hints": ["bolsa", "austrália", "pulos"] },
-    { "word": "Coala", "hints": ["eucalipto", "dorme", "austrália"] },
-    { "word": "Camelo", "hints": ["corcova", "deserto", "sede"] },
-    { "word": "Hipopótamo", "hints": ["rio", "bocão", "pesado"] },
-    { "word": "Rinoceronte", "hints": ["chifre", "couro", "áfrica"] },
-    { "word": "Águia", "hints": ["visão", "voo alto", "símbolo"] }
+    {
+      "word": "Cachorro",
+      "hints": ["fiel", "quintal", "osso"]
+    },
+    {
+      "word": "Gato",
+      "hints": ["independente", "ronrona", "sete vidas"]
+    },
+    {
+      "word": "Elefante",
+      "hints": ["memória", "grande", "marfim"]
+    },
+    {
+      "word": "Girafa",
+      "hints": ["pescoço", "manchas", "folhas altas"]
+    },
+    {
+      "word": "Leão",
+      "hints": ["juba", "rei", "savana"]
+    },
+    {
+      "word": "Tigre",
+      "hints": ["listras", "ásia", "feroz"]
+    },
+    {
+      "word": "Macaco",
+      "hints": ["banana", "galhos", "imita"]
+    },
+    {
+      "word": "Zebra",
+      "hints": ["listras", "preto e branco", "savana"]
+    },
+    {
+      "word": "Cavalo",
+      "hints": ["sela", "galope", "ferradura"]
+    },
+    {
+      "word": "Vaca",
+      "hints": ["leite", "pasto", "malhada"]
+    },
+    {
+      "word": "Porco",
+      "hints": ["lama", "rosado", "focinho"]
+    },
+    {
+      "word": "Galinha",
+      "hints": ["ovos", "cacareja", "quintal"]
+    },
+    {
+      "word": "Pato",
+      "hints": ["lago", "grasna", "marcha"]
+    },
+    {
+      "word": "Coelho",
+      "hints": ["cenoura", "orelhas", "páscoa"]
+    },
+    {
+      "word": "Tartaruga",
+      "hints": ["casco", "lenta", "centenária"]
+    },
+    {
+      "word": "Jacaré",
+      "hints": ["pantanal", "mandíbula", "água parada"]
+    },
+    {
+      "word": "Cobra",
+      "hints": ["rasteja", "veneno", "muda de pele"]
+    },
+    {
+      "word": "Arara",
+      "hints": ["colorida", "barulhenta", "casal"]
+    },
+    {
+      "word": "Papagaio",
+      "hints": ["repete", "verde", "pirata"]
+    },
+    {
+      "word": "Tucano",
+      "hints": ["bico", "colorido", "mata"]
+    },
+    {
+      "word": "Pinguim",
+      "hints": ["frio", "smoking", "desajeitado"]
+    },
+    {
+      "word": "Urso",
+      "hints": ["hibernação", "mel", "caverna"]
+    },
+    {
+      "word": "Panda",
+      "hints": ["bambu", "china", "preguiçoso"]
+    },
+    {
+      "word": "Lobo",
+      "hints": ["uiva", "alcateia", "lua"]
+    },
+    {
+      "word": "Raposa",
+      "hints": ["esperta", "ruiva", "astuta"]
+    },
+    {
+      "word": "Coruja",
+      "hints": ["noturna", "sábia", "pescoço"]
+    },
+    {
+      "word": "Morcego",
+      "hints": ["caverna", "de cabeça pra baixo", "noturno"]
+    },
+    {
+      "word": "Golfinho",
+      "hints": ["inteligente", "salto", "assobio"]
+    },
+    {
+      "word": "Baleia",
+      "hints": ["gigante", "jato", "canto"]
+    },
+    {
+      "word": "Tubarão",
+      "hints": ["barbatana", "dentes", "filme"]
+    },
+    {
+      "word": "Polvo",
+      "hints": ["oito", "tinta", "flexível"]
+    },
+    {
+      "word": "Caranguejo",
+      "hints": ["pinças", "de lado", "mangue"]
+    },
+    {
+      "word": "Cavalo-marinho",
+      "hints": ["pai carrega", "enrolado", "delicado"]
+    },
+    {
+      "word": "Borboleta",
+      "hints": ["casulo", "colorida", "jardim"]
+    },
+    {
+      "word": "Abelha",
+      "hints": ["colmeia", "rainha", "ferrão"]
+    },
+    {
+      "word": "Formiga",
+      "hints": ["fila", "carrega", "trabalho"]
+    },
+    {
+      "word": "Aranha",
+      "hints": ["teia", "oito patas", "canto"]
+    },
+    {
+      "word": "Escorpião",
+      "hints": ["cauda", "deserto", "signo"]
+    },
+    {
+      "word": "Sapo",
+      "hints": ["lagoa", "pula", "príncipe"]
+    },
+    {
+      "word": "Camaleão",
+      "hints": ["muda de cor", "língua", "olhos"]
+    },
+    {
+      "word": "Preguiça",
+      "hints": ["lento", "árvore", "pecado"]
+    },
+    {
+      "word": "Tamanduá",
+      "hints": ["língua", "formigueiro", "focinho"]
+    },
+    {
+      "word": "Capivara",
+      "hints": ["lagoa", "tranquila", "meme"]
+    },
+    {
+      "word": "Onça",
+      "hints": ["pintada", "pantanal", "nota"]
+    },
+    {
+      "word": "Canguru",
+      "hints": ["bolsa", "austrália", "pulos"]
+    },
+    {
+      "word": "Coala",
+      "hints": ["eucalipto", "dorme", "austrália"]
+    },
+    {
+      "word": "Camelo",
+      "hints": ["corcova", "deserto", "sede"]
+    },
+    {
+      "word": "Hipopótamo",
+      "hints": ["rio", "bocão", "pesado"]
+    },
+    {
+      "word": "Rinoceronte",
+      "hints": ["chifre", "couro", "áfrica"]
+    },
+    {
+      "word": "Águia",
+      "hints": ["visão", "voo alto", "símbolo"]
+    },
+    {
+      "word": "Gorila",
+      "hints": ["peito", "imponente", "montanha"]
+    },
+    {
+      "word": "Guepardo",
+      "hints": ["mais rápido", "manchas", "savana"]
+    },
+    {
+      "word": "Hiena",
+      "hints": ["risada", "savana", "bando"]
+    },
+    {
+      "word": "Lêmure",
+      "hints": ["madagascar", "cauda listrada", "olhões"]
+    },
+    {
+      "word": "Suricato",
+      "hints": ["sentinela", "em pé", "deserto"]
+    },
+    {
+      "word": "Ornitorrinco",
+      "hints": ["bico de pato", "esquisito", "austrália"]
+    },
+    {
+      "word": "Tatu",
+      "hints": ["bolinha", "casca", "buraco"]
+    },
+    {
+      "word": "Quati",
+      "hints": ["focinho", "bando", "parques"]
+    },
+    {
+      "word": "Lontra",
+      "hints": ["deitada de costas", "rio", "brincalhona"]
+    },
+    {
+      "word": "Castor",
+      "hints": ["represa", "dentes", "madeira"]
+    },
+    {
+      "word": "Esquilo",
+      "hints": ["nozes", "bochechas", "parque"]
+    },
+    {
+      "word": "Ouriço",
+      "hints": ["espinhos", "bolinha", "jardim"]
+    },
+    {
+      "word": "Veado",
+      "hints": ["chifres", "floresta", "bambi"]
+    },
+    {
+      "word": "Rena",
+      "hints": ["natal", "trenó", "frio"]
+    },
+    {
+      "word": "Touro",
+      "hints": ["arena", "vermelho", "chifres"]
+    },
+    {
+      "word": "Cabra",
+      "hints": ["montanha", "leite", "teimosa"]
+    },
+    {
+      "word": "Ovelha",
+      "hints": ["lã", "rebanho", "dócil"]
+    },
+    {
+      "word": "Burro",
+      "hints": ["carga", "teimoso", "zurro"]
+    },
+    {
+      "word": "Pavão",
+      "hints": ["cauda", "exibido", "colorido"]
+    },
+    {
+      "word": "Flamingo",
+      "hints": ["rosa", "uma perna", "lagoa"]
+    },
+    {
+      "word": "Avestruz",
+      "hints": ["maior ave", "corre", "enterra a cabeça"]
+    },
+    {
+      "word": "Gaivota",
+      "hints": ["praia", "rouba comida", "bando"]
+    },
+    {
+      "word": "Urubu",
+      "hints": ["preto", "carniça", "círculos"]
+    },
+    {
+      "word": "Beija-flor",
+      "hints": ["néctar", "parado no ar", "pequeno"]
+    },
+    {
+      "word": "Pombo",
+      "hints": ["praça", "cinza", "migalhas"]
+    },
+    {
+      "word": "Galo",
+      "hints": ["madrugada", "crista", "canto"]
+    },
+    {
+      "word": "Água-viva",
+      "hints": ["transparente", "queima", "praia"]
+    },
+    {
+      "word": "Estrela-do-mar",
+      "hints": ["cinco braços", "regenera", "fundo do mar"]
+    },
+    {
+      "word": "Foca",
+      "hints": ["equilibrista", "bola", "gelo"]
+    },
+    {
+      "word": "Orca",
+      "hints": ["preta e branca", "gigante", "filme"]
+    }
   ]
 }

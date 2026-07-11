@@ -3,55 +3,325 @@
   "name": "Marcas",
   "emoji": "🏷️",
   "words": [
-    { "word": "Coca-Cola", "hints": ["vermelho", "fórmula secreta", "natal"] },
-    { "word": "Pepsi", "hints": ["azul", "rival", "desafio"] },
-    { "word": "Guaraná Antarctica", "hints": ["fruta", "verde", "brasileiro"] },
-    { "word": "Nike", "hints": ["risco", "just do it", "esporte"] },
-    { "word": "Adidas", "hints": ["três listras", "alemã", "esporte"] },
-    { "word": "Havaianas", "hints": ["dedo", "praia", "todo mundo usa"] },
-    { "word": "Natura", "hints": ["consultora", "sustentável", "cosméticos"] },
-    { "word": "O Boticário", "hints": ["perfume", "lojas", "presente"] },
-    { "word": "Petrobras", "hints": ["plataforma", "verde e amarelo", "estatal"] },
-    { "word": "Itaú", "hints": ["laranja", "banco", "feito para você"] },
-    { "word": "Bradesco", "hints": ["vermelho", "banco", "árvore"] },
-    { "word": "Nubank", "hints": ["roxo", "sem agência", "cartão"] },
-    { "word": "McDonald's", "hints": ["arcos", "palhaço", "lanche feliz"] },
-    { "word": "Burger King", "hints": ["coroa", "grelhado", "rival"] },
-    { "word": "Subway", "hints": ["sanduíche", "escolha tudo", "pão de 15cm"] },
-    { "word": "Starbucks", "hints": ["sereia", "nome no copo", "café"] },
-    { "word": "Apple", "hints": ["mordida", "maçã", "premium"] },
-    { "word": "Samsung", "hints": ["coreana", "galáxia", "eletrônicos"] },
-    { "word": "Motorola", "hints": ["m", "celulares", "razr"] },
-    { "word": "Nokia", "hints": ["tijolão", "cobrinha", "indestrutível"] },
-    { "word": "Google", "hints": ["busca", "colorido", "verbo"] },
-    { "word": "Microsoft", "hints": ["janelas", "escritório", "bill"] },
-    { "word": "Amazon", "hints": ["sorriso", "entrega", "de a a z"] },
-    { "word": "Netflix", "hints": ["vermelho", "tudum", "maratona"] },
-    { "word": "Spotify", "hints": ["verde", "playlists", "retrospectiva"] },
-    { "word": "YouTube", "hints": ["play", "vermelho", "inscreva-se"] },
-    { "word": "Instagram", "hints": ["câmera", "filtros", "stories"] },
-    { "word": "TikTok", "hints": ["dancinhas", "nota musical", "viral"] },
-    { "word": "WhatsApp", "hints": ["verde", "dois tiques", "zap"] },
-    { "word": "Facebook", "hints": ["azul", "curtir", "rede"] },
-    { "word": "Twitter", "hints": ["passarinho", "280", "virou x"] },
-    { "word": "Uber", "hints": ["aplicativo", "motorista", "preto"] },
-    { "word": "iFood", "hints": ["vermelho", "entregador", "fome"] },
-    { "word": "Mercado Livre", "hints": ["amarelo", "aperto de mãos", "frete"] },
-    { "word": "Magazine Luiza", "hints": ["lu", "azul", "varejo"] },
-    { "word": "Casas Bahia", "hints": ["quer pagar quanto", "crediário", "baianinho"] },
-    { "word": "Lego", "hints": ["blocos", "dinamarquesa", "pisar dói"] },
-    { "word": "Barbie", "hints": ["rosa", "boneca", "mundo perfeito"] },
-    { "word": "Hot Wheels", "hints": ["carrinhos", "pista", "laranja"] },
-    { "word": "Nestlé", "hints": ["ninho", "suíça", "alimentos"] },
-    { "word": "Garoto", "hints": ["caixa amarela", "espírito santo", "chocolate"] },
-    { "word": "Lacta", "hints": ["roxo", "sonho", "páscoa"] },
-    { "word": "Bauducco", "hints": ["panetone", "biscoitos", "natal"] },
-    { "word": "Sadia", "hints": ["s", "congelados", "frango"] },
-    { "word": "Skol", "hints": ["redonda", "amarela", "cerveja"] },
-    { "word": "Brahma", "hints": ["número 1", "vermelha", "cerveja"] },
-    { "word": "Heineken", "hints": ["verde", "estrela", "holandesa"] },
-    { "word": "Red Bull", "hints": ["asas", "touros", "energia"] },
-    { "word": "Ferrari", "hints": ["cavalo", "vermelho", "itália"] },
-    { "word": "Volkswagen", "hints": ["fusca", "alemã", "do povo"] }
+    {
+      "word": "Coca-Cola",
+      "hints": ["vermelho", "fórmula secreta", "natal"]
+    },
+    {
+      "word": "Pepsi",
+      "hints": ["azul", "rival", "desafio"]
+    },
+    {
+      "word": "Guaraná Antarctica",
+      "hints": ["fruta", "verde", "brasileiro"]
+    },
+    {
+      "word": "Nike",
+      "hints": ["risco", "just do it", "esporte"]
+    },
+    {
+      "word": "Adidas",
+      "hints": ["três listras", "alemã", "esporte"]
+    },
+    {
+      "word": "Havaianas",
+      "hints": ["dedo", "praia", "todo mundo usa"]
+    },
+    {
+      "word": "Natura",
+      "hints": ["consultora", "sustentável", "cosméticos"]
+    },
+    {
+      "word": "O Boticário",
+      "hints": ["perfume", "lojas", "presente"]
+    },
+    {
+      "word": "Petrobras",
+      "hints": ["plataforma", "verde e amarelo", "estatal"]
+    },
+    {
+      "word": "Itaú",
+      "hints": ["laranja", "banco", "feito para você"]
+    },
+    {
+      "word": "Bradesco",
+      "hints": ["vermelho", "banco", "árvore"]
+    },
+    {
+      "word": "Nubank",
+      "hints": ["roxo", "sem agência", "cartão"]
+    },
+    {
+      "word": "McDonald's",
+      "hints": ["arcos", "palhaço", "lanche feliz"]
+    },
+    {
+      "word": "Burger King",
+      "hints": ["coroa", "grelhado", "rival"]
+    },
+    {
+      "word": "Subway",
+      "hints": ["sanduíche", "escolha tudo", "pão de 15cm"]
+    },
+    {
+      "word": "Starbucks",
+      "hints": ["sereia", "nome no copo", "café"]
+    },
+    {
+      "word": "Apple",
+      "hints": ["mordida", "maçã", "premium"]
+    },
+    {
+      "word": "Samsung",
+      "hints": ["coreana", "galáxia", "eletrônicos"]
+    },
+    {
+      "word": "Motorola",
+      "hints": ["m", "celulares", "razr"]
+    },
+    {
+      "word": "Nokia",
+      "hints": ["tijolão", "cobrinha", "indestrutível"]
+    },
+    {
+      "word": "Google",
+      "hints": ["busca", "colorido", "verbo"]
+    },
+    {
+      "word": "Microsoft",
+      "hints": ["janelas", "escritório", "bill"]
+    },
+    {
+      "word": "Amazon",
+      "hints": ["sorriso", "entrega", "de a a z"]
+    },
+    {
+      "word": "Netflix",
+      "hints": ["vermelho", "tudum", "maratona"]
+    },
+    {
+      "word": "Spotify",
+      "hints": ["verde", "playlists", "retrospectiva"]
+    },
+    {
+      "word": "YouTube",
+      "hints": ["play", "vermelho", "inscreva-se"]
+    },
+    {
+      "word": "Instagram",
+      "hints": ["câmera", "filtros", "stories"]
+    },
+    {
+      "word": "TikTok",
+      "hints": ["dancinhas", "nota musical", "viral"]
+    },
+    {
+      "word": "WhatsApp",
+      "hints": ["verde", "dois tiques", "zap"]
+    },
+    {
+      "word": "Facebook",
+      "hints": ["azul", "curtir", "rede"]
+    },
+    {
+      "word": "Twitter",
+      "hints": ["passarinho", "280", "virou x"]
+    },
+    {
+      "word": "Uber",
+      "hints": ["aplicativo", "motorista", "preto"]
+    },
+    {
+      "word": "iFood",
+      "hints": ["vermelho", "entregador", "fome"]
+    },
+    {
+      "word": "Mercado Livre",
+      "hints": ["amarelo", "aperto de mãos", "frete"]
+    },
+    {
+      "word": "Magazine Luiza",
+      "hints": ["lu", "azul", "varejo"]
+    },
+    {
+      "word": "Casas Bahia",
+      "hints": ["quer pagar quanto", "crediário", "baianinho"]
+    },
+    {
+      "word": "Lego",
+      "hints": ["blocos", "dinamarquesa", "pisar dói"]
+    },
+    {
+      "word": "Barbie",
+      "hints": ["rosa", "boneca", "mundo perfeito"]
+    },
+    {
+      "word": "Hot Wheels",
+      "hints": ["carrinhos", "pista", "laranja"]
+    },
+    {
+      "word": "Nestlé",
+      "hints": ["ninho", "suíça", "alimentos"]
+    },
+    {
+      "word": "Garoto",
+      "hints": ["caixa amarela", "espírito santo", "chocolate"]
+    },
+    {
+      "word": "Lacta",
+      "hints": ["roxo", "sonho", "páscoa"]
+    },
+    {
+      "word": "Bauducco",
+      "hints": ["panetone", "biscoitos", "natal"]
+    },
+    {
+      "word": "Sadia",
+      "hints": ["s", "congelados", "frango"]
+    },
+    {
+      "word": "Skol",
+      "hints": ["redonda", "amarela", "cerveja"]
+    },
+    {
+      "word": "Brahma",
+      "hints": ["número 1", "vermelha", "cerveja"]
+    },
+    {
+      "word": "Heineken",
+      "hints": ["verde", "estrela", "holandesa"]
+    },
+    {
+      "word": "Red Bull",
+      "hints": ["asas", "touros", "energia"]
+    },
+    {
+      "word": "Ferrari",
+      "hints": ["cavalo", "vermelho", "itália"]
+    },
+    {
+      "word": "Volkswagen",
+      "hints": ["fusca", "alemã", "do povo"]
+    },
+    {
+      "word": "Puma",
+      "hints": ["felino", "esporte", "alemã"]
+    },
+    {
+      "word": "New Balance",
+      "hints": ["n", "tênis", "conforto"]
+    },
+    {
+      "word": "Vans",
+      "hints": ["skate", "xadrez", "off the wall"]
+    },
+    {
+      "word": "All Star",
+      "hints": ["cano alto", "lona", "clássico"]
+    },
+    {
+      "word": "Olympikus",
+      "hints": ["brasileira", "tênis", "corrida"]
+    },
+    {
+      "word": "Mizuno",
+      "hints": ["corrida", "japonesa", "onda"]
+    },
+    {
+      "word": "Oakley",
+      "hints": ["óculos", "esporte", "juliet"]
+    },
+    {
+      "word": "Ray-Ban",
+      "hints": ["aviador", "óculos", "clássico"]
+    },
+    {
+      "word": "Chilli Beans",
+      "hints": ["óculos", "quiosque", "pimenta"]
+    },
+    {
+      "word": "Melissa",
+      "hints": ["plástico", "cheirinho", "sandália"]
+    },
+    {
+      "word": "Ipanema",
+      "hints": ["sandália", "praia", "gisele"]
+    },
+    {
+      "word": "Renner",
+      "hints": ["lojas", "roupas", "cartão"]
+    },
+    {
+      "word": "C&A",
+      "hints": ["roupas", "lojas", "jingle"]
+    },
+    {
+      "word": "Riachuelo",
+      "hints": ["roupas", "lojas", "varejo"]
+    },
+    {
+      "word": "Zara",
+      "hints": ["fast fashion", "espanhola", "lojas"]
+    },
+    {
+      "word": "Shein",
+      "hints": ["aplicativo", "china", "haul"]
+    },
+    {
+      "word": "Shopee",
+      "hints": ["aplicativo", "frete", "laranja"]
+    },
+    {
+      "word": "AliExpress",
+      "hints": ["china", "espera", "barato"]
+    },
+    {
+      "word": "Carrefour",
+      "hints": ["mercado", "francês", "hiper"]
+    },
+    {
+      "word": "Pão de Açúcar",
+      "hints": ["mercado", "verde", "premium"]
+    },
+    {
+      "word": "Havan",
+      "hints": ["estátua", "liberdade", "azul e branco"]
+    },
+    {
+      "word": "Cacau Show",
+      "hints": ["chocolates", "lojas", "páscoa"]
+    },
+    {
+      "word": "Kopenhagen",
+      "hints": ["chocolate", "premium", "língua de gato"]
+    },
+    {
+      "word": "Trakinas",
+      "hints": ["recheado", "biscoito", "criança"]
+    },
+    {
+      "word": "Toddy",
+      "hints": ["achocolatado", "pó", "copo"]
+    },
+    {
+      "word": "Nescau",
+      "hints": ["achocolatado", "energia", "rival"]
+    },
+    {
+      "word": "Yakult",
+      "hints": ["frasquinho", "lactobacilos", "japonês"]
+    },
+    {
+      "word": "Fanta",
+      "hints": ["laranja", "refrigerante", "colorida"]
+    },
+    {
+      "word": "Dolly",
+      "hints": ["guaraná", "polêmica", "paulista"]
+    },
+    {
+      "word": "Xiaomi",
+      "hints": ["custo-benefício", "china", "celulares"]
+    }
   ]
 }

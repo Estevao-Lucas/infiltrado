@@ -3,55 +3,325 @@
   "name": "Esportes",
   "emoji": "⚽",
   "words": [
-    { "word": "Futebol", "hints": ["gol", "domingo", "paixão"] },
-    { "word": "Vôlei", "hints": ["rede", "quadra", "saque"] },
-    { "word": "Basquete", "hints": ["cesta", "quicar", "alto"] },
-    { "word": "Tênis", "hints": ["raquete", "saibro", "sets"] },
-    { "word": "Natação", "hints": ["piscina", "touca", "raias"] },
-    { "word": "Surfe", "hints": ["prancha", "onda", "parafina"] },
-    { "word": "Skate", "hints": ["rodinhas", "manobra", "pista"] },
-    { "word": "Judô", "hints": ["quimono", "faixa", "tatame"] },
-    { "word": "Capoeira", "hints": ["roda", "ginga", "berimbau"] },
-    { "word": "Boxe", "hints": ["luvas", "ringue", "rounds"] },
-    { "word": "MMA", "hints": ["octógono", "mistura", "finalização"] },
-    { "word": "Atletismo", "hints": ["pista", "provas", "medalhas"] },
-    { "word": "Corrida", "hints": ["tênis", "parque", "fôlego"] },
-    { "word": "Maratona", "hints": ["42", "resistência", "chegada"] },
-    { "word": "Ciclismo", "hints": ["pedal", "capacete", "estrada"] },
-    { "word": "Ginástica", "hints": ["salto", "notas", "flexibilidade"] },
-    { "word": "Futsal", "hints": ["quadra", "cinco", "escola"] },
-    { "word": "Handebol", "hints": ["mãos", "sete", "quadra"] },
-    { "word": "Tênis de mesa", "hints": ["raquete pequena", "rede baixa", "rápido"] },
-    { "word": "Sinuca", "hints": ["taco", "caçapa", "bar"] },
-    { "word": "Golfe", "hints": ["buraco", "gramado", "taco"] },
-    { "word": "Beisebol", "hints": ["taco", "luva", "americano"] },
-    { "word": "Futebol americano", "hints": ["oval", "capacete", "jardas"] },
-    { "word": "Rugby", "hints": ["oval", "contato", "try"] },
-    { "word": "Esgrima", "hints": ["máscara", "toque", "lâmina"] },
-    { "word": "Tiro com arco", "hints": ["alvo", "flecha", "mira"] },
-    { "word": "Hipismo", "hints": ["obstáculos", "sela", "elegante"] },
-    { "word": "Remo", "hints": ["barco", "equipe", "ritmo"] },
-    { "word": "Canoagem", "hints": ["rio", "pá", "corredeira"] },
-    { "word": "Escalada", "hints": ["parede", "agarras", "corda"] },
-    { "word": "Paraquedismo", "hints": ["avião", "queda", "adrenalina"] },
-    { "word": "Mergulho", "hints": ["cilindro", "profundidade", "corais"] },
-    { "word": "Esqui", "hints": ["neve", "bastões", "montanha"] },
-    { "word": "Snowboard", "hints": ["neve", "prancha", "manobras"] },
-    { "word": "Patinação", "hints": ["gelo", "giros", "lâminas"] },
-    { "word": "Patins", "hints": ["rodinhas", "praça", "joelheira"] },
-    { "word": "Crossfit", "hints": ["caixote", "corda", "treino do dia"] },
-    { "word": "Musculação", "hints": ["academia", "carga", "série"] },
-    { "word": "Dardos", "hints": ["alvo", "pub", "mira"] },
-    { "word": "Boliche", "hints": ["pinos", "pista", "strike"] },
-    { "word": "Pesca", "hints": ["isca", "paciência", "anzol"] },
-    { "word": "Peteca", "hints": ["mão", "penas", "praia"] },
-    { "word": "Frescobol", "hints": ["praia", "dupla", "sem ponto"] },
-    { "word": "Queimada", "hints": ["escola", "bola", "esquiva"] },
-    { "word": "Cabo de guerra", "hints": ["corda", "equipes", "força"] },
-    { "word": "Xadrez", "hints": ["tabuleiro", "rei", "estratégia"] },
-    { "word": "Jiu-jítsu", "hints": ["quimono", "chão", "faixa"] },
-    { "word": "Karatê", "hints": ["faixa", "golpes", "kiai"] },
-    { "word": "Taekwondo", "hints": ["chutes", "coreia", "faixa"] },
-    { "word": "Polo aquático", "hints": ["piscina", "touca", "gol"] }
+    {
+      "word": "Futebol",
+      "hints": ["gol", "domingo", "paixão"]
+    },
+    {
+      "word": "Vôlei",
+      "hints": ["rede", "quadra", "saque"]
+    },
+    {
+      "word": "Basquete",
+      "hints": ["cesta", "quicar", "alto"]
+    },
+    {
+      "word": "Tênis",
+      "hints": ["raquete", "saibro", "sets"]
+    },
+    {
+      "word": "Natação",
+      "hints": ["piscina", "touca", "raias"]
+    },
+    {
+      "word": "Surfe",
+      "hints": ["prancha", "onda", "parafina"]
+    },
+    {
+      "word": "Skate",
+      "hints": ["rodinhas", "manobra", "pista"]
+    },
+    {
+      "word": "Judô",
+      "hints": ["quimono", "faixa", "tatame"]
+    },
+    {
+      "word": "Capoeira",
+      "hints": ["roda", "ginga", "berimbau"]
+    },
+    {
+      "word": "Boxe",
+      "hints": ["luvas", "ringue", "rounds"]
+    },
+    {
+      "word": "MMA",
+      "hints": ["octógono", "mistura", "finalização"]
+    },
+    {
+      "word": "Atletismo",
+      "hints": ["pista", "provas", "medalhas"]
+    },
+    {
+      "word": "Corrida",
+      "hints": ["tênis", "parque", "fôlego"]
+    },
+    {
+      "word": "Maratona",
+      "hints": ["42", "resistência", "chegada"]
+    },
+    {
+      "word": "Ciclismo",
+      "hints": ["pedal", "capacete", "estrada"]
+    },
+    {
+      "word": "Ginástica",
+      "hints": ["salto", "notas", "flexibilidade"]
+    },
+    {
+      "word": "Futsal",
+      "hints": ["quadra", "cinco", "escola"]
+    },
+    {
+      "word": "Handebol",
+      "hints": ["mãos", "sete", "quadra"]
+    },
+    {
+      "word": "Tênis de mesa",
+      "hints": ["raquete pequena", "rede baixa", "rápido"]
+    },
+    {
+      "word": "Sinuca",
+      "hints": ["taco", "caçapa", "bar"]
+    },
+    {
+      "word": "Golfe",
+      "hints": ["buraco", "gramado", "taco"]
+    },
+    {
+      "word": "Beisebol",
+      "hints": ["taco", "luva", "americano"]
+    },
+    {
+      "word": "Futebol americano",
+      "hints": ["oval", "capacete", "jardas"]
+    },
+    {
+      "word": "Rugby",
+      "hints": ["oval", "contato", "try"]
+    },
+    {
+      "word": "Esgrima",
+      "hints": ["máscara", "toque", "lâmina"]
+    },
+    {
+      "word": "Tiro com arco",
+      "hints": ["alvo", "flecha", "mira"]
+    },
+    {
+      "word": "Hipismo",
+      "hints": ["obstáculos", "sela", "elegante"]
+    },
+    {
+      "word": "Remo",
+      "hints": ["barco", "equipe", "ritmo"]
+    },
+    {
+      "word": "Canoagem",
+      "hints": ["rio", "pá", "corredeira"]
+    },
+    {
+      "word": "Escalada",
+      "hints": ["parede", "agarras", "corda"]
+    },
+    {
+      "word": "Paraquedismo",
+      "hints": ["avião", "queda", "adrenalina"]
+    },
+    {
+      "word": "Mergulho",
+      "hints": ["cilindro", "profundidade", "corais"]
+    },
+    {
+      "word": "Esqui",
+      "hints": ["neve", "bastões", "montanha"]
+    },
+    {
+      "word": "Snowboard",
+      "hints": ["neve", "prancha", "manobras"]
+    },
+    {
+      "word": "Patinação",
+      "hints": ["gelo", "giros", "lâminas"]
+    },
+    {
+      "word": "Patins",
+      "hints": ["rodinhas", "praça", "joelheira"]
+    },
+    {
+      "word": "Crossfit",
+      "hints": ["caixote", "corda", "treino do dia"]
+    },
+    {
+      "word": "Musculação",
+      "hints": ["academia", "carga", "série"]
+    },
+    {
+      "word": "Dardos",
+      "hints": ["alvo", "pub", "mira"]
+    },
+    {
+      "word": "Boliche",
+      "hints": ["pinos", "pista", "strike"]
+    },
+    {
+      "word": "Pesca",
+      "hints": ["isca", "paciência", "anzol"]
+    },
+    {
+      "word": "Peteca",
+      "hints": ["mão", "penas", "praia"]
+    },
+    {
+      "word": "Frescobol",
+      "hints": ["praia", "dupla", "sem ponto"]
+    },
+    {
+      "word": "Queimada",
+      "hints": ["escola", "bola", "esquiva"]
+    },
+    {
+      "word": "Cabo de guerra",
+      "hints": ["corda", "equipes", "força"]
+    },
+    {
+      "word": "Xadrez",
+      "hints": ["tabuleiro", "rei", "estratégia"]
+    },
+    {
+      "word": "Jiu-jítsu",
+      "hints": ["quimono", "chão", "faixa"]
+    },
+    {
+      "word": "Karatê",
+      "hints": ["faixa", "golpes", "kiai"]
+    },
+    {
+      "word": "Taekwondo",
+      "hints": ["chutes", "coreia", "faixa"]
+    },
+    {
+      "word": "Polo aquático",
+      "hints": ["piscina", "touca", "gol"]
+    },
+    {
+      "word": "Vôlei de praia",
+      "hints": ["dupla", "areia", "rede"]
+    },
+    {
+      "word": "Beach tennis",
+      "hints": ["areia", "raquete", "moda"]
+    },
+    {
+      "word": "Futevôlei",
+      "hints": ["areia", "sem mãos", "altinha"]
+    },
+    {
+      "word": "Badminton",
+      "hints": ["raquete leve", "rede alta", "rápido"]
+    },
+    {
+      "word": "Padel",
+      "hints": ["paredes", "dupla", "moda"]
+    },
+    {
+      "word": "Nado sincronizado",
+      "hints": ["piscina", "coreografia", "pernas"]
+    },
+    {
+      "word": "Saltos ornamentais",
+      "hints": ["trampolim", "piscina", "giros"]
+    },
+    {
+      "word": "Levantamento de peso",
+      "hints": ["barra", "força", "anilhas"]
+    },
+    {
+      "word": "Salto em altura",
+      "hints": ["sarrafo", "de costas", "impulso"]
+    },
+    {
+      "word": "Salto em distância",
+      "hints": ["areia", "impulso", "corrida"]
+    },
+    {
+      "word": "Revezamento",
+      "hints": ["bastão", "equipe", "pista"]
+    },
+    {
+      "word": "Triatlo",
+      "hints": ["três provas", "resistência", "transição"]
+    },
+    {
+      "word": "Motociclismo",
+      "hints": ["duas rodas", "capacete", "velocidade"]
+    },
+    {
+      "word": "Fórmula 1",
+      "hints": ["pole", "boxes", "pódio"]
+    },
+    {
+      "word": "Kart",
+      "hints": ["baixinho", "pista", "começo dos pilotos"]
+    },
+    {
+      "word": "Rally",
+      "hints": ["terra", "copiloto", "etapas"]
+    },
+    {
+      "word": "Parkour",
+      "hints": ["obstáculos", "cidade", "saltos"]
+    },
+    {
+      "word": "Slackline",
+      "hints": ["fita", "equilíbrio", "parque"]
+    },
+    {
+      "word": "Montanhismo",
+      "hints": ["cume", "corda", "altitude"]
+    },
+    {
+      "word": "Rapel",
+      "hints": ["descida", "corda", "paredão"]
+    },
+    {
+      "word": "Tirolesa",
+      "hints": ["cabo", "deslizar", "altura"]
+    },
+    {
+      "word": "Stand up paddle",
+      "hints": ["prancha", "remo", "em pé"]
+    },
+    {
+      "word": "Kitesurf",
+      "hints": ["pipa", "vento", "mar"]
+    },
+    {
+      "word": "Windsurf",
+      "hints": ["vela", "prancha", "vento"]
+    },
+    {
+      "word": "Bodyboard",
+      "hints": ["prancha pequena", "deitado", "ondas"]
+    },
+    {
+      "word": "Canoa havaiana",
+      "hints": ["remo", "equipe", "mar"]
+    },
+    {
+      "word": "Hóquei",
+      "hints": ["taco", "disco", "gelo"]
+    },
+    {
+      "word": "Ginástica rítmica",
+      "hints": ["fita", "arco", "coreografia"]
+    },
+    {
+      "word": "Sumô",
+      "hints": ["círculo", "japão", "peso"]
+    },
+    {
+      "word": "Muay thai",
+      "hints": ["cotovelos", "joelhos", "tailândia"]
+    }
   ]
 }

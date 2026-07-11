@@ -3,55 +3,325 @@
   "name": "Cidades",
   "emoji": "🏙️",
   "words": [
-    { "word": "São Paulo", "hints": ["garoa", "trânsito", "avenida"] },
-    { "word": "Rio de Janeiro", "hints": ["estátua", "praia", "morro"] },
-    { "word": "Salvador", "hints": ["elevador", "acarajé", "ladeiras"] },
-    { "word": "Brasília", "hints": ["avião", "planejada", "poder"] },
-    { "word": "Fortaleza", "hints": ["jangada", "humor", "beira-mar"] },
-    { "word": "Recife", "hints": ["pontes", "frevo", "veneza"] },
-    { "word": "Manaus", "hints": ["floresta", "teatro", "encontro das águas"] },
-    { "word": "Belém", "hints": ["mercado", "círio", "manga"] },
-    { "word": "Porto Alegre", "hints": ["chimarrão", "sul", "gaúcho"] },
-    { "word": "Curitiba", "hints": ["frio", "ônibus", "parques"] },
-    { "word": "Florianópolis", "hints": ["ilha", "ponte", "praias"] },
-    { "word": "Natal", "hints": ["dunas", "forte", "nome de festa"] },
-    { "word": "Maceió", "hints": ["piscinas naturais", "verde-água", "jangada"] },
-    { "word": "João Pessoa", "hints": ["nome próprio", "sol nascente", "tranquila"] },
-    { "word": "Foz do Iguaçu", "hints": ["quedas", "fronteira", "usina"] },
-    { "word": "Gramado", "hints": ["natal", "chocolate", "serra"] },
-    { "word": "Búzios", "hints": ["brigitte", "península", "charme"] },
-    { "word": "Paraty", "hints": ["colonial", "pedras", "festa literária"] },
-    { "word": "Ouro Preto", "hints": ["ladeiras", "igrejas", "mineração"] },
-    { "word": "Campos do Jordão", "hints": ["inverno", "suíça", "malhas"] },
-    { "word": "Belo Horizonte", "hints": ["boteco", "pão de queijo", "serra"] },
-    { "word": "Vitória", "hints": ["ilha", "nome de conquista", "moqueca"] },
-    { "word": "Goiânia", "hints": ["sertanejo", "parques", "pequi"] },
-    { "word": "Cuiabá", "hints": ["calor", "pantanal", "centro do continente"] },
-    { "word": "Bonito", "hints": ["águas cristalinas", "flutuação", "adjetivo"] },
-    { "word": "Petrópolis", "hints": ["imperador", "serra", "museu"] },
-    { "word": "Nova York", "hints": ["estátua", "táxi amarelo", "letreiros"] },
-    { "word": "Paris", "hints": ["torre", "croissant", "amor"] },
-    { "word": "Londres", "hints": ["relógio", "chá", "ônibus vermelho"] },
-    { "word": "Tóquio", "hints": ["neon", "cruzamento", "tecnologia"] },
-    { "word": "Roma", "hints": ["arena antiga", "moedas na fonte", "massas"] },
-    { "word": "Veneza", "hints": ["canais", "gôndola", "máscaras"] },
-    { "word": "Barcelona", "hints": ["catedral inacabada", "ramblas", "gaudí"] },
-    { "word": "Madri", "hints": ["touros", "capital", "museu"] },
-    { "word": "Lisboa", "hints": ["bondinho", "pastel", "fado"] },
-    { "word": "Buenos Aires", "hints": ["tango", "obelisco", "hermanos"] },
-    { "word": "Santiago", "hints": ["cordilheira", "vinho", "nome de santo"] },
-    { "word": "Miami", "hints": ["compras", "calor", "latinos"] },
-    { "word": "Orlando", "hints": ["parques", "castelo", "família"] },
-    { "word": "Las Vegas", "hints": ["cassino", "deserto", "letreiro"] },
-    { "word": "Los Angeles", "hints": ["letreiro no morro", "estrelas", "cinema"] },
-    { "word": "Dubai", "hints": ["prédio mais alto", "luxo", "deserto"] },
-    { "word": "Cairo", "hints": ["pirâmides", "rio", "bazar"] },
-    { "word": "Amsterdã", "hints": ["bicicletas", "canais", "tulipas"] },
-    { "word": "Berlim", "hints": ["muro", "história", "cerveja"] },
-    { "word": "Moscou", "hints": ["praça vermelha", "cúpulas", "frio"] },
-    { "word": "Pequim", "hints": ["muralha", "cidade proibida", "capital"] },
-    { "word": "Sydney", "hints": ["ópera", "baía", "canguru"] },
-    { "word": "Istambul", "hints": ["dois continentes", "mesquitas", "bazar"] },
-    { "word": "Cancún", "hints": ["caribe", "resorts", "formatura"] }
+    {
+      "word": "São Paulo",
+      "hints": ["garoa", "trânsito", "avenida"]
+    },
+    {
+      "word": "Rio de Janeiro",
+      "hints": ["estátua", "praia", "morro"]
+    },
+    {
+      "word": "Salvador",
+      "hints": ["elevador", "acarajé", "ladeiras"]
+    },
+    {
+      "word": "Brasília",
+      "hints": ["avião", "planejada", "poder"]
+    },
+    {
+      "word": "Fortaleza",
+      "hints": ["jangada", "humor", "beira-mar"]
+    },
+    {
+      "word": "Recife",
+      "hints": ["pontes", "frevo", "veneza"]
+    },
+    {
+      "word": "Manaus",
+      "hints": ["floresta", "teatro", "encontro das águas"]
+    },
+    {
+      "word": "Belém",
+      "hints": ["mercado", "círio", "manga"]
+    },
+    {
+      "word": "Porto Alegre",
+      "hints": ["chimarrão", "sul", "gaúcho"]
+    },
+    {
+      "word": "Curitiba",
+      "hints": ["frio", "ônibus", "parques"]
+    },
+    {
+      "word": "Florianópolis",
+      "hints": ["ilha", "ponte", "praias"]
+    },
+    {
+      "word": "Natal",
+      "hints": ["dunas", "forte", "nome de festa"]
+    },
+    {
+      "word": "Maceió",
+      "hints": ["piscinas naturais", "verde-água", "jangada"]
+    },
+    {
+      "word": "João Pessoa",
+      "hints": ["nome próprio", "sol nascente", "tranquila"]
+    },
+    {
+      "word": "Foz do Iguaçu",
+      "hints": ["quedas", "fronteira", "usina"]
+    },
+    {
+      "word": "Gramado",
+      "hints": ["natal", "chocolate", "serra"]
+    },
+    {
+      "word": "Búzios",
+      "hints": ["brigitte", "península", "charme"]
+    },
+    {
+      "word": "Paraty",
+      "hints": ["colonial", "pedras", "festa literária"]
+    },
+    {
+      "word": "Ouro Preto",
+      "hints": ["ladeiras", "igrejas", "mineração"]
+    },
+    {
+      "word": "Campos do Jordão",
+      "hints": ["inverno", "suíça", "malhas"]
+    },
+    {
+      "word": "Belo Horizonte",
+      "hints": ["boteco", "pão de queijo", "serra"]
+    },
+    {
+      "word": "Vitória",
+      "hints": ["ilha", "nome de conquista", "moqueca"]
+    },
+    {
+      "word": "Goiânia",
+      "hints": ["sertanejo", "parques", "pequi"]
+    },
+    {
+      "word": "Cuiabá",
+      "hints": ["calor", "pantanal", "centro do continente"]
+    },
+    {
+      "word": "Bonito",
+      "hints": ["águas cristalinas", "flutuação", "adjetivo"]
+    },
+    {
+      "word": "Petrópolis",
+      "hints": ["imperador", "serra", "museu"]
+    },
+    {
+      "word": "Nova York",
+      "hints": ["estátua", "táxi amarelo", "letreiros"]
+    },
+    {
+      "word": "Paris",
+      "hints": ["torre", "croissant", "amor"]
+    },
+    {
+      "word": "Londres",
+      "hints": ["relógio", "chá", "ônibus vermelho"]
+    },
+    {
+      "word": "Tóquio",
+      "hints": ["neon", "cruzamento", "tecnologia"]
+    },
+    {
+      "word": "Roma",
+      "hints": ["arena antiga", "moedas na fonte", "massas"]
+    },
+    {
+      "word": "Veneza",
+      "hints": ["canais", "gôndola", "máscaras"]
+    },
+    {
+      "word": "Barcelona",
+      "hints": ["catedral inacabada", "ramblas", "gaudí"]
+    },
+    {
+      "word": "Madri",
+      "hints": ["touros", "capital", "museu"]
+    },
+    {
+      "word": "Lisboa",
+      "hints": ["bondinho", "pastel", "fado"]
+    },
+    {
+      "word": "Buenos Aires",
+      "hints": ["tango", "obelisco", "hermanos"]
+    },
+    {
+      "word": "Santiago",
+      "hints": ["cordilheira", "vinho", "nome de santo"]
+    },
+    {
+      "word": "Miami",
+      "hints": ["compras", "calor", "latinos"]
+    },
+    {
+      "word": "Orlando",
+      "hints": ["parques", "castelo", "família"]
+    },
+    {
+      "word": "Las Vegas",
+      "hints": ["cassino", "deserto", "letreiro"]
+    },
+    {
+      "word": "Los Angeles",
+      "hints": ["letreiro no morro", "estrelas", "cinema"]
+    },
+    {
+      "word": "Dubai",
+      "hints": ["prédio mais alto", "luxo", "deserto"]
+    },
+    {
+      "word": "Cairo",
+      "hints": ["pirâmides", "rio", "bazar"]
+    },
+    {
+      "word": "Amsterdã",
+      "hints": ["bicicletas", "canais", "tulipas"]
+    },
+    {
+      "word": "Berlim",
+      "hints": ["muro", "história", "cerveja"]
+    },
+    {
+      "word": "Moscou",
+      "hints": ["praça vermelha", "cúpulas", "frio"]
+    },
+    {
+      "word": "Pequim",
+      "hints": ["muralha", "cidade proibida", "capital"]
+    },
+    {
+      "word": "Sydney",
+      "hints": ["ópera", "baía", "canguru"]
+    },
+    {
+      "word": "Istambul",
+      "hints": ["dois continentes", "mesquitas", "bazar"]
+    },
+    {
+      "word": "Cancún",
+      "hints": ["caribe", "resorts", "formatura"]
+    },
+    {
+      "word": "Porto Seguro",
+      "hints": ["descobrimento", "axé", "passarela"]
+    },
+    {
+      "word": "Jericoacoara",
+      "hints": ["duna", "pôr do sol", "vila"]
+    },
+    {
+      "word": "São Luís",
+      "hints": ["azulejos", "reggae", "ilha"]
+    },
+    {
+      "word": "Aracaju",
+      "hints": ["orla", "calor", "caranguejo"]
+    },
+    {
+      "word": "Palmas",
+      "hints": ["mais nova", "planejada", "calor"]
+    },
+    {
+      "word": "Campo Grande",
+      "hints": ["pantanal perto", "sobá", "cidade morena"]
+    },
+    {
+      "word": "Macapá",
+      "hints": ["linha do equador", "meio do mundo", "norte"]
+    },
+    {
+      "word": "Niterói",
+      "hints": ["ponte", "museu disco voador", "vizinha"]
+    },
+    {
+      "word": "Santos",
+      "hints": ["porto", "café", "pelé"]
+    },
+    {
+      "word": "Campinas",
+      "hints": ["interior paulista", "tecnologia", "universidade"]
+    },
+    {
+      "word": "Ribeirão Preto",
+      "hints": ["agro", "calor", "chopp"]
+    },
+    {
+      "word": "Uberlândia",
+      "hints": ["triângulo", "atacadista", "mineiro"]
+    },
+    {
+      "word": "Londrina",
+      "hints": ["café", "norte do paraná", "pé vermelho"]
+    },
+    {
+      "word": "Joinville",
+      "hints": ["dança", "flores", "indústria"]
+    },
+    {
+      "word": "Blumenau",
+      "hints": ["oktoberfest", "alemã", "vale"]
+    },
+    {
+      "word": "Balneário Camboriú",
+      "hints": ["prédios altos", "praia", "roda gigante"]
+    },
+    {
+      "word": "Caxias do Sul",
+      "hints": ["uva", "serra", "festa"]
+    },
+    {
+      "word": "Pelotas",
+      "hints": ["doces", "sul", "charque"]
+    },
+    {
+      "word": "Bento Gonçalves",
+      "hints": ["vinho", "serra", "vale"]
+    },
+    {
+      "word": "Angra dos Reis",
+      "hints": ["ilhas", "costa verde", "barcos"]
+    },
+    {
+      "word": "Cabo Frio",
+      "hints": ["areia branca", "vento", "lagoa"]
+    },
+    {
+      "word": "Arraial do Cabo",
+      "hints": ["caribe brasileiro", "mergulho", "águas claras"]
+    },
+    {
+      "word": "Ilhéus",
+      "hints": ["cacau", "jorge amado", "gabriela"]
+    },
+    {
+      "word": "Trancoso",
+      "hints": ["quadrado", "charme", "praia"]
+    },
+    {
+      "word": "Caldas Novas",
+      "hints": ["águas quentes", "parques", "piscinas"]
+    },
+    {
+      "word": "Holambra",
+      "hints": ["tulipas", "moinho", "holandesa"]
+    },
+    {
+      "word": "Cusco",
+      "hints": ["incas", "altitude", "umbigo do mundo"]
+    },
+    {
+      "word": "Cartagena",
+      "hints": ["muralhas", "caribe", "colonial"]
+    },
+    {
+      "word": "Punta del Este",
+      "hints": ["mão na areia", "balneário", "vizinho"]
+    },
+    {
+      "word": "Ushuaia",
+      "hints": ["fim do mundo", "patagônia", "fria"]
+    }
   ]
 }

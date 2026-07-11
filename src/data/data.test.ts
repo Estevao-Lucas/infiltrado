@@ -10,10 +10,10 @@ describe('banco de palavras', () => {
   it.each(categories.map((c) => [c.id, c] as const))('%s é válida', (_id, category) => {
     expect(category.name).toBeTruthy()
     expect(category.emoji).toBeTruthy()
-    expect(category.words).toHaveLength(50)
+    expect(category.words).toHaveLength(80)
 
     const words = category.words.map((w) => w.word)
-    expect(new Set(words).size, 'palavras duplicadas na categoria').toBe(50)
+    expect(new Set(words).size, 'palavras duplicadas na categoria').toBe(80)
 
     for (const entry of category.words) {
       expect(entry.word.trim()).toBe(entry.word)

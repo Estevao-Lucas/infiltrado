@@ -3,58 +3,325 @@
   "name": "História",
   "emoji": "📜",
   "words": [
-    { "word": "Dom Pedro I", "hints": ["grito", "margem do rio", "independência"] },
-    { "word": "Dom Pedro II", "hints": ["barba", "imperador menino", "longo reinado"] },
-    { "word": "Princesa Isabel", "hints": ["assinatura", "lei", "regente"] },
-    { "word": "Tiradentes", "hints": ["dentista", "conspiração", "feriado"] },
-    { "word": "Zumbi dos Palmares", "hints": ["quilombo", "resistência", "consciência"] },
-    { "word": "Santos Dumont", "hints": ["14", "relógio de pulso", "voo"] },
-    { "word": "Getúlio Vargas", "hints": ["pai dos pobres", "carta", "era"] },
-    { "word": "Juscelino Kubitschek", "hints": ["50 em 5", "capital nova", "jk"] },
-    { "word": "Pedro Álvares Cabral", "hints": ["caravelas", "1500", "desvio de rota"] },
-    { "word": "Cristóvão Colombo", "hints": ["1492", "índias", "três navios"] },
-    { "word": "Napoleão", "hints": ["baixinho", "exílio", "frança"] },
-    { "word": "Júlio César", "hints": ["roma", "até tu", "março"] },
-    { "word": "Cleópatra", "hints": ["rainha", "nilo", "serpente"] },
-    { "word": "Isaac Newton", "hints": ["maçã", "gravidade", "leis"] },
-    { "word": "Galileu Galilei", "hints": ["telescópio", "e pur si muove", "julgamento"] },
-    { "word": "Charles Darwin", "hints": ["ilhas", "espécies", "evolução"] },
-    { "word": "Gandhi", "hints": ["não violência", "índia", "sal"] },
-    { "word": "Nelson Mandela", "hints": ["27 anos", "áfrica", "reconciliação"] },
-    { "word": "Martin Luther King", "hints": ["sonho", "marcha", "direitos"] },
-    { "word": "Che Guevara", "hints": ["boina", "camiseta", "revolução"] },
-    { "word": "Joana d'Arc", "hints": ["armadura", "vozes", "fogueira"] },
-    { "word": "Leonardo da Vinci", "hints": ["inventor", "renascimento", "espelhado"] },
-    { "word": "Marie Curie", "hints": ["dois prêmios", "radioativa", "pioneira"] },
-    { "word": "Abraham Lincoln", "hints": ["cartola", "teatro", "abolição"] },
-    { "word": "Segunda Guerra Mundial", "hints": ["1939", "eixo", "normandia"] },
-    { "word": "Primeira Guerra Mundial", "hints": ["trincheiras", "1914", "arquiduque"] },
-    { "word": "Guerra Fria", "hints": ["dois blocos", "espionagem", "corrida"] },
-    { "word": "Revolução Francesa", "hints": ["guilhotina", "bastilha", "liberdade"] },
-    { "word": "Independência do Brasil", "hints": ["7 de setembro", "grito", "riacho"] },
-    { "word": "Abolição da Escravatura", "hints": ["1888", "lei áurea", "assinatura"] },
+    {
+      "word": "Dom Pedro I",
+      "hints": ["grito", "margem do rio", "independência"]
+    },
+    {
+      "word": "Dom Pedro II",
+      "hints": ["barba", "imperador menino", "longo reinado"]
+    },
+    {
+      "word": "Princesa Isabel",
+      "hints": ["assinatura", "lei", "regente"]
+    },
+    {
+      "word": "Tiradentes",
+      "hints": ["dentista", "conspiração", "feriado"]
+    },
+    {
+      "word": "Zumbi dos Palmares",
+      "hints": ["quilombo", "resistência", "consciência"]
+    },
+    {
+      "word": "Santos Dumont",
+      "hints": ["14", "relógio de pulso", "voo"]
+    },
+    {
+      "word": "Getúlio Vargas",
+      "hints": ["pai dos pobres", "carta", "era"]
+    },
+    {
+      "word": "Juscelino Kubitschek",
+      "hints": ["50 em 5", "capital nova", "jk"]
+    },
+    {
+      "word": "Pedro Álvares Cabral",
+      "hints": ["caravelas", "1500", "desvio de rota"]
+    },
+    {
+      "word": "Cristóvão Colombo",
+      "hints": ["1492", "índias", "três navios"]
+    },
+    {
+      "word": "Napoleão",
+      "hints": ["baixinho", "exílio", "frança"]
+    },
+    {
+      "word": "Júlio César",
+      "hints": ["roma", "até tu", "março"]
+    },
+    {
+      "word": "Cleópatra",
+      "hints": ["rainha", "nilo", "serpente"]
+    },
+    {
+      "word": "Isaac Newton",
+      "hints": ["maçã", "gravidade", "leis"]
+    },
+    {
+      "word": "Galileu Galilei",
+      "hints": ["telescópio", "e pur si muove", "julgamento"]
+    },
+    {
+      "word": "Charles Darwin",
+      "hints": ["ilhas", "espécies", "evolução"]
+    },
+    {
+      "word": "Gandhi",
+      "hints": ["não violência", "índia", "sal"]
+    },
+    {
+      "word": "Nelson Mandela",
+      "hints": ["27 anos", "áfrica", "reconciliação"]
+    },
+    {
+      "word": "Martin Luther King",
+      "hints": ["sonho", "marcha", "direitos"]
+    },
+    {
+      "word": "Che Guevara",
+      "hints": ["boina", "camiseta", "revolução"]
+    },
+    {
+      "word": "Joana d'Arc",
+      "hints": ["armadura", "vozes", "fogueira"]
+    },
+    {
+      "word": "Leonardo da Vinci",
+      "hints": ["inventor", "renascimento", "espelhado"]
+    },
+    {
+      "word": "Marie Curie",
+      "hints": ["dois prêmios", "radioativa", "pioneira"]
+    },
+    {
+      "word": "Abraham Lincoln",
+      "hints": ["cartola", "teatro", "abolição"]
+    },
+    {
+      "word": "Segunda Guerra Mundial",
+      "hints": ["1939", "eixo", "normandia"]
+    },
+    {
+      "word": "Primeira Guerra Mundial",
+      "hints": ["trincheiras", "1914", "arquiduque"]
+    },
+    {
+      "word": "Guerra Fria",
+      "hints": ["dois blocos", "espionagem", "corrida"]
+    },
+    {
+      "word": "Revolução Francesa",
+      "hints": ["guilhotina", "bastilha", "liberdade"]
+    },
+    {
+      "word": "Independência do Brasil",
+      "hints": ["7 de setembro", "grito", "riacho"]
+    },
+    {
+      "word": "Abolição da Escravatura",
+      "hints": ["1888", "lei áurea", "assinatura"]
+    },
     {
       "word": "Proclamação da República",
       "hints": ["15 de novembro", "marechal", "fim do império"]
     },
-    { "word": "Descobrimento do Brasil", "hints": ["caravelas", "porto seguro", "22 de abril"] },
-    { "word": "Inconfidência Mineira", "hints": ["ouro", "conspiração", "vila rica"] },
-    { "word": "Chegada à Lua", "hints": ["1969", "pequeno passo", "bandeira"] },
-    { "word": "Queda do Muro de Berlim", "hints": ["1989", "reunificação", "martelo"] },
-    { "word": "Revolução Industrial", "hints": ["vapor", "fábricas", "inglaterra"] },
-    { "word": "Egito Antigo", "hints": ["faraós", "hieróglifos", "múmias"] },
-    { "word": "Pirâmides de Gizé", "hints": ["deserto", "esfinge", "maravilha"] },
-    { "word": "Roma Antiga", "hints": ["império", "togas", "aquedutos"] },
-    { "word": "Grécia Antiga", "hints": ["filósofos", "olimpíadas", "deuses"] },
-    { "word": "Idade Média", "hints": ["castelos", "peste", "cavaleiros"] },
-    { "word": "Renascimento", "hints": ["itália", "artes", "florença"] },
-    { "word": "Samurais", "hints": ["espada", "honra", "japão"] },
-    { "word": "Faraó", "hints": ["coroa dupla", "deus vivo", "sarcófago"] },
-    { "word": "Coliseu", "hints": ["arena", "gladiadores", "ruína"] },
-    { "word": "Muralha da China", "hints": ["visível de longe", "milhares de km", "proteção"] },
-    { "word": "Machu Picchu", "hints": ["montanha", "incas", "trilha"] },
-    { "word": "Titanic (naufrágio)", "hints": ["1912", "inafundável", "iceberg"] },
-    { "word": "Peste Negra", "hints": ["ratos", "idade média", "máscaras"] },
-    { "word": "Caravela", "hints": ["velas", "navegações", "madeira"] }
+    {
+      "word": "Descobrimento do Brasil",
+      "hints": ["caravelas", "porto seguro", "22 de abril"]
+    },
+    {
+      "word": "Inconfidência Mineira",
+      "hints": ["ouro", "conspiração", "vila rica"]
+    },
+    {
+      "word": "Chegada à Lua",
+      "hints": ["1969", "pequeno passo", "bandeira"]
+    },
+    {
+      "word": "Queda do Muro de Berlim",
+      "hints": ["1989", "reunificação", "martelo"]
+    },
+    {
+      "word": "Revolução Industrial",
+      "hints": ["vapor", "fábricas", "inglaterra"]
+    },
+    {
+      "word": "Egito Antigo",
+      "hints": ["faraós", "hieróglifos", "múmias"]
+    },
+    {
+      "word": "Pirâmides de Gizé",
+      "hints": ["deserto", "esfinge", "maravilha"]
+    },
+    {
+      "word": "Roma Antiga",
+      "hints": ["império", "togas", "aquedutos"]
+    },
+    {
+      "word": "Grécia Antiga",
+      "hints": ["filósofos", "olimpíadas", "deuses"]
+    },
+    {
+      "word": "Idade Média",
+      "hints": ["castelos", "peste", "cavaleiros"]
+    },
+    {
+      "word": "Renascimento",
+      "hints": ["itália", "artes", "florença"]
+    },
+    {
+      "word": "Samurais",
+      "hints": ["espada", "honra", "japão"]
+    },
+    {
+      "word": "Faraó",
+      "hints": ["coroa dupla", "deus vivo", "sarcófago"]
+    },
+    {
+      "word": "Coliseu",
+      "hints": ["arena", "gladiadores", "ruína"]
+    },
+    {
+      "word": "Muralha da China",
+      "hints": ["visível de longe", "milhares de km", "proteção"]
+    },
+    {
+      "word": "Machu Picchu",
+      "hints": ["montanha", "incas", "trilha"]
+    },
+    {
+      "word": "Titanic (naufrágio)",
+      "hints": ["1912", "inafundável", "iceberg"]
+    },
+    {
+      "word": "Peste Negra",
+      "hints": ["ratos", "idade média", "máscaras"]
+    },
+    {
+      "word": "Caravela",
+      "hints": ["velas", "navegações", "madeira"]
+    },
+    {
+      "word": "Barão de Mauá",
+      "hints": ["ferrovias", "banqueiro", "império"]
+    },
+    {
+      "word": "Dandara",
+      "hints": ["guerreira", "quilombo", "companheira"]
+    },
+    {
+      "word": "Anita Garibaldi",
+      "hints": ["revolução", "heroína", "dois mundos"]
+    },
+    {
+      "word": "Duque de Caxias",
+      "hints": ["pacificador", "exército", "patrono"]
+    },
+    {
+      "word": "Marechal Deodoro",
+      "hints": ["proclamação", "primeiro", "militar"]
+    },
+    {
+      "word": "Rui Barbosa",
+      "hints": ["águia", "haia", "jurista"]
+    },
+    {
+      "word": "Dom João VI",
+      "hints": ["fuga da corte", "1808", "portugal"]
+    },
+    {
+      "word": "Guerra do Paraguai",
+      "hints": ["tríplice aliança", "sul", "sangrenta"]
+    },
+    {
+      "word": "Guerra de Canudos",
+      "hints": ["sertão", "conselheiro", "arraial"]
+    },
+    {
+      "word": "Revolta da Vacina",
+      "hints": ["rio antigo", "obrigatória", "quebra-quebra"]
+    },
+    {
+      "word": "Semana de Arte Moderna",
+      "hints": ["1922", "são paulo", "ruptura"]
+    },
+    {
+      "word": "Diretas Já",
+      "hints": ["comícios", "1984", "eleições"]
+    },
+    {
+      "word": "Plano Real",
+      "hints": ["moeda", "inflação", "estabilidade"]
+    },
+    {
+      "word": "Constituição de 1988",
+      "hints": ["cidadã", "direitos", "ulysses"]
+    },
+    {
+      "word": "Cruzadas",
+      "hints": ["terra santa", "cavaleiros", "fé"]
+    },
+    {
+      "word": "Inquisição",
+      "hints": ["tribunal", "fogueira", "heresia"]
+    },
+    {
+      "word": "Reforma Protestante",
+      "hints": ["95 teses", "porta", "lutero"]
+    },
+    {
+      "word": "Iluminismo",
+      "hints": ["razão", "filósofos", "luz"]
+    },
+    {
+      "word": "Independência dos EUA",
+      "hints": ["1776", "colônias", "declaração"]
+    },
+    {
+      "word": "Corrida Espacial",
+      "hints": ["urss", "foguetes", "disputa"]
+    },
+    {
+      "word": "Guerra do Vietnã",
+      "hints": ["selva", "protestos", "helicópteros"]
+    },
+    {
+      "word": "Crise de 1929",
+      "hints": ["quebra", "bolsa", "depressão"]
+    },
+    {
+      "word": "Chernobyl",
+      "hints": ["reator", "1986", "cidade fantasma"]
+    },
+    {
+      "word": "Revolução Russa",
+      "hints": ["1917", "czar", "vermelha"]
+    },
+    {
+      "word": "Maias",
+      "hints": ["calendário", "pirâmides", "2012"]
+    },
+    {
+      "word": "Astecas",
+      "hints": ["méxico antigo", "sacrifícios", "império"]
+    },
+    {
+      "word": "Incas",
+      "hints": ["andes", "ouro", "império"]
+    },
+    {
+      "word": "Alexandre, o Grande",
+      "hints": ["macedônia", "jovem", "conquistas"]
+    },
+    {
+      "word": "Gengis Khan",
+      "hints": ["mongol", "cavalos", "império"]
+    },
+    {
+      "word": "Marco Polo",
+      "hints": ["rota da seda", "veneza", "viajante"]
+    }
   ]
 }

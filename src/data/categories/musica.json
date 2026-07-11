@@ -3,55 +3,325 @@
   "name": "Música",
   "emoji": "🎵",
   "words": [
-    { "word": "Samba", "hints": ["carnaval", "quadra", "cavaquinho"] },
-    { "word": "Pagode", "hints": ["roda", "churrasco", "tantã"] },
-    { "word": "Forró", "hints": ["são joão", "colado", "trio"] },
-    { "word": "Sertanejo", "hints": ["dupla", "rodeio", "sofrência"] },
-    { "word": "Funk", "hints": ["baile", "grave", "passinho"] },
-    { "word": "Axé", "hints": ["trio elétrico", "bahia", "coreografia"] },
-    { "word": "MPB", "hints": ["sigla", "poesia", "festival"] },
-    { "word": "Rock", "hints": ["guitarra", "banda", "atitude"] },
-    { "word": "Rap", "hints": ["rima", "batalha", "rua"] },
-    { "word": "Bossa Nova", "hints": ["garota", "praia", "suave"] },
-    { "word": "Reggae", "hints": ["jamaica", "paz", "dreads"] },
-    { "word": "Jazz", "hints": ["improviso", "saxofone", "bar"] },
-    { "word": "Ópera", "hints": ["teatro", "vozes", "itália"] },
-    { "word": "Gospel", "hints": ["igreja", "coral", "louvor"] },
-    { "word": "Eletrônica", "hints": ["festival", "batida", "pista"] },
-    { "word": "K-pop", "hints": ["coreia", "grupos", "fandom"] },
-    { "word": "Violão", "hints": ["cordas", "fogueira", "dedilhado"] },
-    { "word": "Guitarra", "hints": ["solo", "amplificador", "palheta"] },
-    { "word": "Bateria", "hints": ["baquetas", "fundo do palco", "pratos"] },
-    { "word": "Piano", "hints": ["teclas", "cauda", "clássico"] },
-    { "word": "Teclado", "hints": ["portátil", "ritmos", "banda"] },
-    { "word": "Baixo", "hints": ["quatro cordas", "grave", "groove"] },
-    { "word": "Sanfona", "hints": ["fole", "nordeste", "botões"] },
-    { "word": "Cavaquinho", "hints": ["pequeno", "roda", "agudo"] },
-    { "word": "Pandeiro", "hints": ["mão", "platinelas", "roda"] },
-    { "word": "Tamborim", "hints": ["pequeno", "batida", "escola"] },
-    { "word": "Berimbau", "hints": ["arco", "capoeira", "cabaça"] },
-    { "word": "Flauta", "hints": ["sopro", "doce", "escola"] },
-    { "word": "Saxofone", "hints": ["dourado", "curvo", "jazz"] },
-    { "word": "Trompete", "hints": ["sopro", "fanfarra", "brilhante"] },
-    { "word": "Violino", "hints": ["arco", "queixo", "orquestra"] },
-    { "word": "Violoncelo", "hints": ["sentado", "grave", "orquestra"] },
-    { "word": "Harpa", "hints": ["anjo", "cordas", "dedilhado"] },
-    { "word": "Gaita", "hints": ["bolso", "sopro", "blues"] },
-    { "word": "Ukulele", "hints": ["havaí", "pequeno", "quatro cordas"] },
-    { "word": "Microfone", "hints": ["palco", "voz", "chiado"] },
-    { "word": "Karaokê", "hints": ["letra na tela", "amigos", "desafinado"] },
-    { "word": "Playlist", "hints": ["aplicativo", "sequência", "humor"] },
-    { "word": "Show", "hints": ["ingresso", "palco", "multidão"] },
-    { "word": "Festival", "hints": ["dias", "palcos", "acampamento"] },
-    { "word": "Orquestra", "hints": ["maestro", "naipes", "concerto"] },
-    { "word": "Coral", "hints": ["vozes", "regente", "igreja"] },
-    { "word": "DJ", "hints": ["pick-up", "mixagem", "festa"] },
-    { "word": "Maestro", "hints": ["batuta", "frente", "gestos"] },
-    { "word": "Serenata", "hints": ["janela", "noite", "romântico"] },
-    { "word": "Dueto", "hints": ["dois", "vozes", "harmonia"] },
-    { "word": "Refrão", "hints": ["repete", "gruda", "todos cantam"] },
-    { "word": "Clipe", "hints": ["vídeo", "lançamento", "visualizações"] },
-    { "word": "Disco de vinil", "hints": ["agulha", "colecionador", "girando"] },
-    { "word": "Trilha sonora", "hints": ["filme", "clima", "fundo"] }
+    {
+      "word": "Samba",
+      "hints": ["carnaval", "quadra", "cavaquinho"]
+    },
+    {
+      "word": "Pagode",
+      "hints": ["roda", "churrasco", "tantã"]
+    },
+    {
+      "word": "Forró",
+      "hints": ["são joão", "colado", "trio"]
+    },
+    {
+      "word": "Sertanejo",
+      "hints": ["dupla", "rodeio", "sofrência"]
+    },
+    {
+      "word": "Funk",
+      "hints": ["baile", "grave", "passinho"]
+    },
+    {
+      "word": "Axé",
+      "hints": ["trio elétrico", "bahia", "coreografia"]
+    },
+    {
+      "word": "MPB",
+      "hints": ["sigla", "poesia", "festival"]
+    },
+    {
+      "word": "Rock",
+      "hints": ["guitarra", "banda", "atitude"]
+    },
+    {
+      "word": "Rap",
+      "hints": ["rima", "batalha", "rua"]
+    },
+    {
+      "word": "Bossa Nova",
+      "hints": ["garota", "praia", "suave"]
+    },
+    {
+      "word": "Reggae",
+      "hints": ["jamaica", "paz", "dreads"]
+    },
+    {
+      "word": "Jazz",
+      "hints": ["improviso", "saxofone", "bar"]
+    },
+    {
+      "word": "Ópera",
+      "hints": ["teatro", "vozes", "itália"]
+    },
+    {
+      "word": "Gospel",
+      "hints": ["igreja", "coral", "louvor"]
+    },
+    {
+      "word": "Eletrônica",
+      "hints": ["festival", "batida", "pista"]
+    },
+    {
+      "word": "K-pop",
+      "hints": ["coreia", "grupos", "fandom"]
+    },
+    {
+      "word": "Violão",
+      "hints": ["cordas", "fogueira", "dedilhado"]
+    },
+    {
+      "word": "Guitarra",
+      "hints": ["solo", "amplificador", "palheta"]
+    },
+    {
+      "word": "Bateria",
+      "hints": ["baquetas", "fundo do palco", "pratos"]
+    },
+    {
+      "word": "Piano",
+      "hints": ["teclas", "cauda", "clássico"]
+    },
+    {
+      "word": "Teclado",
+      "hints": ["portátil", "ritmos", "banda"]
+    },
+    {
+      "word": "Baixo",
+      "hints": ["quatro cordas", "grave", "groove"]
+    },
+    {
+      "word": "Sanfona",
+      "hints": ["fole", "nordeste", "botões"]
+    },
+    {
+      "word": "Cavaquinho",
+      "hints": ["pequeno", "roda", "agudo"]
+    },
+    {
+      "word": "Pandeiro",
+      "hints": ["mão", "platinelas", "roda"]
+    },
+    {
+      "word": "Tamborim",
+      "hints": ["pequeno", "batida", "escola"]
+    },
+    {
+      "word": "Berimbau",
+      "hints": ["arco", "capoeira", "cabaça"]
+    },
+    {
+      "word": "Flauta",
+      "hints": ["sopro", "doce", "escola"]
+    },
+    {
+      "word": "Saxofone",
+      "hints": ["dourado", "curvo", "jazz"]
+    },
+    {
+      "word": "Trompete",
+      "hints": ["sopro", "fanfarra", "brilhante"]
+    },
+    {
+      "word": "Violino",
+      "hints": ["arco", "queixo", "orquestra"]
+    },
+    {
+      "word": "Violoncelo",
+      "hints": ["sentado", "grave", "orquestra"]
+    },
+    {
+      "word": "Harpa",
+      "hints": ["anjo", "cordas", "dedilhado"]
+    },
+    {
+      "word": "Gaita",
+      "hints": ["bolso", "sopro", "blues"]
+    },
+    {
+      "word": "Ukulele",
+      "hints": ["havaí", "pequeno", "quatro cordas"]
+    },
+    {
+      "word": "Microfone",
+      "hints": ["palco", "voz", "chiado"]
+    },
+    {
+      "word": "Karaokê",
+      "hints": ["letra na tela", "amigos", "desafinado"]
+    },
+    {
+      "word": "Playlist",
+      "hints": ["aplicativo", "sequência", "humor"]
+    },
+    {
+      "word": "Show",
+      "hints": ["ingresso", "palco", "multidão"]
+    },
+    {
+      "word": "Festival",
+      "hints": ["dias", "palcos", "acampamento"]
+    },
+    {
+      "word": "Orquestra",
+      "hints": ["maestro", "naipes", "concerto"]
+    },
+    {
+      "word": "Coral",
+      "hints": ["vozes", "regente", "igreja"]
+    },
+    {
+      "word": "DJ",
+      "hints": ["pick-up", "mixagem", "festa"]
+    },
+    {
+      "word": "Maestro",
+      "hints": ["batuta", "frente", "gestos"]
+    },
+    {
+      "word": "Serenata",
+      "hints": ["janela", "noite", "romântico"]
+    },
+    {
+      "word": "Dueto",
+      "hints": ["dois", "vozes", "harmonia"]
+    },
+    {
+      "word": "Refrão",
+      "hints": ["repete", "gruda", "todos cantam"]
+    },
+    {
+      "word": "Clipe",
+      "hints": ["vídeo", "lançamento", "visualizações"]
+    },
+    {
+      "word": "Disco de vinil",
+      "hints": ["agulha", "colecionador", "girando"]
+    },
+    {
+      "word": "Trilha sonora",
+      "hints": ["filme", "clima", "fundo"]
+    },
+    {
+      "word": "Blues",
+      "hints": ["tristeza", "guitarra", "raiz"]
+    },
+    {
+      "word": "Country",
+      "hints": ["chapéu", "eua", "interior"]
+    },
+    {
+      "word": "Salsa",
+      "hints": ["dança", "cuba", "par"]
+    },
+    {
+      "word": "Tango",
+      "hints": ["argentina", "dramático", "par"]
+    },
+    {
+      "word": "Lambada",
+      "hints": ["proibida", "anos 80", "colada"]
+    },
+    {
+      "word": "Frevo",
+      "hints": ["sombrinha", "recife", "acelerado"]
+    },
+    {
+      "word": "Maracatu",
+      "hints": ["tambores", "cortejo", "pernambuco"]
+    },
+    {
+      "word": "Carimbó",
+      "hints": ["pará", "saia rodada", "roda"]
+    },
+    {
+      "word": "Piseiro",
+      "hints": ["batida", "nordeste", "festa"]
+    },
+    {
+      "word": "Trap",
+      "hints": ["batida", "autotune", "grave"]
+    },
+    {
+      "word": "Arrocha",
+      "hints": ["sofrência", "colado", "bahia"]
+    },
+    {
+      "word": "Brega",
+      "hints": ["cafona", "romântico", "recife"]
+    },
+    {
+      "word": "Xote",
+      "hints": ["forró", "dança", "calmo"]
+    },
+    {
+      "word": "Baião",
+      "hints": ["luiz gonzaga", "nordeste", "ritmo"]
+    },
+    {
+      "word": "Metal",
+      "hints": ["pesado", "preto", "cabelo"]
+    },
+    {
+      "word": "Punk",
+      "hints": ["moicano", "três acordes", "atitude"]
+    },
+    {
+      "word": "Indie",
+      "hints": ["alternativo", "festival", "independente"]
+    },
+    {
+      "word": "Lo-fi",
+      "hints": ["estudar", "chuva", "batida calma"]
+    },
+    {
+      "word": "Acústico",
+      "hints": ["sem plugar", "voz e violão", "intimista"]
+    },
+    {
+      "word": "Single",
+      "hints": ["lançamento", "uma faixa", "hit"]
+    },
+    {
+      "word": "Álbum",
+      "hints": ["faixas", "capa", "lançamento"]
+    },
+    {
+      "word": "Turnê",
+      "hints": ["estradas", "shows", "ônibus"]
+    },
+    {
+      "word": "Ensaio",
+      "hints": ["repetição", "garagem", "antes do show"]
+    },
+    {
+      "word": "Afinação",
+      "hints": ["cordas", "ouvido", "ajuste"]
+    },
+    {
+      "word": "Partitura",
+      "hints": ["notas", "papel", "leitura"]
+    },
+    {
+      "word": "Solo",
+      "hints": ["destaque", "improviso", "palmas"]
+    },
+    {
+      "word": "Banda",
+      "hints": ["integrantes", "garagem", "conjunto"]
+    },
+    {
+      "word": "Vocalista",
+      "hints": ["frente", "voz", "destaque"]
+    },
+    {
+      "word": "Beatbox",
+      "hints": ["boca", "batida", "imitação"]
+    },
+    {
+      "word": "Hino",
+      "hints": ["estádio", "coro", "oficial"]
+    }
   ]
 }

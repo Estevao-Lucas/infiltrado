@@ -3,55 +3,325 @@
   "name": "Formas",
   "emoji": "🔷",
   "words": [
-    { "word": "Círculo", "hints": ["sem cantos", "roda", "compasso"] },
-    { "word": "Quadrado", "hints": ["lados iguais", "quatro", "certinho"] },
-    { "word": "Triângulo", "hints": ["três", "pirâmide", "amoroso"] },
-    { "word": "Retângulo", "hints": ["porta", "tela", "alongado"] },
-    { "word": "Losango", "hints": ["bandeira", "amarelo", "inclinado"] },
-    { "word": "Trapézio", "hints": ["circo", "lados desiguais", "geometria"] },
-    { "word": "Pentágono", "hints": ["cinco", "prédio militar", "polígono"] },
-    { "word": "Hexágono", "hints": ["seis", "colmeia", "parafuso"] },
-    { "word": "Octógono", "hints": ["oito", "placa de pare", "luta"] },
-    { "word": "Oval", "hints": ["ovo", "rosto", "espelho"] },
-    { "word": "Elipse", "hints": ["órbita", "achatado", "matemática"] },
-    { "word": "Esfera", "hints": ["bola", "globo", "3d"] },
-    { "word": "Cubo", "hints": ["dado", "gelo", "mágico"] },
-    { "word": "Cilindro", "hints": ["lata", "cano", "rolo"] },
-    { "word": "Cone", "hints": ["trânsito", "sorvete", "chapéu de festa"] },
-    { "word": "Pirâmide", "hints": ["egito", "base quadrada", "ponta"] },
-    { "word": "Prisma", "hints": ["vidro", "arco-íris", "capa de álbum"] },
-    { "word": "Paralelepípedo", "hints": ["caixa", "rua antiga", "nome difícil"] },
-    { "word": "Estrela", "hints": ["céu", "cinco pontas", "famoso"] },
-    { "word": "Coração", "hints": ["amor", "curtida", "baralho"] },
-    { "word": "Seta", "hints": ["direção", "placa", "cupido"] },
-    { "word": "Espiral", "hints": ["caderno", "caracol", "hipnose"] },
-    { "word": "Cruz", "hints": ["igreja", "soma", "farmácia"] },
-    { "word": "Meia-lua", "hints": ["céu", "crescente", "banana"] },
-    { "word": "Anel", "hints": ["dedo", "saturno", "redondo vazado"] },
-    { "word": "Zigue-zague", "hints": ["raio", "costura", "vai e volta"] },
-    { "word": "Onda", "hints": ["mar", "som", "cabelo"] },
-    { "word": "Semicírculo", "hints": ["metade", "transferidor", "arco"] },
-    { "word": "Gota", "hints": ["chuva", "lágrima", "pingente"] },
-    { "word": "Diamante", "hints": ["joia", "baralho", "lapidado"] },
-    { "word": "Escudo", "hints": ["proteção", "time", "medieval"] },
-    { "word": "Infinito", "hints": ["oito deitado", "sem fim", "tatuagem"] },
-    { "word": "Linha", "hints": ["reta", "costura", "caderno"] },
-    { "word": "Ponto", "hints": ["final", "pequeno", "encontro"] },
-    { "word": "Curva", "hints": ["estrada", "perigosa", "gráfico"] },
-    { "word": "Ângulo", "hints": ["90", "esquadro", "câmera"] },
-    { "word": "Polígono", "hints": ["vários lados", "geometria", "fechado"] },
-    { "word": "Cubo mágico", "hints": ["colorido", "girar", "resolver"] },
-    { "word": "Ampulheta", "hints": ["areia", "tempo", "corpo"] },
-    { "word": "Balão de fala", "hints": ["quadrinhos", "conversa", "nuvem"] },
-    { "word": "Nuvem", "hints": ["céu", "fofa", "armazenamento"] },
-    { "word": "Raio", "hints": ["tempestade", "flash", "harry potter"] },
-    { "word": "Lua crescente", "hints": ["fase", "bandeiras", "noite"] },
-    { "word": "Ferradura", "hints": ["sorte", "cavalo", "u"] },
-    { "word": "Rosca", "hints": ["donut", "pneu", "furo no meio"] },
-    { "word": "Quadriculado", "hints": ["tabuleiro", "caderno", "xadrez"] },
-    { "word": "Favo", "hints": ["abelhas", "encaixe", "mel"] },
-    { "word": "Alvo", "hints": ["círculos", "centro", "dardos"] },
-    { "word": "Engrenagem", "hints": ["dentes", "máquina", "configuração"] },
-    { "word": "Labirinto", "hints": ["entrada", "perdido", "minotauro"] }
+    {
+      "word": "Círculo",
+      "hints": ["sem cantos", "roda", "compasso"]
+    },
+    {
+      "word": "Quadrado",
+      "hints": ["lados iguais", "quatro", "certinho"]
+    },
+    {
+      "word": "Triângulo",
+      "hints": ["três", "pirâmide", "amoroso"]
+    },
+    {
+      "word": "Retângulo",
+      "hints": ["porta", "tela", "alongado"]
+    },
+    {
+      "word": "Losango",
+      "hints": ["bandeira", "amarelo", "inclinado"]
+    },
+    {
+      "word": "Trapézio",
+      "hints": ["circo", "lados desiguais", "geometria"]
+    },
+    {
+      "word": "Pentágono",
+      "hints": ["cinco", "prédio militar", "polígono"]
+    },
+    {
+      "word": "Hexágono",
+      "hints": ["seis", "colmeia", "parafuso"]
+    },
+    {
+      "word": "Octógono",
+      "hints": ["oito", "placa de pare", "luta"]
+    },
+    {
+      "word": "Oval",
+      "hints": ["ovo", "rosto", "espelho"]
+    },
+    {
+      "word": "Elipse",
+      "hints": ["órbita", "achatado", "matemática"]
+    },
+    {
+      "word": "Esfera",
+      "hints": ["bola", "globo", "3d"]
+    },
+    {
+      "word": "Cubo",
+      "hints": ["dado", "gelo", "mágico"]
+    },
+    {
+      "word": "Cilindro",
+      "hints": ["lata", "cano", "rolo"]
+    },
+    {
+      "word": "Cone",
+      "hints": ["trânsito", "sorvete", "chapéu de festa"]
+    },
+    {
+      "word": "Pirâmide",
+      "hints": ["egito", "base quadrada", "ponta"]
+    },
+    {
+      "word": "Prisma",
+      "hints": ["vidro", "arco-íris", "capa de álbum"]
+    },
+    {
+      "word": "Paralelepípedo",
+      "hints": ["caixa", "rua antiga", "nome difícil"]
+    },
+    {
+      "word": "Estrela",
+      "hints": ["céu", "cinco pontas", "famoso"]
+    },
+    {
+      "word": "Coração",
+      "hints": ["amor", "curtida", "baralho"]
+    },
+    {
+      "word": "Seta",
+      "hints": ["direção", "placa", "cupido"]
+    },
+    {
+      "word": "Espiral",
+      "hints": ["caderno", "caracol", "hipnose"]
+    },
+    {
+      "word": "Cruz",
+      "hints": ["igreja", "soma", "farmácia"]
+    },
+    {
+      "word": "Meia-lua",
+      "hints": ["céu", "crescente", "banana"]
+    },
+    {
+      "word": "Anel",
+      "hints": ["dedo", "saturno", "redondo vazado"]
+    },
+    {
+      "word": "Zigue-zague",
+      "hints": ["raio", "costura", "vai e volta"]
+    },
+    {
+      "word": "Onda",
+      "hints": ["mar", "som", "cabelo"]
+    },
+    {
+      "word": "Semicírculo",
+      "hints": ["metade", "transferidor", "arco"]
+    },
+    {
+      "word": "Gota",
+      "hints": ["chuva", "lágrima", "pingente"]
+    },
+    {
+      "word": "Diamante",
+      "hints": ["joia", "baralho", "lapidado"]
+    },
+    {
+      "word": "Escudo",
+      "hints": ["proteção", "time", "medieval"]
+    },
+    {
+      "word": "Infinito",
+      "hints": ["oito deitado", "sem fim", "tatuagem"]
+    },
+    {
+      "word": "Linha",
+      "hints": ["reta", "costura", "caderno"]
+    },
+    {
+      "word": "Ponto",
+      "hints": ["final", "pequeno", "encontro"]
+    },
+    {
+      "word": "Curva",
+      "hints": ["estrada", "perigosa", "gráfico"]
+    },
+    {
+      "word": "Ângulo",
+      "hints": ["90", "esquadro", "câmera"]
+    },
+    {
+      "word": "Polígono",
+      "hints": ["vários lados", "geometria", "fechado"]
+    },
+    {
+      "word": "Cubo mágico",
+      "hints": ["colorido", "girar", "resolver"]
+    },
+    {
+      "word": "Ampulheta",
+      "hints": ["areia", "tempo", "corpo"]
+    },
+    {
+      "word": "Balão de fala",
+      "hints": ["quadrinhos", "conversa", "nuvem"]
+    },
+    {
+      "word": "Nuvem",
+      "hints": ["céu", "fofa", "armazenamento"]
+    },
+    {
+      "word": "Raio",
+      "hints": ["tempestade", "flash", "harry potter"]
+    },
+    {
+      "word": "Lua crescente",
+      "hints": ["fase", "bandeiras", "noite"]
+    },
+    {
+      "word": "Ferradura",
+      "hints": ["sorte", "cavalo", "u"]
+    },
+    {
+      "word": "Rosca",
+      "hints": ["donut", "pneu", "furo no meio"]
+    },
+    {
+      "word": "Quadriculado",
+      "hints": ["tabuleiro", "caderno", "xadrez"]
+    },
+    {
+      "word": "Favo",
+      "hints": ["abelhas", "encaixe", "mel"]
+    },
+    {
+      "word": "Alvo",
+      "hints": ["círculos", "centro", "dardos"]
+    },
+    {
+      "word": "Engrenagem",
+      "hints": ["dentes", "máquina", "configuração"]
+    },
+    {
+      "word": "Labirinto",
+      "hints": ["entrada", "perdido", "minotauro"]
+    },
+    {
+      "word": "Heptágono",
+      "hints": ["sete lados", "raro", "geometria"]
+    },
+    {
+      "word": "Decágono",
+      "hints": ["dez lados", "geometria", "fechado"]
+    },
+    {
+      "word": "Dodecaedro",
+      "hints": ["doze faces", "dado", "3d"]
+    },
+    {
+      "word": "Poá",
+      "hints": ["bolinhas", "vestido", "retrô"]
+    },
+    {
+      "word": "Listras",
+      "hints": ["zebra", "camisa", "paralelas"]
+    },
+    {
+      "word": "Grade",
+      "hints": ["janela", "cruzado", "proteção"]
+    },
+    {
+      "word": "Malha",
+      "hints": ["rede", "tecido", "quadradinhos"]
+    },
+    {
+      "word": "Hélice",
+      "hints": ["ventilador", "dna", "gira"]
+    },
+    {
+      "word": "Parábola",
+      "hints": ["antena", "curva", "matemática"]
+    },
+    {
+      "word": "Pêndulo",
+      "hints": ["relógio", "balança", "vai e vem"]
+    },
+    {
+      "word": "Cunha",
+      "hints": ["calço", "triangular", "porta"]
+    },
+    {
+      "word": "Arco",
+      "hints": ["flecha", "portal", "curvado"]
+    },
+    {
+      "word": "Domo",
+      "hints": ["cúpula", "planetário", "redondo"]
+    },
+    {
+      "word": "Pentagrama",
+      "hints": ["cinco pontas", "místico", "desenho"]
+    },
+    {
+      "word": "Asterisco",
+      "hints": ["teclado", "nota de rodapé", "estrelinha"]
+    },
+    {
+      "word": "Cifrão",
+      "hints": ["dinheiro", "s cortado", "teclado"]
+    },
+    {
+      "word": "Arroba",
+      "hints": ["e-mail", "teclado", "caracol"]
+    },
+    {
+      "word": "Hashtag",
+      "hints": ["redes", "jogo da velha", "teclado"]
+    },
+    {
+      "word": "Til",
+      "hints": ["acento", "ondulado", "teclado"]
+    },
+    {
+      "word": "Vírgula",
+      "hints": ["pausa", "texto", "pequena"]
+    },
+    {
+      "word": "Interrogação",
+      "hints": ["dúvida", "curva", "ponto"]
+    },
+    {
+      "word": "Exclamação",
+      "hints": ["susto", "reta", "ponto"]
+    },
+    {
+      "word": "Sino",
+      "hints": ["igreja", "notificação", "badalo"]
+    },
+    {
+      "word": "Pino",
+      "hints": ["boliche", "mapa", "localização"]
+    },
+    {
+      "word": "Bandeira",
+      "hints": ["mastro", "tremula", "país"]
+    },
+    {
+      "word": "Fita",
+      "hints": ["laço", "presente", "métrica"]
+    },
+    {
+      "word": "Laço",
+      "hints": ["presente", "cabelo", "nó"]
+    },
+    {
+      "word": "Trevo",
+      "hints": ["quatro folhas", "sorte", "verde"]
+    },
+    {
+      "word": "Yin-yang",
+      "hints": ["equilíbrio", "opostos", "oriental"]
+    },
+    {
+      "word": "Cata-vento",
+      "hints": ["quintal", "gira", "colorido"]
+    }
   ]
 }

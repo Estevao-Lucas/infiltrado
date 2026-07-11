@@ -3,55 +3,325 @@
   "name": "Super-heróis",
   "emoji": "🦸",
   "words": [
-    { "word": "Homem-Aranha", "hints": ["vizinhança", "teia", "responsabilidade"] },
-    { "word": "Batman", "hints": ["morcego", "bilionário", "sem poderes"] },
-    { "word": "Superman", "hints": ["capa", "jornalista", "kryptonita"] },
-    { "word": "Mulher-Maravilha", "hints": ["laço", "amazona", "bracelete"] },
-    { "word": "Hulk", "hints": ["verde", "raiva", "cientista"] },
-    { "word": "Thor", "hints": ["martelo", "trovão", "asgard"] },
-    { "word": "Homem de Ferro", "hints": ["armadura", "bilionário", "reator"] },
-    { "word": "Capitão América", "hints": ["escudo", "soldado", "congelado"] },
-    { "word": "Viúva Negra", "hints": ["espiã", "ruiva", "vermelho no nome"] },
-    { "word": "Gavião Arqueiro", "hints": ["flechas", "mira", "sem poderes"] },
-    { "word": "Pantera Negra", "hints": ["rei", "garras", "vibração"] },
-    { "word": "Doutor Estranho", "hints": ["capa", "portais", "cirurgião"] },
-    { "word": "Wolverine", "hints": ["garras", "regeneração", "mau humor"] },
-    { "word": "Tempestade", "hints": ["clima", "cabelo branco", "voa"] },
-    { "word": "Professor Xavier", "hints": ["cadeira", "mente", "escola"] },
-    { "word": "Vampira", "hints": ["toque", "mecha branca", "luvas"] },
-    { "word": "Ciclope", "hints": ["óculos", "laser", "líder"] },
-    { "word": "Deadpool", "hints": ["quebra a parede", "piadas", "regeneração"] },
-    { "word": "Flash", "hints": ["velocidade", "raio", "vermelho"] },
-    { "word": "Aquaman", "hints": ["tridente", "oceano", "peixes"] },
-    { "word": "Lanterna Verde", "hints": ["anel", "vontade", "juramento"] },
-    { "word": "Robin", "hints": ["parceiro", "sidekick", "colorido"] },
-    { "word": "Supergirl", "hints": ["prima", "capa", "voa"] },
-    { "word": "Homem-Formiga", "hints": ["encolhe", "capacete", "ladrão"] },
-    { "word": "Vespa", "hints": ["asas", "encolhe", "dupla"] },
-    { "word": "Capitã Marvel", "hints": ["espaço", "brilho", "piloto"] },
-    { "word": "Feiticeira Escarlate", "hints": ["vermelho", "caos", "gêmeo"] },
-    { "word": "Visão", "hints": ["sintético", "pedra na testa", "atravessa"] },
-    { "word": "Groot", "hints": ["árvore", "três palavras", "cresce"] },
-    { "word": "Rocket", "hints": ["guaxinim", "armas", "espaço"] },
-    { "word": "Senhor das Estrelas", "hints": ["walkman", "espaço", "ladrão"] },
-    { "word": "Gamora", "hints": ["verde", "assassina", "filha adotiva"] },
-    { "word": "Shazam", "hints": ["palavra mágica", "criança", "raio"] },
-    { "word": "Demolidor", "hints": ["advogado", "sentidos", "cego"] },
-    { "word": "Justiceiro", "hints": ["caveira", "vingança", "sem piedade"] },
-    { "word": "Motoqueiro Fantasma", "hints": ["corrente", "fogo", "caveira"] },
-    { "word": "Blade", "hints": ["espada", "meio vampiro", "noite"] },
-    { "word": "Hellboy", "hints": ["vermelho", "chifres serrados", "punho de pedra"] },
-    { "word": "Mr. Fantástico", "hints": ["elástico", "cientista", "quarteto"] },
-    { "word": "Mulher Invisível", "hints": ["some", "campo de força", "quarteto"] },
-    { "word": "Tocha Humana", "hints": ["fogo", "voa", "quarteto"] },
-    { "word": "Coisa", "hints": ["pedra", "laranja", "hora do pau"] },
-    { "word": "Venom", "hints": ["simbionte", "língua", "preto"] },
-    { "word": "Goku", "hints": ["esferas", "cabelo dourado", "kamehameha"] },
-    { "word": "Ben 10", "hints": ["relógio", "alienígenas", "criança"] },
-    { "word": "He-Man", "hints": ["espada", "castelo", "eu tenho a força"] },
-    { "word": "She-Ra", "hints": ["espada", "irmã", "princesa"] },
-    { "word": "Power Rangers", "hints": ["cores", "morfar", "robô gigante"] },
-    { "word": "Tartarugas Ninja", "hints": ["esgoto", "pizza", "faixas coloridas"] },
-    { "word": "Chapolin Colorado", "hints": ["marreta", "antenas", "sigam-me os bons"] }
+    {
+      "word": "Homem-Aranha",
+      "hints": ["vizinhança", "teia", "responsabilidade"]
+    },
+    {
+      "word": "Batman",
+      "hints": ["morcego", "bilionário", "sem poderes"]
+    },
+    {
+      "word": "Superman",
+      "hints": ["capa", "jornalista", "kryptonita"]
+    },
+    {
+      "word": "Mulher-Maravilha",
+      "hints": ["laço", "amazona", "bracelete"]
+    },
+    {
+      "word": "Hulk",
+      "hints": ["verde", "raiva", "cientista"]
+    },
+    {
+      "word": "Thor",
+      "hints": ["martelo", "trovão", "asgard"]
+    },
+    {
+      "word": "Homem de Ferro",
+      "hints": ["armadura", "bilionário", "reator"]
+    },
+    {
+      "word": "Capitão América",
+      "hints": ["escudo", "soldado", "congelado"]
+    },
+    {
+      "word": "Viúva Negra",
+      "hints": ["espiã", "ruiva", "vermelho no nome"]
+    },
+    {
+      "word": "Gavião Arqueiro",
+      "hints": ["flechas", "mira", "sem poderes"]
+    },
+    {
+      "word": "Pantera Negra",
+      "hints": ["rei", "garras", "vibração"]
+    },
+    {
+      "word": "Doutor Estranho",
+      "hints": ["capa", "portais", "cirurgião"]
+    },
+    {
+      "word": "Wolverine",
+      "hints": ["garras", "regeneração", "mau humor"]
+    },
+    {
+      "word": "Tempestade",
+      "hints": ["clima", "cabelo branco", "voa"]
+    },
+    {
+      "word": "Professor Xavier",
+      "hints": ["cadeira", "mente", "escola"]
+    },
+    {
+      "word": "Vampira",
+      "hints": ["toque", "mecha branca", "luvas"]
+    },
+    {
+      "word": "Ciclope",
+      "hints": ["óculos", "laser", "líder"]
+    },
+    {
+      "word": "Deadpool",
+      "hints": ["quebra a parede", "piadas", "regeneração"]
+    },
+    {
+      "word": "Flash",
+      "hints": ["velocidade", "raio", "vermelho"]
+    },
+    {
+      "word": "Aquaman",
+      "hints": ["tridente", "oceano", "peixes"]
+    },
+    {
+      "word": "Lanterna Verde",
+      "hints": ["anel", "vontade", "juramento"]
+    },
+    {
+      "word": "Robin",
+      "hints": ["parceiro", "sidekick", "colorido"]
+    },
+    {
+      "word": "Supergirl",
+      "hints": ["prima", "capa", "voa"]
+    },
+    {
+      "word": "Homem-Formiga",
+      "hints": ["encolhe", "capacete", "ladrão"]
+    },
+    {
+      "word": "Vespa",
+      "hints": ["asas", "encolhe", "dupla"]
+    },
+    {
+      "word": "Capitã Marvel",
+      "hints": ["espaço", "brilho", "piloto"]
+    },
+    {
+      "word": "Feiticeira Escarlate",
+      "hints": ["vermelho", "caos", "gêmeo"]
+    },
+    {
+      "word": "Visão",
+      "hints": ["sintético", "pedra na testa", "atravessa"]
+    },
+    {
+      "word": "Groot",
+      "hints": ["árvore", "três palavras", "cresce"]
+    },
+    {
+      "word": "Rocket",
+      "hints": ["guaxinim", "armas", "espaço"]
+    },
+    {
+      "word": "Senhor das Estrelas",
+      "hints": ["walkman", "espaço", "ladrão"]
+    },
+    {
+      "word": "Gamora",
+      "hints": ["verde", "assassina", "filha adotiva"]
+    },
+    {
+      "word": "Shazam",
+      "hints": ["palavra mágica", "criança", "raio"]
+    },
+    {
+      "word": "Demolidor",
+      "hints": ["advogado", "sentidos", "cego"]
+    },
+    {
+      "word": "Justiceiro",
+      "hints": ["caveira", "vingança", "sem piedade"]
+    },
+    {
+      "word": "Motoqueiro Fantasma",
+      "hints": ["corrente", "fogo", "caveira"]
+    },
+    {
+      "word": "Blade",
+      "hints": ["espada", "meio vampiro", "noite"]
+    },
+    {
+      "word": "Hellboy",
+      "hints": ["vermelho", "chifres serrados", "punho de pedra"]
+    },
+    {
+      "word": "Mr. Fantástico",
+      "hints": ["elástico", "cientista", "quarteto"]
+    },
+    {
+      "word": "Mulher Invisível",
+      "hints": ["some", "campo de força", "quarteto"]
+    },
+    {
+      "word": "Tocha Humana",
+      "hints": ["fogo", "voa", "quarteto"]
+    },
+    {
+      "word": "Coisa",
+      "hints": ["pedra", "laranja", "hora do pau"]
+    },
+    {
+      "word": "Venom",
+      "hints": ["simbionte", "língua", "preto"]
+    },
+    {
+      "word": "Goku",
+      "hints": ["esferas", "cabelo dourado", "kamehameha"]
+    },
+    {
+      "word": "Ben 10",
+      "hints": ["relógio", "alienígenas", "criança"]
+    },
+    {
+      "word": "He-Man",
+      "hints": ["espada", "castelo", "eu tenho a força"]
+    },
+    {
+      "word": "She-Ra",
+      "hints": ["espada", "irmã", "princesa"]
+    },
+    {
+      "word": "Power Rangers",
+      "hints": ["cores", "morfar", "robô gigante"]
+    },
+    {
+      "word": "Tartarugas Ninja",
+      "hints": ["esgoto", "pizza", "faixas coloridas"]
+    },
+    {
+      "word": "Chapolin Colorado",
+      "hints": ["marreta", "antenas", "sigam-me os bons"]
+    },
+    {
+      "word": "Mulher-Gato",
+      "hints": ["ladra", "chicote", "felina"]
+    },
+    {
+      "word": "Cavaleiro da Lua",
+      "hints": ["personalidades", "branco", "egito"]
+    },
+    {
+      "word": "Miles Morales",
+      "hints": ["brooklyn", "verso", "jovem"]
+    },
+    {
+      "word": "Fera",
+      "hints": ["azul", "peludo", "gênio"]
+    },
+    {
+      "word": "Noturno",
+      "hints": ["teleporte", "azul", "cauda"]
+    },
+    {
+      "word": "Jean Grey",
+      "hints": ["fênix", "telepata", "ruiva"]
+    },
+    {
+      "word": "Mercúrio",
+      "hints": ["velocista", "prata", "gêmeo"]
+    },
+    {
+      "word": "Ravena",
+      "hints": ["escura", "meditação", "titãs"]
+    },
+    {
+      "word": "Estelar",
+      "hints": ["alien", "cabelo de fogo", "titãs"]
+    },
+    {
+      "word": "Mutano",
+      "hints": ["verde", "vira animais", "titãs"]
+    },
+    {
+      "word": "Ciborgue",
+      "hints": ["metade máquina", "canhão", "titãs"]
+    },
+    {
+      "word": "Asa Noturna",
+      "hints": ["ex-parceiro", "acrobata", "bastões"]
+    },
+    {
+      "word": "Canário Negro",
+      "hints": ["grito", "loira", "luta"]
+    },
+    {
+      "word": "Arqueiro Verde",
+      "hints": ["flechas", "capuz", "bilionário"]
+    },
+    {
+      "word": "Constantine",
+      "hints": ["sobretudo", "ocultismo", "exorcista"]
+    },
+    {
+      "word": "Hancock",
+      "hints": ["bêbado", "desastrado", "will smith"]
+    },
+    {
+      "word": "Super Choque",
+      "hints": ["eletricidade", "prancha voadora", "animação"]
+    },
+    {
+      "word": "Samurai X",
+      "hints": ["cicatriz", "espada invertida", "andarilho"]
+    },
+    {
+      "word": "Vegeta",
+      "hints": ["príncipe", "orgulho", "rival"]
+    },
+    {
+      "word": "Luffy",
+      "hints": ["borracha", "chapéu de palha", "pirata"]
+    },
+    {
+      "word": "Sailor Moon",
+      "hints": ["marinheira", "lua", "transformação"]
+    },
+    {
+      "word": "Cavaleiros do Zodíaco",
+      "hints": ["armaduras", "constelações", "atena"]
+    },
+    {
+      "word": "Jaspion",
+      "hints": ["gigante", "japonês", "anos 80"]
+    },
+    {
+      "word": "Ultraman",
+      "hints": ["gigante", "prateado", "japão"]
+    },
+    {
+      "word": "Zorro",
+      "hints": ["máscara", "espada", "marca na parede"]
+    },
+    {
+      "word": "She-Hulk",
+      "hints": ["prima", "verde", "advogada"]
+    },
+    {
+      "word": "Nick Fury",
+      "hints": ["tapa-olho", "diretor", "recrutador"]
+    },
+    {
+      "word": "Gambit",
+      "hints": ["cartas", "sotaque", "bastão"]
+    },
+    {
+      "word": "Colossus",
+      "hints": ["metal", "russo", "grandão"]
+    },
+    {
+      "word": "Invencível",
+      "hints": ["animação", "filho", "capa amarela"]
+    }
   ]
 }

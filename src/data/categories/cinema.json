@@ -3,55 +3,325 @@
   "name": "Cinema",
   "emoji": "🎬",
   "words": [
-    { "word": "Titanic", "hints": ["romance", "oceano", "trágico"] },
-    { "word": "Star Wars", "hints": ["galáxia", "saga", "mestre"] },
-    { "word": "Harry Potter", "hints": ["escola", "britânico", "capa"] },
-    { "word": "Vingadores", "hints": ["equipe", "estalo", "reunidos"] },
-    { "word": "Rei Leão", "hints": ["savana", "pai", "animação"] },
-    { "word": "Toy Story", "hints": ["quarto", "ganham vida", "amigo fiel"] },
-    { "word": "Shrek", "hints": ["pântano", "verde", "camadas"] },
-    { "word": "Procurando Nemo", "hints": ["oceano", "pai", "esquecida"] },
-    { "word": "Frozen", "hints": ["irmãs", "inverno", "solte"] },
-    { "word": "Homem-Aranha", "hints": ["vizinhança", "picada", "responsabilidade"] },
-    { "word": "Batman", "hints": ["noite", "bilionário", "caverna"] },
-    { "word": "Jurassic Park", "hints": ["ilha", "cerca elétrica", "âmbar"] },
-    { "word": "E.T.", "hints": ["bicicleta", "telefone", "dedo"] },
-    { "word": "De Volta para o Futuro", "hints": ["carro", "relógio", "88"] },
-    { "word": "Matrix", "hints": ["pílula", "simulação", "desviar"] },
-    { "word": "Avatar", "hints": ["azul", "floresta", "conexão"] },
-    { "word": "Piratas do Caribe", "hints": ["navio", "rum", "amaldiçoado"] },
-    { "word": "Senhor dos Anéis", "hints": ["jornada", "precioso", "montanha"] },
-    { "word": "Velozes e Furiosos", "hints": ["família", "corrida", "câmbio"] },
-    { "word": "Rocky", "hints": ["escadaria", "luvas", "filadélfia"] },
-    { "word": "Exterminador do Futuro", "hints": ["robô", "volto já", "futuro"] },
-    { "word": "King Kong", "hints": ["prédio", "gigante", "loira"] },
-    { "word": "Godzilla", "hints": ["cidade", "lagarto", "japão"] },
-    { "word": "A Bela e a Fera", "hints": ["castelo", "rosa", "aparências"] },
-    { "word": "Cinderela", "hints": ["meia-noite", "sapatinho", "madrasta"] },
-    { "word": "Branca de Neve", "hints": ["maçã", "sete", "espelho"] },
-    { "word": "Aladdin", "hints": ["lâmpada", "tapete", "três desejos"] },
-    { "word": "Moana", "hints": ["oceano", "ilha", "galo"] },
-    { "word": "Divertida Mente", "hints": ["emoções", "cabeça", "memórias"] },
-    { "word": "Up: Altas Aventuras", "hints": ["balões", "casa", "idoso"] },
-    { "word": "Os Incríveis", "hints": ["família", "uniforme", "sem capa"] },
-    { "word": "Carros", "hints": ["corrida", "pistão", "interior"] },
-    { "word": "Madagascar", "hints": ["zoológico", "fuga", "pinguins"] },
-    { "word": "A Era do Gelo", "hints": ["noz", "esquilo", "manada"] },
-    { "word": "Minions", "hints": ["amarelos", "banana", "macacão"] },
-    { "word": "Esqueceram de Mim", "hints": ["natal", "sozinho", "armadilhas"] },
-    { "word": "Forrest Gump", "hints": ["corre", "chocolates", "pena"] },
-    { "word": "O Poderoso Chefão", "hints": ["família", "oferta", "itália"] },
-    { "word": "Coringa", "hints": ["riso", "escadaria", "maquiagem"] },
-    { "word": "Pantera Negra", "hints": ["reino", "vibração", "áfrica"] },
-    { "word": "Gladiador", "hints": ["arena", "imperador", "vingança"] },
-    { "word": "Interestelar", "hints": ["espaço", "tempo", "estante"] },
-    { "word": "Cidade de Deus", "hints": ["favela", "fotografia", "buscapé"] },
-    { "word": "Tropa de Elite", "hints": ["caveira", "capitão", "pede pra sair"] },
-    { "word": "O Auto da Compadecida", "hints": ["nordeste", "julgamento", "esperteza"] },
-    { "word": "Central do Brasil", "hints": ["cartas", "estação", "viagem"] },
-    { "word": "Um Sonho de Liberdade", "hints": ["prisão", "túnel", "esperança"] },
-    { "word": "Jumanji", "hints": ["tabuleiro", "selva", "preso"] },
-    { "word": "Monstros S.A.", "hints": ["portas", "sustos", "energia"] },
-    { "word": "O Mágico de Oz", "hints": ["estrada", "sapatos", "tornado"] }
+    {
+      "word": "Titanic",
+      "hints": ["romance", "oceano", "trágico"]
+    },
+    {
+      "word": "Star Wars",
+      "hints": ["galáxia", "saga", "mestre"]
+    },
+    {
+      "word": "Harry Potter",
+      "hints": ["escola", "britânico", "capa"]
+    },
+    {
+      "word": "Vingadores",
+      "hints": ["equipe", "estalo", "reunidos"]
+    },
+    {
+      "word": "Rei Leão",
+      "hints": ["savana", "pai", "animação"]
+    },
+    {
+      "word": "Toy Story",
+      "hints": ["quarto", "ganham vida", "amigo fiel"]
+    },
+    {
+      "word": "Shrek",
+      "hints": ["pântano", "verde", "camadas"]
+    },
+    {
+      "word": "Procurando Nemo",
+      "hints": ["oceano", "pai", "esquecida"]
+    },
+    {
+      "word": "Frozen",
+      "hints": ["irmãs", "inverno", "solte"]
+    },
+    {
+      "word": "Homem-Aranha",
+      "hints": ["vizinhança", "picada", "responsabilidade"]
+    },
+    {
+      "word": "Batman",
+      "hints": ["noite", "bilionário", "caverna"]
+    },
+    {
+      "word": "Jurassic Park",
+      "hints": ["ilha", "cerca elétrica", "âmbar"]
+    },
+    {
+      "word": "E.T.",
+      "hints": ["bicicleta", "telefone", "dedo"]
+    },
+    {
+      "word": "De Volta para o Futuro",
+      "hints": ["carro", "relógio", "88"]
+    },
+    {
+      "word": "Matrix",
+      "hints": ["pílula", "simulação", "desviar"]
+    },
+    {
+      "word": "Avatar",
+      "hints": ["azul", "floresta", "conexão"]
+    },
+    {
+      "word": "Piratas do Caribe",
+      "hints": ["navio", "rum", "amaldiçoado"]
+    },
+    {
+      "word": "Senhor dos Anéis",
+      "hints": ["jornada", "precioso", "montanha"]
+    },
+    {
+      "word": "Velozes e Furiosos",
+      "hints": ["família", "corrida", "câmbio"]
+    },
+    {
+      "word": "Rocky",
+      "hints": ["escadaria", "luvas", "filadélfia"]
+    },
+    {
+      "word": "Exterminador do Futuro",
+      "hints": ["robô", "volto já", "futuro"]
+    },
+    {
+      "word": "King Kong",
+      "hints": ["prédio", "gigante", "loira"]
+    },
+    {
+      "word": "Godzilla",
+      "hints": ["cidade", "lagarto", "japão"]
+    },
+    {
+      "word": "A Bela e a Fera",
+      "hints": ["castelo", "rosa", "aparências"]
+    },
+    {
+      "word": "Cinderela",
+      "hints": ["meia-noite", "sapatinho", "madrasta"]
+    },
+    {
+      "word": "Branca de Neve",
+      "hints": ["maçã", "sete", "espelho"]
+    },
+    {
+      "word": "Aladdin",
+      "hints": ["lâmpada", "tapete", "três desejos"]
+    },
+    {
+      "word": "Moana",
+      "hints": ["oceano", "ilha", "galo"]
+    },
+    {
+      "word": "Divertida Mente",
+      "hints": ["emoções", "cabeça", "memórias"]
+    },
+    {
+      "word": "Up: Altas Aventuras",
+      "hints": ["balões", "casa", "idoso"]
+    },
+    {
+      "word": "Os Incríveis",
+      "hints": ["família", "uniforme", "sem capa"]
+    },
+    {
+      "word": "Carros",
+      "hints": ["corrida", "pistão", "interior"]
+    },
+    {
+      "word": "Madagascar",
+      "hints": ["zoológico", "fuga", "pinguins"]
+    },
+    {
+      "word": "A Era do Gelo",
+      "hints": ["noz", "esquilo", "manada"]
+    },
+    {
+      "word": "Minions",
+      "hints": ["amarelos", "banana", "macacão"]
+    },
+    {
+      "word": "Esqueceram de Mim",
+      "hints": ["natal", "sozinho", "armadilhas"]
+    },
+    {
+      "word": "Forrest Gump",
+      "hints": ["corre", "chocolates", "pena"]
+    },
+    {
+      "word": "O Poderoso Chefão",
+      "hints": ["família", "oferta", "itália"]
+    },
+    {
+      "word": "Coringa",
+      "hints": ["riso", "escadaria", "maquiagem"]
+    },
+    {
+      "word": "Pantera Negra",
+      "hints": ["reino", "vibração", "áfrica"]
+    },
+    {
+      "word": "Gladiador",
+      "hints": ["arena", "imperador", "vingança"]
+    },
+    {
+      "word": "Interestelar",
+      "hints": ["espaço", "tempo", "estante"]
+    },
+    {
+      "word": "Cidade de Deus",
+      "hints": ["favela", "fotografia", "buscapé"]
+    },
+    {
+      "word": "Tropa de Elite",
+      "hints": ["caveira", "capitão", "pede pra sair"]
+    },
+    {
+      "word": "O Auto da Compadecida",
+      "hints": ["nordeste", "julgamento", "esperteza"]
+    },
+    {
+      "word": "Central do Brasil",
+      "hints": ["cartas", "estação", "viagem"]
+    },
+    {
+      "word": "Um Sonho de Liberdade",
+      "hints": ["prisão", "túnel", "esperança"]
+    },
+    {
+      "word": "Jumanji",
+      "hints": ["tabuleiro", "selva", "preso"]
+    },
+    {
+      "word": "Monstros S.A.",
+      "hints": ["portas", "sustos", "energia"]
+    },
+    {
+      "word": "O Mágico de Oz",
+      "hints": ["estrada", "sapatos", "tornado"]
+    },
+    {
+      "word": "Os Caça-Fantasmas",
+      "hints": ["uniforme", "nova york", "quem você vai chamar"]
+    },
+    {
+      "word": "Zootopia",
+      "hints": ["coelha policial", "cidade", "preguiça no detran"]
+    },
+    {
+      "word": "A Origem",
+      "hints": ["sonhos", "pião", "camadas"]
+    },
+    {
+      "word": "Clube da Luta",
+      "hints": ["primeira regra", "insônia", "sabão"]
+    },
+    {
+      "word": "Pulp Fiction",
+      "hints": ["dança", "maleta", "fora de ordem"]
+    },
+    {
+      "word": "O Sexto Sentido",
+      "hints": ["vejo gente morta", "reviravolta", "menino"]
+    },
+    {
+      "word": "Dirty Dancing",
+      "hints": ["dança", "verão", "carregada no ar"]
+    },
+    {
+      "word": "Grease",
+      "hints": ["anos 50", "jaqueta", "musical"]
+    },
+    {
+      "word": "Mamma Mia",
+      "hints": ["ilha grega", "abba", "casamento"]
+    },
+    {
+      "word": "O Diabo Veste Prada",
+      "hints": ["moda", "chefe", "revista"]
+    },
+    {
+      "word": "Legalmente Loira",
+      "hints": ["rosa", "direito", "chihuahua"]
+    },
+    {
+      "word": "As Branquelas",
+      "hints": ["disfarce", "agentes", "loiras"]
+    },
+    {
+      "word": "Debi & Lóide",
+      "hints": ["burrice", "dupla", "viagem"]
+    },
+    {
+      "word": "Todo Poderoso",
+      "hints": ["poderes", "reclamação", "trocado"]
+    },
+    {
+      "word": "Como Se Fosse a Primeira Vez",
+      "hints": ["memória", "todo dia", "havaí"]
+    },
+    {
+      "word": "Ratatouille",
+      "hints": ["chef", "paris", "crítico"]
+    },
+    {
+      "word": "Wall-E",
+      "hints": ["robô", "lixo", "espaço"]
+    },
+    {
+      "word": "Enrolados",
+      "hints": ["cabelo", "torre", "lanternas no céu"]
+    },
+    {
+      "word": "A Pequena Sereia",
+      "hints": ["voz", "mar", "caranguejo"]
+    },
+    {
+      "word": "Mulan",
+      "hints": ["disfarce", "china", "dragão"]
+    },
+    {
+      "word": "Pocahontas",
+      "hints": ["novo mundo", "natureza", "canoa"]
+    },
+    {
+      "word": "Hércules",
+      "hints": ["força", "deuses", "zero a herói"]
+    },
+    {
+      "word": "Tarzan",
+      "hints": ["selva", "cipós", "gorilas"]
+    },
+    {
+      "word": "Bambi",
+      "hints": ["floresta", "mãe", "filhote"]
+    },
+    {
+      "word": "Dumbo",
+      "hints": ["orelhas", "circo", "voa"]
+    },
+    {
+      "word": "Pinóquio",
+      "hints": ["nariz", "mentira", "boneco"]
+    },
+    {
+      "word": "Peter Pan",
+      "hints": ["terra do nunca", "sombra", "sininho"]
+    },
+    {
+      "word": "A Fantástica Fábrica de Chocolate",
+      "hints": ["bilhete dourado", "doces", "excêntrico"]
+    },
+    {
+      "word": "Náufrago",
+      "hints": ["ilha", "wilson", "sozinho"]
+    },
+    {
+      "word": "O Lobo de Wall Street",
+      "hints": ["ações", "excessos", "discurso"]
+    }
   ]
 }

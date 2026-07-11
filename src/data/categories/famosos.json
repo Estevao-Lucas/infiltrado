@@ -3,55 +3,325 @@
   "name": "Pessoas Famosas",
   "emoji": "🌟",
   "words": [
-    { "word": "Neymar", "hints": ["camisa 10", "paris", "polêmicas"] },
-    { "word": "Pelé", "hints": ["rei", "mil gols", "santos"] },
-    { "word": "Ronaldinho Gaúcho", "hints": ["sorriso", "drible", "barcelona"] },
-    { "word": "Marta", "hints": ["rainha", "seis vezes", "camisa 10"] },
-    { "word": "Ayrton Senna", "hints": ["capacete", "chuva", "ídolo eterno"] },
-    { "word": "Anitta", "hints": ["funk", "internacional", "envolver"] },
-    { "word": "Ivete Sangalo", "hints": ["trio", "carisma", "veveta"] },
-    { "word": "Caetano Veloso", "hints": ["tropicália", "bahia", "poeta"] },
-    { "word": "Gilberto Gil", "hints": ["tropicália", "ministro", "bahia"] },
-    { "word": "Roberto Carlos", "hints": ["rei", "azul", "detalhes"] },
-    { "word": "Xuxa", "hints": ["baixinhos", "nave", "loira"] },
-    { "word": "Silvio Santos", "hints": ["aviõezinhos", "quem quer dinheiro", "domingo"] },
-    { "word": "Faustão", "hints": ["domingo", "errou", "bordões"] },
-    { "word": "Ana Maria Braga", "hints": ["café da manhã", "louro", "receitas"] },
-    { "word": "Luciano Huck", "hints": ["sábado", "reformas", "prêmios"] },
-    { "word": "William Bonner", "hints": ["bancada", "boa noite", "jornal"] },
-    { "word": "Gisele Bündchen", "hints": ["passarela", "top", "brasileira"] },
-    { "word": "Paulo Coelho", "hints": ["alquimista", "best-seller", "frases"] },
-    { "word": "Machado de Assis", "hints": ["clássicos", "defunto autor", "academia"] },
-    { "word": "Zico", "hints": ["galinho", "flamengo", "japão"] },
-    { "word": "Romário", "hints": ["baixinho", "área", "94"] },
-    { "word": "Ronaldo Fenômeno", "hints": ["9", "corte de cabelo", "2002"] },
-    { "word": "Cafu", "hints": ["capitão", "lateral", "penta"] },
-    { "word": "Messi", "hints": ["camisa 10", "argentina", "copa 2022"] },
-    { "word": "Cristiano Ronaldo", "hints": ["siuuu", "português", "abdominais"] },
-    { "word": "Michael Jordan", "hints": ["23", "voa", "chicago"] },
-    { "word": "Usain Bolt", "hints": ["raio", "jamaica", "pose"] },
-    { "word": "Beyoncé", "hints": ["diva", "single ladies", "queen b"] },
-    { "word": "Madonna", "hints": ["rainha do pop", "polêmica", "show na praia"] },
-    { "word": "Michael Jackson", "hints": ["luva", "moonwalk", "thriller"] },
-    { "word": "Elvis Presley", "hints": ["topete", "rock", "las vegas"] },
-    { "word": "Freddie Mercury", "hints": ["bigode", "vozeirão", "we will rock you"] },
-    { "word": "Taylor Swift", "hints": ["eras", "compositora", "fãs dedicados"] },
-    { "word": "Shakira", "hints": ["quadril", "colômbia", "waka waka"] },
-    { "word": "Rihanna", "hints": ["guarda-chuva", "maquiagem", "barbados"] },
-    { "word": "Lady Gaga", "hints": ["figurinos", "poker face", "carne"] },
-    { "word": "Tom Cruise", "hints": ["missão", "dublês próprios", "baixinho"] },
-    { "word": "Leonardo DiCaprio", "hints": ["oscar demorado", "navio", "meme da taça"] },
-    { "word": "Angelina Jolie", "hints": ["lábios", "tumb raider", "adoções"] },
-    { "word": "Brad Pitt", "hints": ["galã", "clube da luta", "ex-casal famoso"] },
-    { "word": "Johnny Depp", "hints": ["pirata", "excêntrico", "tesoura"] },
-    { "word": "Will Smith", "hints": ["príncipe", "tapa", "men in black"] },
-    { "word": "Dwayne Johnson", "hints": ["pedra", "músculos", "luta livre"] },
-    { "word": "Keanu Reeves", "hints": ["gentil", "matrix", "cachorro"] },
-    { "word": "Albert Einstein", "hints": ["cabelo", "língua", "gênio"] },
-    { "word": "Whindersson Nunes", "hints": ["piauí", "humor", "luta de boxe"] },
-    { "word": "Casimiro", "hints": ["live", "reação", "vasco"] },
-    { "word": "Felipe Neto", "hints": ["vídeos", "polêmicas", "irmão"] },
-    { "word": "Larissa Manoela", "hints": ["novelas infantis", "herança", "atriz"] },
-    { "word": "Tom Hanks", "hints": ["náufrago", "forrest", "querido"] }
+    {
+      "word": "Neymar",
+      "hints": ["camisa 10", "paris", "polêmicas"]
+    },
+    {
+      "word": "Pelé",
+      "hints": ["rei", "mil gols", "santos"]
+    },
+    {
+      "word": "Ronaldinho Gaúcho",
+      "hints": ["sorriso", "drible", "barcelona"]
+    },
+    {
+      "word": "Marta",
+      "hints": ["rainha", "seis vezes", "camisa 10"]
+    },
+    {
+      "word": "Ayrton Senna",
+      "hints": ["capacete", "chuva", "ídolo eterno"]
+    },
+    {
+      "word": "Anitta",
+      "hints": ["funk", "internacional", "envolver"]
+    },
+    {
+      "word": "Ivete Sangalo",
+      "hints": ["trio", "carisma", "veveta"]
+    },
+    {
+      "word": "Caetano Veloso",
+      "hints": ["tropicália", "bahia", "poeta"]
+    },
+    {
+      "word": "Gilberto Gil",
+      "hints": ["tropicália", "ministro", "bahia"]
+    },
+    {
+      "word": "Roberto Carlos",
+      "hints": ["rei", "azul", "detalhes"]
+    },
+    {
+      "word": "Xuxa",
+      "hints": ["baixinhos", "nave", "loira"]
+    },
+    {
+      "word": "Silvio Santos",
+      "hints": ["aviõezinhos", "quem quer dinheiro", "domingo"]
+    },
+    {
+      "word": "Faustão",
+      "hints": ["domingo", "errou", "bordões"]
+    },
+    {
+      "word": "Ana Maria Braga",
+      "hints": ["café da manhã", "louro", "receitas"]
+    },
+    {
+      "word": "Luciano Huck",
+      "hints": ["sábado", "reformas", "prêmios"]
+    },
+    {
+      "word": "William Bonner",
+      "hints": ["bancada", "boa noite", "jornal"]
+    },
+    {
+      "word": "Gisele Bündchen",
+      "hints": ["passarela", "top", "brasileira"]
+    },
+    {
+      "word": "Paulo Coelho",
+      "hints": ["alquimista", "best-seller", "frases"]
+    },
+    {
+      "word": "Machado de Assis",
+      "hints": ["clássicos", "defunto autor", "academia"]
+    },
+    {
+      "word": "Zico",
+      "hints": ["galinho", "flamengo", "japão"]
+    },
+    {
+      "word": "Romário",
+      "hints": ["baixinho", "área", "94"]
+    },
+    {
+      "word": "Ronaldo Fenômeno",
+      "hints": ["9", "corte de cabelo", "2002"]
+    },
+    {
+      "word": "Cafu",
+      "hints": ["capitão", "lateral", "penta"]
+    },
+    {
+      "word": "Messi",
+      "hints": ["camisa 10", "argentina", "copa 2022"]
+    },
+    {
+      "word": "Cristiano Ronaldo",
+      "hints": ["siuuu", "português", "abdominais"]
+    },
+    {
+      "word": "Michael Jordan",
+      "hints": ["23", "voa", "chicago"]
+    },
+    {
+      "word": "Usain Bolt",
+      "hints": ["raio", "jamaica", "pose"]
+    },
+    {
+      "word": "Beyoncé",
+      "hints": ["diva", "single ladies", "queen b"]
+    },
+    {
+      "word": "Madonna",
+      "hints": ["rainha do pop", "polêmica", "show na praia"]
+    },
+    {
+      "word": "Michael Jackson",
+      "hints": ["luva", "moonwalk", "thriller"]
+    },
+    {
+      "word": "Elvis Presley",
+      "hints": ["topete", "rock", "las vegas"]
+    },
+    {
+      "word": "Freddie Mercury",
+      "hints": ["bigode", "vozeirão", "we will rock you"]
+    },
+    {
+      "word": "Taylor Swift",
+      "hints": ["eras", "compositora", "fãs dedicados"]
+    },
+    {
+      "word": "Shakira",
+      "hints": ["quadril", "colômbia", "waka waka"]
+    },
+    {
+      "word": "Rihanna",
+      "hints": ["guarda-chuva", "maquiagem", "barbados"]
+    },
+    {
+      "word": "Lady Gaga",
+      "hints": ["figurinos", "poker face", "carne"]
+    },
+    {
+      "word": "Tom Cruise",
+      "hints": ["missão", "dublês próprios", "baixinho"]
+    },
+    {
+      "word": "Leonardo DiCaprio",
+      "hints": ["oscar demorado", "navio", "meme da taça"]
+    },
+    {
+      "word": "Angelina Jolie",
+      "hints": ["lábios", "tumb raider", "adoções"]
+    },
+    {
+      "word": "Brad Pitt",
+      "hints": ["galã", "clube da luta", "ex-casal famoso"]
+    },
+    {
+      "word": "Johnny Depp",
+      "hints": ["pirata", "excêntrico", "tesoura"]
+    },
+    {
+      "word": "Will Smith",
+      "hints": ["príncipe", "tapa", "men in black"]
+    },
+    {
+      "word": "Dwayne Johnson",
+      "hints": ["pedra", "músculos", "luta livre"]
+    },
+    {
+      "word": "Keanu Reeves",
+      "hints": ["gentil", "matrix", "cachorro"]
+    },
+    {
+      "word": "Albert Einstein",
+      "hints": ["cabelo", "língua", "gênio"]
+    },
+    {
+      "word": "Whindersson Nunes",
+      "hints": ["piauí", "humor", "luta de boxe"]
+    },
+    {
+      "word": "Casimiro",
+      "hints": ["live", "reação", "vasco"]
+    },
+    {
+      "word": "Felipe Neto",
+      "hints": ["vídeos", "polêmicas", "irmão"]
+    },
+    {
+      "word": "Larissa Manoela",
+      "hints": ["novelas infantis", "herança", "atriz"]
+    },
+    {
+      "word": "Tom Hanks",
+      "hints": ["náufrago", "forrest", "querido"]
+    },
+    {
+      "word": "Gustavo Kuerten",
+      "hints": ["saibro", "três títulos", "coração na quadra"]
+    },
+    {
+      "word": "Rebeca Andrade",
+      "hints": ["ginástica", "ouro", "baile de favela"]
+    },
+    {
+      "word": "Rayssa Leal",
+      "hints": ["fadinha", "skate", "jovem"]
+    },
+    {
+      "word": "Daiane dos Santos",
+      "hints": ["solo", "brasileirinho", "pioneira"]
+    },
+    {
+      "word": "Gabriel Medina",
+      "hints": ["ondas", "títulos", "tubos"]
+    },
+    {
+      "word": "Oscar Schmidt",
+      "hints": ["mão santa", "cestas", "basquete"]
+    },
+    {
+      "word": "Hortência",
+      "hints": ["basquete", "rainha", "anos 90"]
+    },
+    {
+      "word": "Zagallo",
+      "hints": ["velho lobo", "13", "copas"]
+    },
+    {
+      "word": "Vini Jr",
+      "hints": ["dança", "real", "ponta"]
+    },
+    {
+      "word": "Taffarel",
+      "hints": ["pênaltis", "luvas", "94"]
+    },
+    {
+      "word": "Gugu Liberato",
+      "hints": ["domingo", "sonhos", "auditório"]
+    },
+    {
+      "word": "Hebe Camargo",
+      "hints": ["loira", "selinho", "auditório"]
+    },
+    {
+      "word": "Jô Soares",
+      "hints": ["entrevistas", "humor", "charuto"]
+    },
+    {
+      "word": "Chacrinha",
+      "hints": ["buzina", "abacaxi", "velho guerreiro"]
+    },
+    {
+      "word": "Galvão Bueno",
+      "hints": ["narração", "bem amigos", "copas"]
+    },
+    {
+      "word": "Fernanda Montenegro",
+      "hints": ["dama", "quase oscar", "central"]
+    },
+    {
+      "word": "Fernanda Torres",
+      "hints": ["globo de ouro", "filha", "atriz"]
+    },
+    {
+      "word": "Wagner Moura",
+      "hints": ["capitão", "narcos", "baiano"]
+    },
+    {
+      "word": "Rodrigo Santoro",
+      "hints": ["300", "hollywood", "galã"]
+    },
+    {
+      "word": "Paulo Gustavo",
+      "hints": ["dona hermínia", "humor", "saudade"]
+    },
+    {
+      "word": "Tatá Werneck",
+      "hints": ["lady night", "rápida", "humor"]
+    },
+    {
+      "word": "Djavan",
+      "hints": ["oceano", "voz", "compositor"]
+    },
+    {
+      "word": "Milton Nascimento",
+      "hints": ["voz", "clube da esquina", "bituca"]
+    },
+    {
+      "word": "Chico Buarque",
+      "hints": ["construção", "letras", "mpb"]
+    },
+    {
+      "word": "Elis Regina",
+      "hints": ["pimentinha", "águas de março", "voz"]
+    },
+    {
+      "word": "Tim Maia",
+      "hints": ["vozeirão", "soul", "descobridor dos mares"]
+    },
+    {
+      "word": "Cazuza",
+      "hints": ["exagerado", "poeta", "barão"]
+    },
+    {
+      "word": "Renato Russo",
+      "hints": ["legião", "brasília", "letras"]
+    },
+    {
+      "word": "Rita Lee",
+      "hints": ["ovelha negra", "roqueira", "ruiva"]
+    },
+    {
+      "word": "Marília Mendonça",
+      "hints": ["sofrência", "rainha", "saudade"]
+    }
   ]
 }

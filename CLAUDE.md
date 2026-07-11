@@ -40,7 +40,7 @@ revealResult/newRound/resetSession`. 3–15 jogadores; impostores 1..floor(playe
   palavra (anti-repetição via `usedWords`, máx. 30; categoria esgotada limpa só o próprio
   histórico) → impostores → dicas (`same` = hints[0] para todos; `different` = distintas,
   cíclico se faltar) → starter.
-- `src/data/categories/*.json` — 17 categorias × 50 palavras, cada uma com 2–3 dicas.
+- `src/data/categories/*.json` — 17 categorias × 80 palavras, cada uma com 2–3 dicas.
   `src/data/index.ts` importa e exporta tudo tipado.
 - `src/hooks/useHoldToReveal.ts` — hold-to-reveal com Pointer Events + `setPointerCapture`;
   delay de 300ms antes de revelar, 600ms revelado para contar "hold completo".
@@ -73,7 +73,7 @@ revealResult/newRound/resetSession`. 3–15 jogadores; impostores 1..floor(playe
 
 ## Banco de palavras
 
-- 50 palavras por categoria, conhecidas do público geral brasileiro.
+- 80 palavras por categoria, conhecidas do público geral brasileiro.
 - Dicas: 2–3 por palavra, **curtas (1–3 palavras) e sutis** — apontam a direção sem entregar
   (ex.: "Esponja" → "absorve", nunca "item de lavar louça"). Dica não pode conter a palavra.
 - `src/data/data.test.ts` valida tudo isso — rodar `npm test` após qualquer edição nos JSONs.

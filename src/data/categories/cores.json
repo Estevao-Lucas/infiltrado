@@ -3,55 +3,325 @@
   "name": "Cores",
   "emoji": "🎨",
   "words": [
-    { "word": "Vermelho", "hints": ["paixão", "pare", "sangue"] },
-    { "word": "Azul", "hints": ["céu", "calma", "menino"] },
-    { "word": "Verde", "hints": ["esperança", "siga", "natureza"] },
-    { "word": "Amarelo", "hints": ["sol", "atenção", "ouro"] },
-    { "word": "Laranja", "hints": ["fruta", "vibrante", "pôr do sol"] },
-    { "word": "Roxo", "hints": ["uva", "místico", "hematoma"] },
-    { "word": "Rosa", "hints": ["flor", "bebê", "chiclete"] },
-    { "word": "Preto", "hints": ["luto", "elegante", "ausência"] },
-    { "word": "Branco", "hints": ["paz", "noiva", "ano novo"] },
-    { "word": "Cinza", "hints": ["nublado", "concreto", "neutro"] },
-    { "word": "Marrom", "hints": ["terra", "chocolate", "madeira"] },
-    { "word": "Bege", "hints": ["neutro", "parede", "areia"] },
-    { "word": "Dourado", "hints": ["medalha", "luxo", "brilho"] },
-    { "word": "Prateado", "hints": ["segundo lugar", "metálico", "espelhado"] },
-    { "word": "Turquesa", "hints": ["mar caribenho", "pedra", "esverdeado"] },
-    { "word": "Violeta", "hints": ["flor", "arco-íris", "última faixa"] },
-    { "word": "Lilás", "hints": ["suave", "lavanda", "claro"] },
-    { "word": "Magenta", "hints": ["impressora", "vibrante", "entre dois"] },
-    { "word": "Ciano", "hints": ["impressora", "água", "claro"] },
-    { "word": "Salmão", "hints": ["peixe", "camisa polêmica", "suave"] },
-    { "word": "Vinho", "hints": ["taça", "escuro", "batom"] },
-    { "word": "Bordô", "hints": ["escuro", "elegante", "quase roxo"] },
-    { "word": "Coral", "hints": ["mar", "alaranjado", "esmalte"] },
-    { "word": "Âmbar", "hints": ["resina", "semáforo", "mel"] },
-    { "word": "Caramelo", "hints": ["doce", "vira-lata", "queimado"] },
-    { "word": "Chocolate", "hints": ["doce", "escuro", "cabelo"] },
-    { "word": "Creme", "hints": ["suave", "sorvete", "parede"] },
-    { "word": "Marfim", "hints": ["elefante", "teclas", "quase branco"] },
-    { "word": "Pérola", "hints": ["ostra", "colar", "brilho suave"] },
-    { "word": "Grafite", "hints": ["lápis", "urbano", "escuro"] },
-    { "word": "Chumbo", "hints": ["metal", "pesado", "céu feio"] },
-    { "word": "Azul-marinho", "hints": ["uniforme", "escuro", "mar profundo"] },
-    { "word": "Azul-celeste", "hints": ["céu limpo", "claro", "manto"] },
-    { "word": "Azul-royal", "hints": ["realeza", "vibrante", "caneta"] },
-    { "word": "Azul-bebê", "hints": ["chá revelação", "claro", "fofo"] },
-    { "word": "Verde-limão", "hints": ["cítrico", "neon", "chamativo"] },
-    { "word": "Verde-musgo", "hints": ["pedra úmida", "militar", "fechado"] },
-    { "word": "Verde-esmeralda", "hints": ["pedra", "joia", "profundo"] },
-    { "word": "Verde-água", "hints": ["piscina", "claro", "suave"] },
-    { "word": "Verde-oliva", "hints": ["azeitona", "militar", "terroso"] },
-    { "word": "Rosa-choque", "hints": ["chamativo", "anos 80", "barbie"] },
-    { "word": "Fúcsia", "hints": ["vibrante", "flor", "quase pink"] },
-    { "word": "Lavanda", "hints": ["campo francês", "perfume", "relaxante"] },
-    { "word": "Mostarda", "hints": ["condimento", "retrô", "suéter"] },
-    { "word": "Terracota", "hints": ["vaso", "telhado", "queimado"] },
-    { "word": "Índigo", "hints": ["jeans", "arco-íris", "profundo"] },
-    { "word": "Carmim", "hints": ["batom", "intenso", "inseto"] },
-    { "word": "Ocre", "hints": ["terra", "pintura antiga", "amarelado"] },
-    { "word": "Sépia", "hints": ["foto antiga", "filtro", "amarronzado"] },
-    { "word": "Neon", "hints": ["balada", "brilha", "chamativo"] }
+    {
+      "word": "Vermelho",
+      "hints": ["paixão", "pare", "sangue"]
+    },
+    {
+      "word": "Azul",
+      "hints": ["céu", "calma", "menino"]
+    },
+    {
+      "word": "Verde",
+      "hints": ["esperança", "siga", "natureza"]
+    },
+    {
+      "word": "Amarelo",
+      "hints": ["sol", "atenção", "ouro"]
+    },
+    {
+      "word": "Laranja",
+      "hints": ["fruta", "vibrante", "pôr do sol"]
+    },
+    {
+      "word": "Roxo",
+      "hints": ["uva", "místico", "hematoma"]
+    },
+    {
+      "word": "Rosa",
+      "hints": ["flor", "bebê", "chiclete"]
+    },
+    {
+      "word": "Preto",
+      "hints": ["luto", "elegante", "ausência"]
+    },
+    {
+      "word": "Branco",
+      "hints": ["paz", "noiva", "ano novo"]
+    },
+    {
+      "word": "Cinza",
+      "hints": ["nublado", "concreto", "neutro"]
+    },
+    {
+      "word": "Marrom",
+      "hints": ["terra", "chocolate", "madeira"]
+    },
+    {
+      "word": "Bege",
+      "hints": ["neutro", "parede", "areia"]
+    },
+    {
+      "word": "Dourado",
+      "hints": ["medalha", "luxo", "brilho"]
+    },
+    {
+      "word": "Prateado",
+      "hints": ["segundo lugar", "metálico", "espelhado"]
+    },
+    {
+      "word": "Turquesa",
+      "hints": ["mar caribenho", "pedra", "esverdeado"]
+    },
+    {
+      "word": "Violeta",
+      "hints": ["flor", "arco-íris", "última faixa"]
+    },
+    {
+      "word": "Lilás",
+      "hints": ["suave", "lavanda", "claro"]
+    },
+    {
+      "word": "Magenta",
+      "hints": ["impressora", "vibrante", "entre dois"]
+    },
+    {
+      "word": "Ciano",
+      "hints": ["impressora", "água", "claro"]
+    },
+    {
+      "word": "Salmão",
+      "hints": ["peixe", "camisa polêmica", "suave"]
+    },
+    {
+      "word": "Vinho",
+      "hints": ["taça", "escuro", "batom"]
+    },
+    {
+      "word": "Bordô",
+      "hints": ["escuro", "elegante", "quase roxo"]
+    },
+    {
+      "word": "Coral",
+      "hints": ["mar", "alaranjado", "esmalte"]
+    },
+    {
+      "word": "Âmbar",
+      "hints": ["resina", "semáforo", "mel"]
+    },
+    {
+      "word": "Caramelo",
+      "hints": ["doce", "vira-lata", "queimado"]
+    },
+    {
+      "word": "Chocolate",
+      "hints": ["doce", "escuro", "cabelo"]
+    },
+    {
+      "word": "Creme",
+      "hints": ["suave", "sorvete", "parede"]
+    },
+    {
+      "word": "Marfim",
+      "hints": ["elefante", "teclas", "quase branco"]
+    },
+    {
+      "word": "Pérola",
+      "hints": ["ostra", "colar", "brilho suave"]
+    },
+    {
+      "word": "Grafite",
+      "hints": ["lápis", "urbano", "escuro"]
+    },
+    {
+      "word": "Chumbo",
+      "hints": ["metal", "pesado", "céu feio"]
+    },
+    {
+      "word": "Azul-marinho",
+      "hints": ["uniforme", "escuro", "mar profundo"]
+    },
+    {
+      "word": "Azul-celeste",
+      "hints": ["céu limpo", "claro", "manto"]
+    },
+    {
+      "word": "Azul-royal",
+      "hints": ["realeza", "vibrante", "caneta"]
+    },
+    {
+      "word": "Azul-bebê",
+      "hints": ["chá revelação", "claro", "fofo"]
+    },
+    {
+      "word": "Verde-limão",
+      "hints": ["cítrico", "neon", "chamativo"]
+    },
+    {
+      "word": "Verde-musgo",
+      "hints": ["pedra úmida", "militar", "fechado"]
+    },
+    {
+      "word": "Verde-esmeralda",
+      "hints": ["pedra", "joia", "profundo"]
+    },
+    {
+      "word": "Verde-água",
+      "hints": ["piscina", "claro", "suave"]
+    },
+    {
+      "word": "Verde-oliva",
+      "hints": ["azeitona", "militar", "terroso"]
+    },
+    {
+      "word": "Rosa-choque",
+      "hints": ["chamativo", "anos 80", "barbie"]
+    },
+    {
+      "word": "Fúcsia",
+      "hints": ["vibrante", "flor", "quase pink"]
+    },
+    {
+      "word": "Lavanda",
+      "hints": ["campo francês", "perfume", "relaxante"]
+    },
+    {
+      "word": "Mostarda",
+      "hints": ["condimento", "retrô", "suéter"]
+    },
+    {
+      "word": "Terracota",
+      "hints": ["vaso", "telhado", "queimado"]
+    },
+    {
+      "word": "Índigo",
+      "hints": ["jeans", "arco-íris", "profundo"]
+    },
+    {
+      "word": "Carmim",
+      "hints": ["batom", "intenso", "inseto"]
+    },
+    {
+      "word": "Ocre",
+      "hints": ["terra", "pintura antiga", "amarelado"]
+    },
+    {
+      "word": "Sépia",
+      "hints": ["foto antiga", "filtro", "amarronzado"]
+    },
+    {
+      "word": "Neon",
+      "hints": ["balada", "brilha", "chamativo"]
+    },
+    {
+      "word": "Escarlate",
+      "hints": ["intenso", "letra", "febre"]
+    },
+    {
+      "word": "Púrpura",
+      "hints": ["realeza", "manto", "chuva"]
+    },
+    {
+      "word": "Anil",
+      "hints": ["lavanderia", "azulado", "tingir"]
+    },
+    {
+      "word": "Cobre",
+      "hints": ["metal", "moedas", "fios"]
+    },
+    {
+      "word": "Bronze",
+      "hints": ["terceiro lugar", "estátua", "medalha"]
+    },
+    {
+      "word": "Champanhe",
+      "hints": ["brinde", "perolado", "carro"]
+    },
+    {
+      "word": "Gelo",
+      "hints": ["quase branco", "frio", "parede"]
+    },
+    {
+      "word": "Nude",
+      "hints": ["pele", "esmalte", "discreto"]
+    },
+    {
+      "word": "Pêssego",
+      "hints": ["fruta", "suave", "rosado"]
+    },
+    {
+      "word": "Abóbora",
+      "hints": ["halloween", "vibrante", "legume"]
+    },
+    {
+      "word": "Ferrugem",
+      "hints": ["metal velho", "alaranjado", "óxido"]
+    },
+    {
+      "word": "Tijolo",
+      "hints": ["parede", "avermelhado", "construção"]
+    },
+    {
+      "word": "Cereja",
+      "hints": ["fruta", "batom", "escuro"]
+    },
+    {
+      "word": "Uva",
+      "hints": ["fruta", "suco", "escuro"]
+    },
+    {
+      "word": "Berinjela",
+      "hints": ["legume", "escuro", "arroxeado"]
+    },
+    {
+      "word": "Orquídea",
+      "hints": ["flor", "delicado", "arroxeado"]
+    },
+    {
+      "word": "Jade",
+      "hints": ["pedra", "oriental", "esverdeado"]
+    },
+    {
+      "word": "Menta",
+      "hints": ["refrescante", "claro", "folha"]
+    },
+    {
+      "word": "Pistache",
+      "hints": ["sorvete", "claro", "oleaginosa"]
+    },
+    {
+      "word": "Militar",
+      "hints": ["farda", "fechado", "camuflagem"]
+    },
+    {
+      "word": "Petróleo",
+      "hints": ["fechado", "azulado", "profundo"]
+    },
+    {
+      "word": "Safira",
+      "hints": ["pedra", "joia", "profundo"]
+    },
+    {
+      "word": "Rubi",
+      "hints": ["pedra", "joia", "intenso"]
+    },
+    {
+      "word": "Ametista",
+      "hints": ["pedra", "arroxeado", "cristal"]
+    },
+    {
+      "word": "Grená",
+      "hints": ["escuro", "times", "avermelhado"]
+    },
+    {
+      "word": "Cáqui",
+      "hints": ["calça", "militar", "claro"]
+    },
+    {
+      "word": "Areia",
+      "hints": ["praia", "claro", "neutro"]
+    },
+    {
+      "word": "Palha",
+      "hints": ["chapéu", "claro", "amarelado"]
+    },
+    {
+      "word": "Trigo",
+      "hints": ["campo", "claro", "cereal"]
+    },
+    {
+      "word": "Rosé",
+      "hints": ["taça", "rosado", "verão"]
+    }
   ]
 }

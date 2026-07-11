@@ -3,55 +3,325 @@
   "name": "Objetos",
   "emoji": "🧰",
   "words": [
-    { "word": "Martelo", "hints": ["prego", "cabo", "pancada"] },
-    { "word": "Tesoura", "hints": ["duas partes", "papel", "afiada"] },
-    { "word": "Guarda-chuva", "hints": ["abre", "cabo", "tempestade"] },
-    { "word": "Escova de dentes", "hints": ["cerdas", "banheiro", "três vezes"] },
-    { "word": "Espelho", "hints": ["reflexo", "parede", "sete anos"] },
-    { "word": "Travesseiro", "hints": ["macio", "cabeça", "fronha"] },
-    { "word": "Cadeira", "hints": ["quatro pernas", "encosto", "sentar"] },
-    { "word": "Geladeira", "hints": ["cozinha", "ímã", "porta pesada"] },
-    { "word": "Ventilador", "hints": ["hélice", "verão", "gira"] },
-    { "word": "Televisão", "hints": ["sala", "canais", "tela"] },
-    { "word": "Controle remoto", "hints": ["sofá", "pilhas", "sumido"] },
-    { "word": "Celular", "hints": ["bolso", "tela", "vício"] },
-    { "word": "Fone de ouvido", "hints": ["música", "fio", "par"] },
-    { "word": "Óculos", "hints": ["armação", "grau", "nariz"] },
-    { "word": "Relógio", "hints": ["pulso", "ponteiros", "atraso"] },
-    { "word": "Chave", "hints": ["fechadura", "molho", "cópia"] },
-    { "word": "Cadeado", "hints": ["segredo", "corrente", "portão"] },
-    { "word": "Mochila", "hints": ["costas", "zíper", "escola"] },
-    { "word": "Carteira", "hints": ["bolso", "documentos", "couro"] },
-    { "word": "Panela", "hints": ["fogão", "tampa", "cabo"] },
-    { "word": "Garfo", "hints": ["dentes", "talher", "esquerda"] },
-    { "word": "Faca", "hints": ["corte", "afiada", "pão"] },
-    { "word": "Colher", "hints": ["sopa", "funda", "chá"] },
-    { "word": "Copo", "hints": ["vidro", "borda", "sede"] },
-    { "word": "Garrafa", "hints": ["tampa", "gargalo", "litro"] },
-    { "word": "Vassoura", "hints": ["cerdas", "cabo", "bruxa"] },
-    { "word": "Rodo", "hints": ["borracha", "puxa", "quintal"] },
-    { "word": "Esponja", "hints": ["absorve", "dois lados", "pia"] },
-    { "word": "Sabonete", "hints": ["escorrega", "cheiroso", "espuma"] },
-    { "word": "Toalha", "hints": ["felpuda", "varal", "pós-banho"] },
-    { "word": "Chuveiro", "hints": ["quente ou frio", "teto", "cantoria"] },
-    { "word": "Chinelo", "hints": ["dedo", "verão", "mãe brava"] },
-    { "word": "Lápis", "hints": ["apontar", "grafite", "escrever"] },
-    { "word": "Caneta", "hints": ["tinta", "clique", "emprestada"] },
-    { "word": "Borracha", "hints": ["apaga", "estojo", "resto"] },
-    { "word": "Caderno", "hints": ["espiral", "linhas", "matéria"] },
-    { "word": "Livro", "hints": ["páginas", "capa", "estante"] },
-    { "word": "Abajur", "hints": ["cabeceira", "cúpula", "leitura"] },
-    { "word": "Tomada", "hints": ["parede", "três pinos", "energia"] },
-    { "word": "Pilha", "hints": ["positivo", "negativo", "acaba"] },
-    { "word": "Lanterna", "hints": ["facho", "apagão", "acampamento"] },
-    { "word": "Vela", "hints": ["pavio", "aniversário", "apagão"] },
-    { "word": "Fósforo", "hints": ["caixinha", "risca", "palito"] },
-    { "word": "Prego", "hints": ["parede", "quadro", "torto"] },
-    { "word": "Parafuso", "hints": ["rosca", "aperta", "solto"] },
-    { "word": "Fita adesiva", "hints": ["gruda", "rolo", "presente"] },
-    { "word": "Cabide", "hints": ["armário", "ombros", "pendura"] },
-    { "word": "Balde", "hints": ["alça", "faxina", "praia"] },
-    { "word": "Ferro de passar", "hints": ["vapor", "tábua", "amassado"] },
-    { "word": "Almofada", "hints": ["sofá", "decoração", "abraço"] }
+    {
+      "word": "Martelo",
+      "hints": ["prego", "cabo", "pancada"]
+    },
+    {
+      "word": "Tesoura",
+      "hints": ["duas partes", "papel", "afiada"]
+    },
+    {
+      "word": "Guarda-chuva",
+      "hints": ["abre", "cabo", "tempestade"]
+    },
+    {
+      "word": "Escova de dentes",
+      "hints": ["cerdas", "banheiro", "três vezes"]
+    },
+    {
+      "word": "Espelho",
+      "hints": ["reflexo", "parede", "sete anos"]
+    },
+    {
+      "word": "Travesseiro",
+      "hints": ["macio", "cabeça", "fronha"]
+    },
+    {
+      "word": "Cadeira",
+      "hints": ["quatro pernas", "encosto", "sentar"]
+    },
+    {
+      "word": "Geladeira",
+      "hints": ["cozinha", "ímã", "porta pesada"]
+    },
+    {
+      "word": "Ventilador",
+      "hints": ["hélice", "verão", "gira"]
+    },
+    {
+      "word": "Televisão",
+      "hints": ["sala", "canais", "tela"]
+    },
+    {
+      "word": "Controle remoto",
+      "hints": ["sofá", "pilhas", "sumido"]
+    },
+    {
+      "word": "Celular",
+      "hints": ["bolso", "tela", "vício"]
+    },
+    {
+      "word": "Fone de ouvido",
+      "hints": ["música", "fio", "par"]
+    },
+    {
+      "word": "Óculos",
+      "hints": ["armação", "grau", "nariz"]
+    },
+    {
+      "word": "Relógio",
+      "hints": ["pulso", "ponteiros", "atraso"]
+    },
+    {
+      "word": "Chave",
+      "hints": ["fechadura", "molho", "cópia"]
+    },
+    {
+      "word": "Cadeado",
+      "hints": ["segredo", "corrente", "portão"]
+    },
+    {
+      "word": "Mochila",
+      "hints": ["costas", "zíper", "escola"]
+    },
+    {
+      "word": "Carteira",
+      "hints": ["bolso", "documentos", "couro"]
+    },
+    {
+      "word": "Panela",
+      "hints": ["fogão", "tampa", "cabo"]
+    },
+    {
+      "word": "Garfo",
+      "hints": ["dentes", "talher", "esquerda"]
+    },
+    {
+      "word": "Faca",
+      "hints": ["corte", "afiada", "pão"]
+    },
+    {
+      "word": "Colher",
+      "hints": ["sopa", "funda", "chá"]
+    },
+    {
+      "word": "Copo",
+      "hints": ["vidro", "borda", "sede"]
+    },
+    {
+      "word": "Garrafa",
+      "hints": ["tampa", "gargalo", "litro"]
+    },
+    {
+      "word": "Vassoura",
+      "hints": ["cerdas", "cabo", "bruxa"]
+    },
+    {
+      "word": "Rodo",
+      "hints": ["borracha", "puxa", "quintal"]
+    },
+    {
+      "word": "Esponja",
+      "hints": ["absorve", "dois lados", "pia"]
+    },
+    {
+      "word": "Sabonete",
+      "hints": ["escorrega", "cheiroso", "espuma"]
+    },
+    {
+      "word": "Toalha",
+      "hints": ["felpuda", "varal", "pós-banho"]
+    },
+    {
+      "word": "Chuveiro",
+      "hints": ["quente ou frio", "teto", "cantoria"]
+    },
+    {
+      "word": "Chinelo",
+      "hints": ["dedo", "verão", "mãe brava"]
+    },
+    {
+      "word": "Lápis",
+      "hints": ["apontar", "grafite", "escrever"]
+    },
+    {
+      "word": "Caneta",
+      "hints": ["tinta", "clique", "emprestada"]
+    },
+    {
+      "word": "Borracha",
+      "hints": ["apaga", "estojo", "resto"]
+    },
+    {
+      "word": "Caderno",
+      "hints": ["espiral", "linhas", "matéria"]
+    },
+    {
+      "word": "Livro",
+      "hints": ["páginas", "capa", "estante"]
+    },
+    {
+      "word": "Abajur",
+      "hints": ["cabeceira", "cúpula", "leitura"]
+    },
+    {
+      "word": "Tomada",
+      "hints": ["parede", "três pinos", "energia"]
+    },
+    {
+      "word": "Pilha",
+      "hints": ["positivo", "negativo", "acaba"]
+    },
+    {
+      "word": "Lanterna",
+      "hints": ["facho", "apagão", "acampamento"]
+    },
+    {
+      "word": "Vela",
+      "hints": ["pavio", "aniversário", "apagão"]
+    },
+    {
+      "word": "Fósforo",
+      "hints": ["caixinha", "risca", "palito"]
+    },
+    {
+      "word": "Prego",
+      "hints": ["parede", "quadro", "torto"]
+    },
+    {
+      "word": "Parafuso",
+      "hints": ["rosca", "aperta", "solto"]
+    },
+    {
+      "word": "Fita adesiva",
+      "hints": ["gruda", "rolo", "presente"]
+    },
+    {
+      "word": "Cabide",
+      "hints": ["armário", "ombros", "pendura"]
+    },
+    {
+      "word": "Balde",
+      "hints": ["alça", "faxina", "praia"]
+    },
+    {
+      "word": "Ferro de passar",
+      "hints": ["vapor", "tábua", "amassado"]
+    },
+    {
+      "word": "Almofada",
+      "hints": ["sofá", "decoração", "abraço"]
+    },
+    {
+      "word": "Micro-ondas",
+      "hints": ["esquenta", "pling", "cozinha"]
+    },
+    {
+      "word": "Liquidificador",
+      "hints": ["vitamina", "lâminas", "barulho"]
+    },
+    {
+      "word": "Batedeira",
+      "hints": ["bolo", "claras", "gira"]
+    },
+    {
+      "word": "Cafeteira",
+      "hints": ["manhã", "coado", "aroma"]
+    },
+    {
+      "word": "Fogão",
+      "hints": ["bocas", "chama", "cozinha"]
+    },
+    {
+      "word": "Máquina de lavar",
+      "hints": ["tambor", "roupa suja", "centrifuga"]
+    },
+    {
+      "word": "Aspirador",
+      "hints": ["sucção", "tapete", "barulho"]
+    },
+    {
+      "word": "Escada",
+      "hints": ["degraus", "alcança", "apoiada"]
+    },
+    {
+      "word": "Regador",
+      "hints": ["plantas", "bico", "jardim"]
+    },
+    {
+      "word": "Mangueira",
+      "hints": ["quintal", "enrolada", "esguicho"]
+    },
+    {
+      "word": "Furadeira",
+      "hints": ["parede", "broca", "barulho"]
+    },
+    {
+      "word": "Alicate",
+      "hints": ["aperta", "corta fio", "ferramenta"]
+    },
+    {
+      "word": "Régua",
+      "hints": ["reta", "centímetros", "estojo"]
+    },
+    {
+      "word": "Envelope",
+      "hints": ["carta", "lacre", "papel"]
+    },
+    {
+      "word": "Mala",
+      "hints": ["viagem", "rodinhas", "etiqueta"]
+    },
+    {
+      "word": "Guarda-roupa",
+      "hints": ["portas", "cabides", "quarto"]
+    },
+    {
+      "word": "Cortina",
+      "hints": ["janela", "corre", "tecido"]
+    },
+    {
+      "word": "Tapete",
+      "hints": ["chão", "sala", "sacudir"]
+    },
+    {
+      "word": "Pente",
+      "hints": ["dentes", "cabelo", "bolso"]
+    },
+    {
+      "word": "Cotonete",
+      "hints": ["ouvido", "hastes", "algodão"]
+    },
+    {
+      "word": "Termômetro",
+      "hints": ["febre", "graus", "axila"]
+    },
+    {
+      "word": "Binóculo",
+      "hints": ["longe", "duas lentes", "aproxima"]
+    },
+    {
+      "word": "Lupa",
+      "hints": ["aumenta", "detetive", "lente"]
+    },
+    {
+      "word": "Bússola",
+      "hints": ["norte", "agulha", "trilha"]
+    },
+    {
+      "word": "Mapa",
+      "hints": ["dobrado", "tesouro", "caminho"]
+    },
+    {
+      "word": "Bola",
+      "hints": ["quica", "redonda", "quintal"]
+    },
+    {
+      "word": "Pipa",
+      "hints": ["vento", "linha", "céu"]
+    },
+    {
+      "word": "Bicicleta",
+      "hints": ["pedais", "duas rodas", "cesta"]
+    },
+    {
+      "word": "Corda",
+      "hints": ["pular", "nó", "amarra"]
+    },
+    {
+      "word": "Rede",
+      "hints": ["descanso", "varanda", "balança"]
+    }
   ]
 }
