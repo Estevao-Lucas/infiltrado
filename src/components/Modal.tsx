@@ -23,11 +23,7 @@ export function Modal({ open, onClose, title, children }: ModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center">
-      <div
-        className="fade-in absolute inset-0 bg-black/60"
-        onClick={onClose}
-        aria-hidden="true"
-      />
+      <div className="fade-in absolute inset-0 bg-black/60" onClick={onClose} aria-hidden="true" />
       <div
         role="dialog"
         aria-modal="true"
