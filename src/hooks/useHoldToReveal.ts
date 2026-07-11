@@ -29,6 +29,11 @@ interface UseHoldToRevealResult {
  * A palavra NUNCA fica visível sem o dedo pressionado: qualquer
  * pointerup/pointercancel/pointerleave (ligação, notificação, dedo
  * escorregando) esconde imediatamente.
+ *
+ * iOS: `touch-action: none` sozinho não impede o WebKit de interpretar
+ * o micro-movimento do dedo como scroll e disparar pointercancel no meio
+ * do hold. Durante o hold registramos um `touchmove` NÃO-passivo com
+ * preventDefault no document — a fonte real do "revela e fecha sozinho".
  */
 export function useHoldToReveal({
   revealDelayMs = 300,
@@ -38,6 +43,7 @@ export function useHoldToReveal({
   const [held, setHeld] = useState(false)
   const revealTimer = useRef<number | null>(null)
   const completeTimer = useRef<number | null>(null)
+  const removeTouchBlocker = useRef<(() => void) | null>(null)
 
   const clearTimers = useCallback(() => {
     if (revealTimer.current !== null) window.clearTimeout(revealTimer.current)
@@ -46,22 +52,34 @@ export function useHoldToReveal({
     completeTimer.current = null
   }, [])
 
-  // Componente desmontado no meio de um hold: não deixar timers vivos
-  useEffect(() => clearTimers, [clearTimers])
-
   const release = useCallback(() => {
     clearTimers()
+    removeTouchBlocker.current?.()
+    removeTouchBlocker.current = null
     setRevealed(false)
   }, [clearTimers])
 
+  // Componente desmontado no meio de um hold: não deixar timers/listeners vivos
+  useEffect(() => release, [release])
+
   const onPointerDown = useCallback(
     (event: ReactPointerEvent<HTMLElement>) => {
+      // Segundo dedo não reinicia nem interfere no hold em andamento
+      if (!event.isPrimary) return
+
       // Captura o ponteiro: o pointerup chega mesmo se o dedo sair do card
       try {
         event.currentTarget.setPointerCapture(event.pointerId)
       } catch {
         // pointerId inválido (eventos sintéticos) — hold funciona mesmo assim
       }
+
+      // Bloqueia o scroll do iOS durante o hold (evita pointercancel espúrio)
+      const preventScroll = (touchEvent: TouchEvent) => touchEvent.preventDefault()
+      document.addEventListener('touchmove', preventScroll, { passive: false })
+      removeTouchBlocker.current?.()
+      removeTouchBlocker.current = () => document.removeEventListener('touchmove', preventScroll)
+
       clearTimers()
       revealTimer.current = window.setTimeout(() => {
         setRevealed(true)

@@ -43,7 +43,10 @@ revealResult/newRound/resetSession`. 3–15 jogadores; impostores 1..floor(playe
 - `src/data/categories/*.json` — 17 categorias × 80 palavras, cada uma com 2–3 dicas.
   `src/data/index.ts` importa e exporta tudo tipado.
 - `src/hooks/useHoldToReveal.ts` — hold-to-reveal com Pointer Events + `setPointerCapture`;
-  delay de 300ms antes de revelar, 600ms revelado para contar "hold completo".
+  delay de 300ms antes de revelar, 600ms revelado para contar "hold completo". No iOS,
+  `touch-action: none` não basta: durante o hold registra `touchmove` NÃO-passivo com
+  preventDefault (senão o WebKit dispara pointercancel por micro-scroll e o card fecha
+  sozinho). CSS de apoio: `overscroll-behavior: none` no html/body e classe `.hold-area`.
 - `src/hooks/useTheme.ts` + `src/styles/tokens.css` — temas dark/light/system.
 
 ## Invariantes de jogo (não quebrar)

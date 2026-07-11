@@ -16,9 +16,23 @@
   --color-on-danger: var(--on-danger);
 }
 
+html,
+body {
+  /* iOS: sem rubber-band — scroll acidental cancela o hold-to-reveal */
+  overscroll-behavior: none;
+}
+
 body {
   background-color: var(--background);
   color: var(--text-primary);
+}
+
+/* Área de hold: nenhum descendente pode acionar seleção/lupa/callout do iOS */
+.hold-area,
+.hold-area * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 /* Transição suave só na troca de tema (classe aplicada pelo useTheme),
