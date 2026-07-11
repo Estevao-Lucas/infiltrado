@@ -51,9 +51,19 @@ export const APP_DESCRIPTION = '...'
 
 Componentes importam essas constantes (nenhum nome hardcoded), e um plugin em [`vite.config.ts`](vite.config.ts) injeta os valores nos placeholders `%APP_NAME%` etc. do `index.html` (título e meta description). Basta editar `app.ts` e rebuildar.
 
+## Deploy
+
+Produção: **<https://infiltrado-mocha.vercel.app>**
+
+Hospedado na [Vercel](https://vercel.com) (projeto `infiltrado`). Todo push na `main` gera um
+deploy automático de produção. A configuração de SPA fallback e cache está em
+[`vercel.json`](vercel.json) — assets com hash são imutáveis por 1 ano; `index.html`,
+`sw.js` e o manifest respondem com `no-cache` para o auto-update do PWA funcionar.
+
 ## Stack
 
 - [Vite](https://vite.dev) + React 19 + TypeScript (strict)
 - [Tailwind CSS v4](https://tailwindcss.com)
 - [Zustand](https://zustand.docs.pmnd.rs) com `persist` (localStorage)
+- PWA via [vite-plugin-pwa](https://vite-pwa-org.netlify.app) (offline-first)
 - ESLint + Prettier
