@@ -1,6 +1,7 @@
 import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import { VitePWA } from 'vite-plugin-pwa'
 import {
   APP_NAME,
   APP_EMOJI,
@@ -27,5 +28,35 @@ function appMetadataPlugin(): Plugin {
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), appMetadataPlugin()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    appMetadataPlugin(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg', 'favicon-96.png', 'apple-touch-icon.png', 'icon.svg'],
+      manifest: {
+        name: APP_NAME,
+        short_name: APP_NAME,
+        description: APP_DESCRIPTION,
+        lang: 'pt-BR',
+        display: 'standalone',
+        orientation: 'portrait',
+        background_color: APP_THEME_COLORS.dark,
+        theme_color: APP_THEME_COLORS.dark,
+        start_url: '/',
+        icons: [
+          { src: 'pwa-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'pwa-512.png', sizes: '512x512', type: 'image/png' },
+          {
+            src: 'pwa-512-maskable.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
+        ],
+      },
+      // Sem chamadas de rede em runtime: o precache do build cobre 100% offline
+    }),
+  ],
 })
