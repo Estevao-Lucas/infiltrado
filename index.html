@@ -7,6 +7,25 @@
     <meta name="description" content="%APP_DESCRIPTION%" />
     <meta name="theme-color" content="%APP_THEME_COLOR%" />
     <title>%APP_EMOJI% %APP_NAME%</title>
+    <script>
+      // Aplica o tema antes do primeiro paint — evita flash de tema errado
+      ;(function () {
+        var theme = 'dark'
+        try {
+          var stored = localStorage.getItem('%THEME_STORAGE_KEY%')
+          var pref = stored === 'dark' || stored === 'light' ? stored : 'system'
+          theme =
+            pref === 'system'
+              ? window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+              : pref
+        } catch (e) {
+          /* localStorage indisponível: mantém dark */
+        }
+        document.documentElement.dataset.theme = theme
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
