@@ -28,17 +28,17 @@ export function Modal({ open, onClose, title, children }: ModalProps) {
         role="dialog"
         aria-modal="true"
         aria-label={title}
-        className="sheet-in relative max-h-[85dvh] w-full max-w-md overflow-y-auto rounded-t-3xl bg-slate-800 p-6 pb-8 sm:rounded-3xl"
+        className="sheet-in relative max-h-[85dvh] w-full max-w-md overflow-y-auto rounded-t-2xl border-t border-border bg-surface p-6 pb-8 sm:rounded-2xl sm:border"
       >
         <div className="mb-4 flex items-center justify-between gap-4">
-          <h2 className="text-xl font-black">{title}</h2>
+          <h2 className="text-xl font-bold tracking-tight text-text-primary">{title}</h2>
           <button
             type="button"
             onClick={onClose}
             aria-label="Fechar"
-            className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-700 text-lg font-bold hover:bg-slate-600 focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:outline-none"
+            className="flex h-11 w-11 items-center justify-center rounded-xl text-lg text-text-secondary transition hover:bg-surface-elevated hover:text-text-primary focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
           >
-            ✕
+            ×
           </button>
         </div>
         {children}

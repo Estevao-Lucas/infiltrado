@@ -12,18 +12,18 @@ export function Toggle({ checked, onChange, label, description }: ToggleProps) {
       role="switch"
       aria-checked={checked}
       onClick={() => onChange(!checked)}
-      className="flex min-h-11 w-full items-center justify-between gap-3 rounded-2xl text-left focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:outline-none"
+      className="flex min-h-11 w-full items-center justify-between gap-3 rounded-xl text-left focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
     >
       <span>
-        <span className="block font-bold">{label}</span>
-        {description && <span className="block text-sm text-slate-400">{description}</span>}
+        <span className="block font-semibold text-text-primary">{label}</span>
+        {description && <span className="block text-sm text-text-secondary">{description}</span>}
       </span>
       <span
         aria-hidden="true"
-        className={`relative h-8 w-14 shrink-0 rounded-full transition-colors ${checked ? 'bg-yellow-400' : 'bg-slate-600'}`}
+        className={`relative h-7 w-12 shrink-0 rounded-full transition-colors ${checked ? 'bg-primary' : 'bg-border'}`}
       >
         <span
-          className={`absolute top-1 left-1 h-6 w-6 rounded-full bg-white shadow transition-transform ${checked ? 'translate-x-6' : ''}`}
+          className={`absolute top-1 left-1 h-5 w-5 rounded-full bg-background transition-transform ${checked ? 'translate-x-5' : ''}`}
         />
       </span>
     </button>

@@ -12,10 +12,10 @@ export function Chip({ selected, onClick, children }: ChipProps) {
       type="button"
       aria-pressed={selected}
       onClick={onClick}
-      className={`flex min-h-11 items-center justify-center gap-1.5 rounded-xl border-2 px-3 py-2 text-sm font-bold transition active:scale-[0.97] focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:outline-none ${
+      className={`flex min-h-11 items-center justify-center gap-1.5 rounded-xl border px-3 py-2 text-sm font-semibold transition active:scale-[0.97] focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none ${
         selected
-          ? 'border-yellow-400 bg-yellow-400 text-slate-900'
-          : 'border-slate-700 bg-slate-800 text-slate-300 hover:border-slate-600'
+          ? 'border-primary bg-primary text-on-primary'
+          : 'border-border bg-surface text-text-secondary hover:border-text-secondary hover:text-text-primary'
       }`}
     >
       {children}

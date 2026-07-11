@@ -8,10 +8,10 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: 'bg-yellow-400 text-slate-900 shadow-lg shadow-yellow-400/20 hover:bg-yellow-300',
-  secondary: 'bg-slate-700 text-slate-100 hover:bg-slate-600',
-  ghost: 'bg-transparent text-slate-300 hover:bg-slate-800',
-  danger: 'bg-red-500/15 text-red-400 hover:bg-red-500/25',
+  primary: 'bg-primary text-on-primary hover:bg-primary-hover',
+  secondary: 'border border-border bg-transparent text-text-primary hover:bg-surface-elevated',
+  ghost: 'bg-transparent text-text-secondary hover:bg-surface-elevated hover:text-text-primary',
+  danger: 'bg-danger text-on-danger hover:opacity-90',
 }
 
 export function Button({
@@ -24,7 +24,7 @@ export function Button({
   return (
     <button
       type={type}
-      className={`min-h-11 rounded-2xl px-5 text-base font-bold transition active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-40 ${variantClasses[variant]} ${fullWidth ? 'w-full' : ''} ${className}`}
+      className={`min-h-11 rounded-xl px-5 text-base font-semibold transition active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none disabled:pointer-events-none disabled:opacity-40 ${variantClasses[variant]} ${fullWidth ? 'w-full' : ''} ${className}`}
       {...props}
     />
   )

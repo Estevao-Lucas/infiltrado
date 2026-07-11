@@ -9,7 +9,7 @@ interface StepperProps {
 
 export function Stepper({ value, min, max, onChange, label, disabled = false }: StepperProps) {
   const buttonClasses =
-    'h-11 w-11 rounded-xl bg-slate-700 text-xl font-bold text-slate-100 transition hover:bg-slate-600 active:scale-95 focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-40'
+    'h-11 w-11 rounded-xl border border-border bg-surface-elevated text-xl font-semibold text-text-primary transition hover:bg-surface active:scale-95 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none disabled:pointer-events-none disabled:opacity-40'
 
   return (
     <div
@@ -26,7 +26,10 @@ export function Stepper({ value, min, max, onChange, label, disabled = false }: 
       >
         −
       </button>
-      <span className="min-w-8 text-center text-2xl font-black tabular-nums" aria-live="polite">
+      <span
+        className="min-w-8 text-center text-2xl font-bold text-text-primary tabular-nums"
+        aria-live="polite"
+      >
         {value}
       </span>
       <button
