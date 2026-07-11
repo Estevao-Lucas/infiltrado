@@ -5,8 +5,9 @@ Contexto para agentes trabalhando neste repo.
 ## O que é
 
 **Infiltrado** — jogo de festa estilo _Imposter Who?/Spyfall_: um celular passa de mão em mão,
-todos recebem a mesma palavra secreta menos o(s) impostor(es). 100% client-side (sem backend,
-sem chamadas de rede em runtime), mobile-first, pt-BR, PWA offline-first.
+todos recebem a mesma palavra secreta menos o(s) impostor(es). 100% client-side (sem backend;
+única chamada de rede em runtime é o Vercel Web Analytics, `<Analytics />` no `main.tsx`,
+que falha silenciosamente offline), mobile-first, pt-BR, PWA offline-first.
 
 - Produção: <https://infiltrado-mocha.vercel.app> (Vercel, projeto `infiltrado`, team `e3-l`)
 - **Push na `main` = deploy automático de produção.**
